@@ -13,12 +13,12 @@ from .formatting import (
 def render_executive_kpi_cards(summary: Dict[str, Any]) -> None:
     """Render top-level executive KPI cards."""
     metrics = summary.get("summary_metrics", summary)
-    urgent_count = metrics.get("urgent_reorder_count", 0)
-    high_risk_count = metrics.get("high_stockout_risk_count", 0)
+    urgent_count = metrics.get("urgent_actions_count", metrics.get("urgent_reorder_count", 0))
+    high_risk_count = metrics.get("high_risk_products_count", metrics.get("high_stockout_risk_count", 0))
     spend = metrics.get("total_recommended_spend_rm", 0.0)
     savings = metrics.get("total_expected_savings_rm", 0.0)
-    so_before = metrics.get("avg_stockout_prob_before", 0.0)
-    so_after = metrics.get("avg_stockout_prob_after", 0.0)
+    so_before = metrics.get("average_stockout_before", metrics.get("avg_stockout_prob_before", 0.0))
+    so_after = metrics.get("average_stockout_after", metrics.get("avg_stockout_prob_after", 0.0))
     bt_savings = metrics.get("historical_backtest_savings_pct", 44.49)
 
     col1, col2, col3, col4, col5 = st.columns(5)

@@ -135,3 +135,7 @@ def test_app_starts_and_has_no_upload_widget():
     assert not app.exception, [x.message for x in app.exception]
     assert len(app.get('file_uploader'))==0
     assert any('rotated bot token' in x.value for x in app.info)
+    import json
+    summary=json.loads((Path(__file__).parents[1]/'reports/recommendations/executive_summary.json').read_text())
+    urgent=next(x for x in app.metric if 'Urgent Reorders' in x.label)
+    assert urgent.value==f"{summary['urgent_actions_count']} items"
