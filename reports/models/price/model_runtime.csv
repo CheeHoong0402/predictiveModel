@@ -1,0 +1,4 @@
+model_family,total_walk_forward_runtime_seconds,folds_evaluated
+lightgbm,245.83,33
+catboost,450.17,33
+xgboost,411.61,33

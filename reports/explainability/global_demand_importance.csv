@@ -1,0 +1,753 @@
+raw_feature_name,mean_abs_shap,display_name,business_family,rank
+141,38.84436857700348,141,General Drivers,1
+258,35.02158278822899,258,General Drivers,2
+140,33.47698811888695,140,General Drivers,3
+cal_sin_day_of_week,14.403820037841797,Cal Sin Day Of Week,Calendar & Seasonality,4
+supplier_lead_time_expected,11.95898723602295,Supplier Lead Time Expected,Procurement & Supplier,5
+262,11.157196599245072,262,General Drivers,6
+Column_184,10.405633926391602,Column 184,General Drivers,7
+cal_day_of_month,9.904060363769531,Cal Day Of Month,Calendar & Seasonality,8
+202,7.881927108764648,202,General Drivers,9
+143,7.165839436650276,143,General Drivers,10
+156,6.426990555226803,156,General Drivers,11
+96,6.175383943365887,96,General Drivers,12
+48,5.882699954509735,48,General Drivers,13
+cal_day_of_week,4.918329238891602,Cal Day Of Week,Calendar & Seasonality,14
+76,4.067424482107162,76,General Drivers,15
+cal_cos_day_of_week,4.032262325286865,Cal Cos Day Of Week,Calendar & Seasonality,16
+34,3.4110492691397667,34,General Drivers,17
+38,3.324517014622688,38,General Drivers,18
+203,3.266770751774311,203,General Drivers,19
+Column_58,3.2226381301879883,Column 58,General Drivers,20
+days_since_previous_promo,2.927375316619873,Days Since Previous Promo,Promotions,21
+106,2.852046263217926,106,General Drivers,22
+37,2.778549849218689,37,General Drivers,23
+52,2.6543064072728155,52,General Drivers,24
+demand_median_84d,2.639251708984375,Demand Median 84D,Historical Demand,25
+73,2.6057568028569222,73,General Drivers,26
+interaction_temp_x_poultry,2.602113723754883,Interaction Temp X Poultry,Cross-Feature Interactions,27
+111,2.3732639878988264,111,General Drivers,28
+144,2.156851226091385,144,General Drivers,29
+105,2.1557070672512055,105,General Drivers,30
+118,2.0330437913537027,118,General Drivers,31
+112,2.0263713955879212,112,General Drivers,32
+Column_26,2.0019609928131104,Column 26,General Drivers,33
+Column_2,1.980941891670227,Column 2,General Drivers,34
+supplier_lead_time_actual,1.9533523321151733,Supplier Lead Time Actual,Procurement & Supplier,35
+days_since_salary_day,1.9430949687957764,Days Since Salary Day,Pay & Salary Cycles,36
+164,1.8790927410125733,164,General Drivers,37
+97,1.7953661918640136,97,General Drivers,38
+Column_56,1.7906594276428223,Column 56,General Drivers,39
+104,1.6962840676307678,104,General Drivers,40
+270,1.6470691457390785,270,General Drivers,41
+47,1.6047201991081237,47,General Drivers,42
+116,1.604471510462463,116,General Drivers,43
+100,1.602145500385086,100,General Drivers,44
+demand_median_56d,1.576087474822998,Demand Median 56D,Historical Demand,45
+110,1.5115078575909138,110,General Drivers,46
+151,1.5105453118681909,151,General Drivers,47
+Column_9,1.5012458562850952,Column 9,General Drivers,48
+45,1.459652652963996,45,General Drivers,49
+108,1.3832141578197479,108,General Drivers,50
+33,1.3758158773183822,33,General Drivers,51
+74,1.3740845173597336,74,General Drivers,52
+113,1.3662260495475493,113,General Drivers,53
+189,1.3523247640579938,189,General Drivers,54
+inventory_coverage_days_28d,1.3045798540115356,Inventory Coverage Days 28D,Inventory & Stockouts,55
+days_until_salary_day,1.2958194017410278,Days Until Salary Day,Pay & Salary Cycles,56
+inventory_current,1.2635940313339233,Current inventory level on hand,Inventory & Stockouts,57
+119,1.2171916727907957,119,General Drivers,58
+124,1.1744218349456788,124,General Drivers,59
+88,1.1596256256103517,88,General Drivers,60
+product_is_controlled_goods,1.1222245693206787,Product Is Controlled Goods,Product Attributes,61
+263,1.1110775597393512,263,General Drivers,62
+41,1.0870752841234208,41,General Drivers,63
+135,1.0810302919708192,135,General Drivers,64
+selling_price_mean_7d,1.0686089992523193,Selling Price Mean 7D,Selling Price & Elasticity,65
+99,1.0310521095991134,99,General Drivers,66
+Column_32,1.0238391160964966,Column 32,General Drivers,67
+87,1.0040418770164252,87,General Drivers,68
+102,0.9790768265724182,102,General Drivers,69
+122,0.9512443516403437,122,General Drivers,70
+demand_mean_28d,0.9343789219856262,Demand Mean 28D,Historical Demand,71
+36,0.9034561172127724,36,General Drivers,72
+120,0.8722872421145439,120,General Drivers,73
+95,0.8651629671454429,95,General Drivers,74
+265,0.8650521367788315,265,General Drivers,75
+42,0.8297598359175027,42,General Drivers,76
+53,0.822594858892262,53,General Drivers,77
+demand_min_28d,0.8146183490753174,Demand Min 28D,Historical Demand,78
+247,0.8137211398221552,247,General Drivers,79
+demand_mean_56d,0.7871353626251221,Demand Mean 56D,Historical Demand,80
+Column_199,0.745236337184906,Column 199,General Drivers,81
+134,0.7326620697975159,134,General Drivers,82
+Column_40,0.7287175059318542,Column 40,General Drivers,83
+51,0.7280251234769821,51,General Drivers,84
+Column_122,0.6942138075828552,Column 122,General Drivers,85
+133,0.6880578398704529,133,General Drivers,86
+159,0.6670541584491729,159,General Drivers,87
+Column_57,0.6560467481613159,Column 57,General Drivers,88
+35,0.6452810446731746,35,General Drivers,89
+46,0.6293964847922325,46,General Drivers,90
+114,0.6229166623204947,114,General Drivers,91
+92,0.6133001979440451,92,General Drivers,92
+inventory_coverage_days_7d,0.6127132773399353,Inventory Coverage Days 7D,Inventory & Stockouts,93
+115,0.6113574033603072,115,General Drivers,94
+264,0.603356650378555,264,General Drivers,95
+29,0.5974380195140838,29,General Drivers,96
+107,0.5935200561769307,107,General Drivers,97
+109,0.5929473980795592,109,General Drivers,98
+Column_172,0.5825443267822266,Column 172,General Drivers,99
+demand_mean_84d,0.5669813752174377,Demand Mean 84D,Historical Demand,100
+50,0.510026179999113,50,General Drivers,101
+demand_median_28d,0.49351873993873596,Demand Median 28D,Historical Demand,102
+98,0.4888284545857459,98,General Drivers,103
+Column_157,0.4544496238231659,Column 157,General Drivers,104
+Column_137,0.43127354979515076,Column 137,General Drivers,105
+44,0.4287642716430128,44,General Drivers,106
+154,0.4240509420633316,154,General Drivers,107
+demand_vs_median_28d,0.4203045666217804,Demand Vs Median 28D,Historical Demand,108
+Column_55,0.4164958596229553,Column 55,General Drivers,109
+182,0.41545162741676905,182,General Drivers,110
+Column_194,0.41435006260871887,Column 194,General Drivers,111
+176,0.41403944282064914,176,General Drivers,112
+15,0.41160571994259953,15,General Drivers,113
+Column_27,0.4110231101512909,Column 27,General Drivers,114
+157,0.4085665702819824,157,General Drivers,115
+183,0.3981369912624359,183,General Drivers,116
+158,0.39181900145486,158,General Drivers,117
+236,0.38830359339272036,236,General Drivers,118
+239,0.3849732011556625,239,General Drivers,119
+sales_mean_28d,0.38463062047958374,Sales Mean 28D,Observed Sales,120
+demand_min_14d,0.3820743262767792,Demand Min 14D,Historical Demand,121
+261,0.3811108350753784,261,General Drivers,122
+177,0.3793464610353112,177,General Drivers,123
+86,0.37879666946828366,86,General Drivers,124
+163,0.3751658909954131,163,General Drivers,125
+weather_temp_mean_7d,0.3696257472038269,Weather Temp Mean 7D,Weather & Climate,126
+84,0.3683679379057139,84,General Drivers,127
+Column_160,0.36465024948120117,Column 160,General Drivers,128
+Column_121,0.3518935739994049,Column 121,General Drivers,129
+91,0.3514145305380225,91,General Drivers,130
+80,0.3474132588133216,80,General Drivers,131
+266,0.34476323127746583,266,General Drivers,132
+demand_min_84d,0.341401606798172,Demand Min 84D,Historical Demand,133
+days_since_last_stockout,0.33891722559928894,Days Since Last Stockout,Inventory & Stockouts,134
+Column_185,0.33816632628440857,Column 185,General Drivers,135
+93,0.33769570011645555,93,General Drivers,136
+Column_195,0.3336246907711029,Column 195,General Drivers,137
+demand_dow_median_8w,0.33135250210762024,Demand Dow Median 8W,Historical Demand,138
+Column_145,0.3248900771141052,Column 145,General Drivers,139
+160,0.32050157655030487,160,General Drivers,140
+Column_125,0.31583040952682495,Column 125,General Drivers,141
+194,0.3094573482871056,194,General Drivers,142
+selling_price_vs_mean_7d,0.3047742247581482,Selling Price Vs Mean 7D,Selling Price & Elasticity,143
+purchase_price_mean_7d,0.30456429719924927,Purchase Price Mean 7D,Historical Purchase Price,144
+Column_117,0.30413153767585754,Column 117,General Drivers,145
+136,0.29679572880268096,136,General Drivers,146
+43,0.2913236278574914,43,General Drivers,147
+Column_149,0.29017922282218933,Column 149,General Drivers,148
+purchase_price_min_30d,0.28601574897766113,Purchase Price Min 30D,Historical Purchase Price,149
+demand_dow_median_4w,0.2833293676376343,Demand Dow Median 4W,Historical Demand,150
+21,0.28165596127510073,21,General Drivers,151
+stockout_count_56d,0.2815861701965332,Stockout Count 56D,Inventory & Stockouts,152
+Column_153,0.2760297954082489,Column 153,General Drivers,153
+cal_is_weekend,0.2749161124229431,Cal Is Weekend,Calendar & Seasonality,154
+20,0.2742590824025683,20,General Drivers,155
+demand_sum_28d,0.2717362642288208,Demand Sum 28D,Historical Demand,156
+Column_164,0.27080675959587097,Column 164,General Drivers,157
+sales_sum_28d,0.26636937260627747,Sales Sum 28D,Observed Sales,158
+Column_158,0.26158246397972107,Column 158,General Drivers,159
+223,0.2585668534040451,223,General Drivers,160
+Column_177,0.2565400004386902,Column 177,General Drivers,161
+demand_max_3d,0.2530815601348877,Demand Max 3D,Historical Demand,162
+257,0.25191067457199096,257,General Drivers,163
+Column_170,0.2508235573768616,Column 170,General Drivers,164
+purchase_price_min_60d,0.24812045693397522,Purchase Price Min 60D,Historical Purchase Price,165
+123,0.24699173793196677,123,General Drivers,166
+195,0.24441764056682586,195,General Drivers,167
+demand_sum_84d,0.24268396198749542,Demand Sum 84D,Historical Demand,168
+150,0.23547768853604795,150,General Drivers,169
+167,0.23036400144919753,167,General Drivers,170
+246,0.2302834089845419,246,General Drivers,171
+155,0.2302326440811157,155,General Drivers,172
+is_post_salary_3d,0.22790396213531494,Is Post Salary 3D,Pay & Salary Cycles,173
+demand_mean_14d,0.2276517003774643,Demand Mean 14D,Historical Demand,174
+94,0.2236710876226425,94,General Drivers,175
+11,0.2190185164101422,11,General Drivers,176
+purchase_price_mean_30d,0.21556733548641205,Purchase Price Mean 30D,Historical Purchase Price,177
+Column_163,0.21524262428283691,Column 163,General Drivers,178
+Column_24,0.2149098515510559,Column 24,General Drivers,179
+sales_std_28d,0.21415671706199646,Sales Std 28D,Observed Sales,180
+Column_15,0.2129618525505066,Column 15,General Drivers,181
+27,0.21293023712933062,27,General Drivers,182
+purchase_price_volatility_30d,0.21236468851566315,Purchase Price Volatility 30D,Historical Purchase Price,183
+260,0.2115079402923584,260,General Drivers,184
+demand_growth_28d,0.20826764404773712,Demand Growth 28D,Historical Demand,185
+244,0.2077402642229572,244,General Drivers,186
+Column_155,0.2053299844264984,Column 155,General Drivers,187
+188,0.20225001830258407,188,General Drivers,188
+Column_196,0.19635525345802307,Column 196,General Drivers,189
+Column_54,0.19300049543380737,Column 54,General Drivers,190
+sales_mean_7d,0.19299866259098053,Sales Mean 7D,Observed Sales,191
+purchase_price_lag_7,0.1915311962366104,Supplier purchase price 7 days ago,Historical Purchase Price,192
+demand_lag_35,0.19018158316612244,Demand 35 days ago,Historical Demand,193
+Column_142,0.18851135671138763,Column 142,General Drivers,194
+137,0.18422208465635775,137,General Drivers,195
+78,0.1830476216971874,78,General Drivers,196
+purchase_price_std_14d,0.18120752274990082,Purchase Price Std 14D,Historical Purchase Price,197
+demand_max_28d,0.178376704454422,Demand Max 28D,Historical Demand,198
+70,0.1768192879855633,70,General Drivers,199
+demand_lag_14,0.17680492997169495,Demand 14 days ago,Historical Demand,200
+Column_107,0.1757650077342987,Column 107,General Drivers,201
+demand_prior_year_week_mean,0.1734558343887329,Demand Prior Year Week Mean,Historical Demand,202
+demand_lag_364,0.16933782398700714,Demand 364 days ago,Historical Demand,203
+17,0.16720836641034112,17,General Drivers,204
+purchase_price_min_7d,0.16313272714614868,Purchase Price Min 7D,Historical Purchase Price,205
+103,0.16198753465432675,103,General Drivers,206
+Column_201,0.1605263501405716,Column 201,General Drivers,207
+sales_lag_364,0.16022779047489166,Sales 364 days ago,Observed Sales,208
+Column_139,0.15995065867900848,Column 139,General Drivers,209
+49,0.15863315983442589,49,General Drivers,210
+stockout_count_7d,0.15526996552944183,Stockout Count 7D,Inventory & Stockouts,211
+245,0.15275114342221058,245,General Drivers,212
+purchase_price_max_7d,0.15264053642749786,Purchase Price Max 7D,Historical Purchase Price,213
+Column_106,0.14960280060768127,Column 106,General Drivers,214
+demand_ratio_14d_56d,0.14868326485157013,Recent trend/momentum in demand ratio 14d 56d,Historical Demand,215
+63,0.14628269523382187,63,General Drivers,216
+selling_price_mean_28d,0.14515723288059235,Selling Price Mean 28D,Selling Price & Elasticity,217
+demand_min_56d,0.14214706420898438,Demand Min 56D,Historical Demand,218
+22,0.14084766692249104,22,General Drivers,219
+268,0.14083457107190042,268,General Drivers,220
+Column_161,0.13922934234142303,Column 161,General Drivers,221
+Column_197,0.13914109766483307,Column 197,General Drivers,222
+54,0.13756727278232575,54,General Drivers,223
+Column_147,0.13696934282779694,Column 147,General Drivers,224
+demand_std_14d,0.13606908917427063,Demand Std 14D,Historical Demand,225
+Column_131,0.1349121332168579,Column 131,General Drivers,226
+25,0.13437983393669128,25,General Drivers,227
+demand_cv_84d,0.13331829011440277,Demand Cv 84D,Historical Demand,228
+204,0.13321331441402434,204,General Drivers,229
+30,0.13288791353115811,30,General Drivers,230
+Column_148,0.13255645334720612,Column 148,General Drivers,231
+Column_128,0.132370725274086,Column 128,General Drivers,232
+selling_price_vs_normal_ratio,0.13198912143707275,Recent trend/momentum in selling price vs normal ratio,Selling Price & Elasticity,233
+Column_25,0.13189195096492767,Column 25,General Drivers,234
+26,0.1306749703362584,26,General Drivers,235
+demand_std_84d,0.1268838793039322,Demand Std 84D,Historical Demand,236
+Column_23,0.1255498081445694,Column 23,General Drivers,237
+207,0.1253554940223694,207,General Drivers,238
+purchase_price_max_90d,0.12480863183736801,Purchase Price Max 90D,Historical Purchase Price,239
+Column_200,0.12416421622037888,Column 200,General Drivers,240
+149,0.12158940786030144,149,General Drivers,241
+Column_133,0.12144148349761963,Column 133,General Drivers,242
+58,0.12018708231626078,58,General Drivers,243
+demand_min_7d,0.11950980126857758,Demand Min 7D,Historical Demand,244
+Column_144,0.11936531215906143,Column 144,General Drivers,245
+purchase_price_max_30d,0.11921529471874237,Purchase Price Max 30D,Historical Purchase Price,246
+23,0.11833790745586156,23,General Drivers,247
+purchase_price_mean_90d,0.11693009734153748,Purchase Price Mean 90D,Historical Purchase Price,248
+Column_115,0.1153416559100151,Column 115,General Drivers,249
+18,0.11512074265629053,18,General Drivers,250
+Column_176,0.11443457752466202,Column 176,General Drivers,251
+purchase_price_std_60d,0.11377953737974167,Purchase Price Std 60D,Historical Purchase Price,252
+demand_mean_3d,0.11333868652582169,Demand Mean 3D,Historical Demand,253
+demand_max_84d,0.1130310669541359,Demand Max 84D,Historical Demand,254
+Column_60,0.11246562749147415,Column 60,General Drivers,255
+212,0.10985749214887619,212,General Drivers,256
+demand_std_56d,0.10969167947769165,Demand Std 56D,Historical Demand,257
+Column_19,0.10667634755373001,Column 19,General Drivers,258
+75,0.10661215488798917,75,General Drivers,259
+demand_median_3d,0.10478527843952179,Demand Median 3D,Historical Demand,260
+demand_std_3d,0.1034405529499054,Demand Std 3D,Historical Demand,261
+sales_std_7d,0.10269290953874588,Sales Std 7D,Observed Sales,262
+stockout_count_28d,0.10200097411870956,Stockout Count 28D,Inventory & Stockouts,263
+purchase_price_min_14d,0.10101769864559174,Purchase Price Min 14D,Historical Purchase Price,264
+demand_max_56d,0.100813128054142,Demand Max 56D,Historical Demand,265
+demand_mean_7d,0.09922731667757034,Demand Mean 7D,Historical Demand,266
+Column_192,0.09888552874326706,Column 192,General Drivers,267
+purchase_price_mean_14d,0.09888232499361038,Purchase Price Mean 14D,Historical Purchase Price,268
+Column_119,0.09833912551403046,Column 119,General Drivers,269
+cpi_headline,0.09751132130622864,Cpi Headline,Macroeconomic & Inflation,270
+224,0.09690309278666973,224,General Drivers,271
+55,0.09617409408092499,55,General Drivers,272
+162,0.09385728240013122,162,General Drivers,273
+demand_lag_1,0.09361564368009567,Demand 1 days ago,Historical Demand,274
+school_holiday_days_since_start,0.09340522438287735,School Holiday Days Since Start,Calendar & Seasonality,275
+days_since_last_gov_assist,0.09275463968515396,Days Since Last Gov Assist,Government Assistance,276
+40,0.09239783287048339,40,General Drivers,277
+weather_temp_max_7d,0.0921674519777298,Weather Temp Max 7D,Weather & Climate,278
+Column_120,0.09080204367637634,Column 120,General Drivers,279
+demand_lag_28,0.08963164687156677,Demand 28 days ago,Historical Demand,280
+31,0.08928016424179078,31,General Drivers,281
+demand_std_28d,0.0888761356472969,Demand Std 28D,Historical Demand,282
+0,0.08777095708064735,0,General Drivers,283
+256,0.08696922194212675,256,General Drivers,284
+purchase_price_std_30d,0.08427762240171432,Purchase Price Std 30D,Historical Purchase Price,285
+Column_175,0.08421756327152252,Column 175,General Drivers,286
+purchase_price_max_60d,0.08290541917085648,Purchase Price Max 60D,Historical Purchase Price,287
+272,0.0827468334697187,272,General Drivers,288
+purchase_price_mean_60d,0.08174353092908859,Purchase Price Mean 60D,Historical Purchase Price,289
+purchase_price_max_14d,0.08164769411087036,Purchase Price Max 14D,Historical Purchase Price,290
+purchase_price_std_7d,0.08098362386226654,Purchase Price Std 7D,Historical Purchase Price,291
+Column_53,0.0801689550280571,Column 53,General Drivers,292
+demand_lag_84,0.07990310341119766,Demand 84 days ago,Historical Demand,293
+210,0.07946151136420668,210,General Drivers,294
+83,0.07756601311266423,83,General Drivers,295
+demand_median_7d,0.07680174708366394,Demand Median 7D,Historical Demand,296
+117,0.07551258057355881,117,General Drivers,297
+Column_162,0.07522202283143997,Column 162,General Drivers,298
+Column_101,0.07508212327957153,Column 101,General Drivers,299
+Column_154,0.07394517958164215,Column 154,General Drivers,300
+205,0.07388353981077671,205,General Drivers,301
+days_since_raya,0.07352865487337112,Days Since Raya,Calendar & Seasonality,302
+demand_cv_28d,0.07337377220392227,Demand Cv 28D,Historical Demand,303
+weather_rainfall_sum_14d,0.07317791879177094,Weather Rainfall Sum 14D,Weather & Climate,304
+holiday_lead_1d,0.07312873750925064,Holiday Lead 1D,Calendar & Seasonality,305
+demand_cv_7d,0.07298077642917633,Demand Cv 7D,Historical Demand,306
+sales_lag_28,0.07273440808057785,Sales 28 days ago,Observed Sales,307
+weather_temp_avg,0.07255236804485321,Weather Temp Avg,Weather & Climate,308
+Column_124,0.07211102545261383,Column 124,General Drivers,309
+cpi_pct_change_365d,0.07132484763860703,Cpi Pct Change 365D,Macroeconomic & Inflation,310
+demand_lag_168,0.07106370478868484,Demand 168 days ago,Historical Demand,311
+Column_193,0.07055467367172241,Column 193,General Drivers,312
+supplier_pack_size_units,0.07024727016687393,Supplier Pack Size Units,Procurement & Supplier,313
+demand_median_14d,0.07002310454845428,Demand Median 14D,Historical Demand,314
+promo_frequency_30d,0.06984083354473114,Promo Frequency 30D,Promotions,315
+demand_lag_365,0.06916385143995285,Demand 365 days ago,Historical Demand,316
+days_since_subsidy_announced,0.06858287006616592,Days Since Subsidy Announced,Government Policy & Subsidies,317
+demand_lag_2,0.06848448514938354,Demand 2 days ago,Historical Demand,318
+Column_156,0.06774379312992096,Column 156,General Drivers,319
+demand_cv_14d,0.06771741062402725,Demand Cv 14D,Historical Demand,320
+demand_max_7d,0.06503155827522278,Demand Max 7D,Historical Demand,321
+inventory_prior_closing,0.06479992717504501,Inventory Prior Closing,Inventory & Stockouts,322
+Column_132,0.062435686588287354,Column 132,General Drivers,323
+Column_16,0.062377143651247025,Column 16,General Drivers,324
+demand_max_14d,0.06227375194430351,Demand Max 14D,Historical Demand,325
+purchase_price_lag_21,0.06225893273949623,Supplier purchase price 21 days ago,Historical Purchase Price,326
+demand_lag_56,0.06199979409575462,Demand 56 days ago,Historical Demand,327
+demand_cv_56d,0.061115335673093796,Demand Cv 56D,Historical Demand,328
+fuel_diesel_unsubsidised,0.06103334203362465,Fuel Diesel Unsubsidised,Fuel & Energy,329
+purchase_price_min_90d,0.0609416589140892,Purchase Price Min 90D,Historical Purchase Price,330
+sales_lag_14,0.06089651584625244,Sales 14 days ago,Observed Sales,331
+demand_std_7d,0.06074860692024231,Demand Std 7D,Historical Demand,332
+purchase_price_acceleration,0.060141656547784805,Recent trend/momentum in purchase price acceleration,Historical Purchase Price,333
+Column_140,0.05889636650681496,Column 140,General Drivers,334
+cpi_pct_change_30d,0.05850726366043091,Cpi Pct Change 30D,Macroeconomic & Inflation,335
+demand_ratio_7d_28d,0.058250945061445236,Recent trend/momentum in demand ratio 7d 28d,Historical Demand,336
+214,0.057278174161911014,214,General Drivers,337
+60,0.056669666699599476,60,General Drivers,338
+demand_lag_7,0.05631339177489281,Demand 7 days ago,Historical Demand,339
+demand_sum_14d,0.05609652027487755,Demand Sum 14D,Historical Demand,340
+sales_sum_7d,0.055674292147159576,Sales Sum 7D,Observed Sales,341
+receipt_count_30d,0.0556483119726181,Receipt Count 30D,Inventory & Stockouts,342
+demand_growth_7d,0.05535941943526268,Demand Growth 7D,Historical Demand,343
+148,0.05528796017169953,148,General Drivers,344
+weather_precip_hours,0.05504778400063515,Weather Precip Hours,Weather & Climate,345
+weather_rainfall_sum_7d,0.05477915704250336,Weather Rainfall Sum 7D,Weather & Climate,346
+Column_135,0.054090097546577454,Column 135,General Drivers,347
+Column_143,0.05323409661650658,Column 143,General Drivers,348
+sales_lag_7,0.0528222881257534,Sales 7 days ago,Observed Sales,349
+demand_sum_3d,0.052721716463565826,Demand Sum 3D,Historical Demand,350
+Column_198,0.052440717816352844,Column 198,General Drivers,351
+inventory_opening,0.051922280341386795,Inventory Opening,Inventory & Stockouts,352
+purchase_price_std_90d,0.050792843103408813,Purchase Price Std 90D,Historical Purchase Price,353
+121,0.05014133863151073,121,General Drivers,354
+supplier_moq,0.049564871937036514,Supplier Moq,Procurement & Supplier,355
+days_until_raya,0.04893115535378456,Days Until Raya,Calendar & Seasonality,356
+211,0.04870248660445213,211,General Drivers,357
+7,0.04668050236650743,7,General Drivers,358
+Column_151,0.04651929810643196,Column 151,General Drivers,359
+demand_min_3d,0.046444498002529144,Demand Min 3D,Historical Demand,360
+Column_150,0.04641195386648178,Column 150,General Drivers,361
+price_elasticity_proxy_7d,0.04602546617388725,Price Elasticity Proxy 7D,Selling Price & Elasticity,362
+demand_lag_3,0.045961372554302216,Demand 3 days ago,Historical Demand,363
+weather_rainfall_mm,0.045688554644584656,Weather Rainfall Mm,Weather & Climate,364
+demand_lag_21,0.04554183781147003,Demand 21 days ago,Historical Demand,365
+interaction_rainfall_x_vegetables,0.04547261446714401,Interaction Rainfall X Vegetables,Cross-Feature Interactions,366
+13,0.045077398978173734,13,General Drivers,367
+89,0.044699149462394415,89,General Drivers,368
+Column_127,0.04406498000025749,Column 127,General Drivers,369
+days_since_policy_announced,0.04386291652917862,Days Since Policy Announced,Government Policy & Subsidies,370
+57,0.04381890194490552,57,General Drivers,371
+Column_169,0.04369189590215683,Column 169,General Drivers,372
+purchase_price_lag_30,0.04316603019833565,Supplier purchase price 30 days ago,Historical Purchase Price,373
+cpi_category,0.04214952141046524,Cpi Category,Macroeconomic & Inflation,374
+weather_temp_max,0.041834596544504166,Weather Temp Max,Weather & Climate,375
+purchase_price_pct_change_7d,0.041548170149326324,Purchase Price Pct Change 7D,Historical Purchase Price,376
+85,0.041071783378720285,85,General Drivers,377
+219,0.04083709418773651,219,General Drivers,378
+254,0.04059050979558378,254,General Drivers,379
+Column_17,0.03985394909977913,Column 17,General Drivers,380
+days_since_cny,0.03913756459951401,Days Since Cny,Calendar & Seasonality,381
+Column_146,0.038676049560308456,Column 146,General Drivers,382
+demand_sum_7d,0.03819146752357483,Demand Sum 7D,Historical Demand,383
+28,0.03712969496846199,28,General Drivers,384
+promo_frequency_90d,0.03671504929661751,Promo Frequency 90D,Promotions,385
+weather_temp_min,0.036665186285972595,Weather Temp Min,Weather & Climate,386
+weather_rainfall_sum_3d,0.036355920135974884,Weather Rainfall Sum 3D,Weather & Climate,387
+days_since_christmas,0.0363529808819294,Days Since Christmas,Calendar & Seasonality,388
+146,0.03484013043344021,146,General Drivers,389
+Column_95,0.03463240712881088,Column 95,General Drivers,390
+19,0.03456292450428009,19,General Drivers,391
+72,0.034293169528245925,72,General Drivers,392
+purchase_price_pct_change_30d,0.034039806574583054,Purchase Price Pct Change 30D,Historical Purchase Price,393
+quantity_received_28d_sum,0.03306881710886955,Quantity Received 28D Sum,Inventory & Stockouts,394
+71,0.03125250935554504,71,General Drivers,395
+241,0.030864248983561993,241,General Drivers,396
+Column_187,0.030669353902339935,Column 187,General Drivers,397
+39,0.03051259331405163,39,General Drivers,398
+Column_18,0.03037029691040516,Column 18,General Drivers,399
+days_until_deepavali,0.030278820544481277,Days Until Deepavali,Calendar & Seasonality,400
+166,0.029638311266899107,166,General Drivers,401
+stockout_rate_56d,0.028958775103092194,Stockout Rate 56D,Inventory & Stockouts,402
+221,0.0284871868789196,221,General Drivers,403
+days_since_deepavali,0.028060657903552055,Days Since Deepavali,Calendar & Seasonality,404
+days_until_cny,0.027747513726353645,Days Until Cny,Calendar & Seasonality,405
+purchase_price_lag_3,0.027445724233984947,Supplier purchase price 3 days ago,Historical Purchase Price,406
+stockout_rate_7d,0.027254967018961906,Stockout Rate 7D,Inventory & Stockouts,407
+Column_3,0.026615707203745842,Column 3,General Drivers,408
+Column_167,0.026359885931015015,Column 167,General Drivers,409
+Column_114,0.02629602886736393,Column 114,General Drivers,410
+153,0.026275680214166642,153,General Drivers,411
+Column_190,0.026002487167716026,Column 190,General Drivers,412
+school_holiday_days_until_end,0.025646988302469254,School Holiday Days Until End,Calendar & Seasonality,413
+promo_days_until_end,0.025512749329209328,Promo Days Until End,Promotions,414
+225,0.02538736816495657,225,General Drivers,415
+Column_29,0.02528078481554985,Column 29,General Drivers,416
+stockout_rate_28d,0.02507590875029564,Stockout Rate 28D,Inventory & Stockouts,417
+Column_130,0.024721890687942505,Column 130,General Drivers,418
+inventory_backorder,0.024619251489639282,Inventory Backorder,Inventory & Stockouts,419
+discount_amount,0.024363422766327858,Discount Amount,Selling Price & Elasticity,420
+14,0.02401697589084506,14,General Drivers,421
+32,0.02376422880915925,32,General Drivers,422
+Column_28,0.02356863208115101,Column 28,General Drivers,423
+131,0.02348836585879326,131,General Drivers,424
+125,0.02307417392730713,125,General Drivers,425
+sales_lag_2,0.022523164749145508,Sales 2 days ago,Observed Sales,426
+Column_136,0.02232247404754162,Column 136,General Drivers,427
+demand_cv_3d,0.02158314920961857,Demand Cv 3D,Historical Demand,428
+days_until_christmas,0.021392207592725754,Days Until Christmas,Calendar & Seasonality,429
+62,0.021180222928524017,62,General Drivers,430
+Column_138,0.021145466715097427,Column 138,General Drivers,431
+Column_59,0.02084183506667614,Column 59,General Drivers,432
+purchase_price_vs_mean_30d,0.0208286102861166,Purchase Price Vs Mean 30D,Historical Purchase Price,433
+Column_46,0.020797383040189743,Column 46,General Drivers,434
+weather_consecutive_rain_days,0.0205839890986681,Weather Consecutive Rain Days,Weather & Climate,435
+Column_33,0.02046506479382515,Column 33,General Drivers,436
+Column_61,0.01922398805618286,Column 61,General Drivers,437
+sales_lag_3,0.019087839871644974,Sales 3 days ago,Observed Sales,438
+238,0.018927977606654166,238,General Drivers,439
+purchase_price_pct_change_1d,0.018790706992149353,Purchase Price Pct Change 1D,Historical Purchase Price,440
+fuel_petrol_unsubsidised,0.018784811720252037,Fuel Petrol Unsubsidised,Fuel & Energy,441
+store_storage_capacity_units,0.018635349348187447,Store Storage Capacity Units,Store Geography,442
+planned_promo_within_7d,0.0184073094278574,Planned Promo Within 7D,Promotions,443
+is_post_gov_assist_7d,0.018222438171505928,Is Post Gov Assist 7D,Government Assistance,444
+purchase_price_vs_mean_90d,0.017918560653924942,Purchase Price Vs Mean 90D,Historical Purchase Price,445
+days_since_last_replenishment,0.01772349700331688,Days Since Last Replenishment,Inventory & Stockouts,446
+purchase_price_lag_14,0.017522670328617096,Supplier purchase price 14 days ago,Historical Purchase Price,447
+216,0.017229996249079706,216,General Drivers,448
+Column_118,0.01710074581205845,Column 118,General Drivers,449
+interaction_gov_assist_x_essential,0.01707075536251068,Interaction Gov Assist X Essential,Cross-Feature Interactions,450
+cal_week_of_year,0.016871945932507515,Cal Week Of Year,Calendar & Seasonality,451
+sales_lag_1,0.016576802358031273,Sales 1 days ago,Observed Sales,452
+226,0.015148203913122415,226,General Drivers,453
+24,0.015062720328569413,24,General Drivers,454
+Column_20,0.014974151737987995,Column 20,General Drivers,455
+purchase_price_lag_90,0.014168567955493927,Supplier purchase price 90 days ago,Historical Purchase Price,456
+Column_152,0.014068330638110638,Column 152,General Drivers,457
+179,0.013992832601070404,179,General Drivers,458
+quantity_received_7d_sum,0.013943575322628021,Quantity Received 7D Sum,Inventory & Stockouts,459
+cal_month,0.012762815691530704,Cal Month,Calendar & Seasonality,460
+cal_cos_month,0.012716153636574745,Cal Cos Month,Calendar & Seasonality,461
+demand_sum_56d,0.01268782839179039,Demand Sum 56D,Historical Demand,462
+purchase_price_lag_60,0.012600311078131199,Supplier purchase price 60 days ago,Historical Purchase Price,463
+Column_45,0.012233893387019634,Column 45,General Drivers,464
+138,0.012117885798215867,138,General Drivers,465
+Column_113,0.011850656941533089,Column 113,General Drivers,466
+101,0.011593664158135652,101,General Drivers,467
+Column_159,0.011499880813062191,Column 159,General Drivers,468
+Column_11,0.011269510723650455,Column 11,General Drivers,469
+Column_111,0.011257798410952091,Column 111,General Drivers,470
+165,0.010703091323375703,165,General Drivers,471
+Column_103,0.010494843125343323,Column 103,General Drivers,472
+77,0.01046295315027237,77,General Drivers,473
+Column_116,0.01027129590511322,Column 116,General Drivers,474
+Column_191,0.010178714990615845,Column 191,General Drivers,475
+selling_price_pct_change_7d,0.01016298308968544,Selling Price Pct Change 7D,Selling Price & Elasticity,476
+is_chicken_subsidy_active,0.010111017152667046,Is Chicken Subsidy Active,Government Policy & Subsidies,477
+purchase_price_lag_1,0.010068447329103947,Supplier purchase price 1 days ago,Historical Purchase Price,478
+Column_41,0.009942399337887764,Column 41,General Drivers,479
+Column_22,0.00966574065387249,Column 22,General Drivers,480
+interaction_promo_x_festival,0.009579472243785858,Interaction Promo X Festival,Cross-Feature Interactions,481
+school_holiday_duration,0.008980331011116505,Recent trend/momentum in school holiday duration,Calendar & Seasonality,482
+201,0.008859549462795258,201,General Drivers,483
+demand_trend_28d,0.008563992567360401,Demand Trend 28D,Historical Demand,484
+Column_30,0.008300810120999813,Column 30,General Drivers,485
+store_geo_latitude,0.008211259730160236,Store Geo Latitude,Store Geography,486
+Column_0,0.00816410593688488,Column 0,General Drivers,487
+217,0.008153127878904343,217,General Drivers,488
+147,0.007980374566977843,147,General Drivers,489
+229,0.007569372095167637,229,General Drivers,490
+191,0.0075359087437391285,191,General Drivers,491
+Column_13,0.007531545590609312,Column 13,General Drivers,492
+253,0.007352236658334732,253,General Drivers,493
+16,0.007255708426237106,16,General Drivers,494
+82,0.007048994302749634,82,General Drivers,495
+65,0.00665174201130867,65,General Drivers,496
+Column_141,0.006539329420775175,Column 141,General Drivers,497
+store_relative_capacity_ratio,0.006385270971804857,Recent trend/momentum in store relative capacity ratio,Store Geography,498
+weather_consecutive_hot_days,0.005286480765789747,Weather Consecutive Hot Days,Weather & Climate,499
+Column_123,0.005160762928426266,Column 123,General Drivers,500
+79,0.004938286542892456,79,General Drivers,501
+is_govt_salary_day,0.004920416045933962,Is Govt Salary Day,Pay & Salary Cycles,502
+185,0.004900319874286652,185,General Drivers,503
+Column_129,0.0044698999263346195,Column 129,General Drivers,504
+231,0.004425328259821981,231,General Drivers,505
+Column_31,0.004206370562314987,Column 31,General Drivers,506
+Column_70,0.00410484429448843,Column 70,General Drivers,507
+232,0.0036752454936504362,232,General Drivers,508
+206,0.003530222084373236,206,General Drivers,509
+186,0.0035106327384710314,186,General Drivers,510
+Column_189,0.0032840934582054615,Column 189,General Drivers,511
+66,0.003280141018331051,66,General Drivers,512
+69,0.0032135073095560076,69,General Drivers,513
+Column_102,0.002993929898366332,Column 102,General Drivers,514
+Column_98,0.0029714845586568117,Column 98,General Drivers,515
+planned_promo_within_14d,0.0029339094180613756,Planned Promo Within 14D,Promotions,516
+major_festival_window_active,0.0029235309921205044,Major Festival Window Active,Calendar & Seasonality,517
+price_vs_market_diff,0.0029015964828431606,Price Vs Market Diff,Market & Competitor Prices,518
+67,0.002734309481456876,67,General Drivers,519
+Column_166,0.0025349368806928396,Column 166,General Drivers,520
+8,0.0025157265365123747,8,General Drivers,521
+Column_134,0.0024621940683573484,Column 134,General Drivers,522
+Column_1,0.0023153387010097504,Column 1,General Drivers,523
+234,0.002305537462234497,234,General Drivers,524
+59,0.0022099962458014487,59,General Drivers,525
+213,0.002076147124171257,213,General Drivers,526
+Column_14,0.0020244435872882605,Column 14,General Drivers,527
+cal_sin_month,0.0019850335083901882,Cal Sin Month,Calendar & Seasonality,528
+61,0.001960155367851257,61,General Drivers,529
+market_price_median,0.0019167590653523803,Market Price Median,Market & Competitor Prices,530
+fuel_petrol_pct_change_28d,0.0018894319655373693,Fuel Petrol Pct Change 28D,Fuel & Energy,531
+weather_humidity_pct,0.0018424824811518192,Weather Humidity Pct,Weather & Climate,532
+promo_days_active_so_far,0.001815628376789391,Promo Days Active So Far,Promotions,533
+64,0.001814737729728222,64,General Drivers,534
+5,0.0017907832516357303,5,General Drivers,535
+Column_81,0.0016556381015107036,Column 81,General Drivers,536
+196,0.0016097668558359146,196,General Drivers,537
+139,0.0015846146270632744,139,General Drivers,538
+cal_year,0.0015721549279987812,Cal Year,Calendar & Seasonality,539
+2,0.0015374317765235901,2,General Drivers,540
+6,0.0014730866998434067,6,General Drivers,541
+promo_discount_percentage,0.0013779847649857402,Promo Discount Percentage,Promotions,542
+Column_165,0.0012873820960521698,Column 165,General Drivers,543
+56,0.0011886135791428388,56,General Drivers,544
+is_deepavali_window_post_7d,0.001038418267853558,Is Deepavali Window Post 7D,Calendar & Seasonality,545
+Column_179,0.0009253890602849424,Column 179,General Drivers,546
+holiday_lead_7d,0.0009077014401555061,Holiday Lead 7D,Calendar & Seasonality,547
+Column_188,0.0007763060857541859,Column 188,General Drivers,548
+230,0.0007395730819553137,230,General Drivers,549
+Column_126,0.0007140152738429606,Column 126,General Drivers,550
+Column_43,0.0006507736979983747,Column 43,General Drivers,551
+Column_51,0.0006367008900269866,Column 51,General Drivers,552
+subsidy_announced_flag_indicator,0.0006273637991398573,Subsidy Announced Flag Indicator,Government Policy & Subsidies,553
+127,0.0006150180473923683,127,General Drivers,554
+Column_10,0.000589718169067055,Column 10,General Drivers,555
+Column_7,0.0005792686715722084,Column 7,General Drivers,556
+Column_110,0.0005183411412872374,Column 110,General Drivers,557
+81,0.00045731598511338233,81,General Drivers,558
+Column_90,0.0004365484928712249,Column 90,General Drivers,559
+10,0.00042269593104720115,10,General Drivers,560
+90,0.0004215862136334181,90,General Drivers,561
+Column_48,0.00041743693873286247,Column 48,General Drivers,562
+Column_21,0.00040957427700050175,Column 21,General Drivers,563
+Column_62,0.0003739806415978819,Column 62,General Drivers,564
+Column_171,0.0003715256752911955,Column 171,General Drivers,565
+Column_180,0.0003689686709549278,Column 180,General Drivers,566
+is_month_end_salary_window,0.00036840158281847835,Is Month End Salary Window,Pay & Salary Cycles,567
+220,0.0003617747686803341,220,General Drivers,568
+Column_92,0.00036126183113083243,Column 92,General Drivers,569
+227,0.00033987429924309254,227,General Drivers,570
+172,0.00033945245668292045,172,General Drivers,571
+4,0.00031353237573057414,4,General Drivers,572
+market_price_max,0.00028669912717305124,Market Price Max,Market & Competitor Prices,573
+Column_173,0.00028401281451806426,Column 173,General Drivers,574
+Column_108,0.0002796281478367746,Column 108,General Drivers,575
+Column_76,0.00027809833409264684,Column 76,General Drivers,576
+Column_82,0.00026954940403811634,Column 82,General Drivers,577
+Column_12,0.00026608636835590005,Column 12,General Drivers,578
+68,0.0002604720648378134,68,General Drivers,579
+market_price_mean,0.00024199686595238745,Market Price Mean,Market & Competitor Prices,580
+Column_36,0.0002173620741814375,Column 36,General Drivers,581
+Column_47,0.0001856889866758138,Column 47,General Drivers,582
+Column_52,0.00017878042126540095,Column 52,General Drivers,583
+market_median_change_7d,0.00014070281758904457,Market Median Change 7D,Market & Competitor Prices,584
+Column_49,0.00013704609591513872,Column 49,General Drivers,585
+price_vs_market_ratio,0.0001289910142077133,Recent trend/momentum in price vs market ratio,Market & Competitor Prices,586
+145,9.645704994909465e-05,145,General Drivers,587
+237,8.709313988219947e-05,237,General Drivers,588
+193,7.511589210480451e-05,193,General Drivers,589
+3,6.438008276745676e-05,3,General Drivers,590
+Column_50,6.122782360762358e-05,Column 50,General Drivers,591
+9,2.8469230164773764e-05,9,General Drivers,592
+174,0.0,174,General Drivers,593
+175,0.0,175,General Drivers,594
+cal_is_month_end,0.0,Cal Is Month End,Calendar & Seasonality,595
+178,0.0,178,General Drivers,596
+cal_quarter,0.0,Cal Quarter,Calendar & Seasonality,597
+discount_percentage_calculated,0.0,Discount Percentage Calculated,Selling Price & Elasticity,598
+fuel_diesel_subsidised,0.0,Fuel Diesel Subsidised,Fuel & Energy,599
+cal_is_month_start,0.0,Cal Is Month Start,Calendar & Seasonality,600
+Column_86,0.0,Column 86,General Drivers,601
+Column_87,0.0,Column 87,General Drivers,602
+Column_88,0.0,Column 88,General Drivers,603
+Column_89,0.0,Column 89,General Drivers,604
+Column_91,0.0,Column 91,General Drivers,605
+Column_93,0.0,Column 93,General Drivers,606
+Column_94,0.0,Column 94,General Drivers,607
+Column_85,0.0,Column 85,General Drivers,608
+Column_96,0.0,Column 96,General Drivers,609
+259,0.0,259,General Drivers,610
+126,0.0,126,General Drivers,611
+12,0.0,12,General Drivers,612
+stockout_flag_prior_day,0.0,Stockout Flag Prior Day,Inventory & Stockouts,613
+store_geo_longitude,0.0,Store Geo Longitude,Store Geography,614
+180,0.0,180,General Drivers,615
+selling_price_vs_product_median,0.0,Selling Price Vs Product Median,Selling Price & Elasticity,616
+184,0.0,184,General Drivers,617
+161,0.0,161,General Drivers,618
+168,0.0,168,General Drivers,619
+169,0.0,169,General Drivers,620
+170,0.0,170,General Drivers,621
+171,0.0,171,General Drivers,622
+173,0.0,173,General Drivers,623
+181,0.0,181,General Drivers,624
+inventory_incoming,0.0,Inventory Incoming,Inventory & Stockouts,625
+interaction_promo_x_discount,0.0,Interaction Promo X Discount,Cross-Feature Interactions,626
+152,0.0,152,General Drivers,627
+142,0.0,142,General Drivers,628
+holiday_lead_3d,0.0,Holiday Lead 3D,Calendar & Seasonality,629
+interaction_price_gap_x_promo,0.0,Interaction Price Gap X Promo,Cross-Feature Interactions,630
+holiday_lead_2d,0.0,Holiday Lead 2D,Calendar & Seasonality,631
+holiday_lag_7d,0.0,Holiday Lag 7D,Calendar & Seasonality,632
+fuel_petrol_subsidised,0.0,Fuel Petrol Subsidised,Fuel & Energy,633
+holiday_lag_3d,0.0,Holiday Lag 3D,Calendar & Seasonality,634
+holiday_lag_2d,0.0,Holiday Lag 2D,Calendar & Seasonality,635
+holiday_lag_1d,0.0,Holiday Lag 1D,Calendar & Seasonality,636
+Column_99,0.0,Column 99,General Drivers,637
+fuel_petrol_pct_change_7d,0.0,Fuel Petrol Pct Change 7D,Fuel & Energy,638
+Column_97,0.0,Column 97,General Drivers,639
+is_christmas_window_prior_30d,0.0,Is Christmas Window Prior 30D,Calendar & Seasonality,640
+is_christmas_window_prior_7d,0.0,Is Christmas Window Prior 7D,Calendar & Seasonality,641
+is_cny_window_post_7d,0.0,Is Cny Window Post 7D,Calendar & Seasonality,642
+is_cny_window_prior_14d,0.0,Is Cny Window Prior 14D,Calendar & Seasonality,643
+is_cny_window_prior_30d,0.0,Is Cny Window Prior 30D,Calendar & Seasonality,644
+is_cny_window_prior_7d,0.0,Is Cny Window Prior 7D,Calendar & Seasonality,645
+is_deepavali_window_prior_14d,0.0,Is Deepavali Window Prior 14D,Calendar & Seasonality,646
+is_deepavali_window_prior_30d,0.0,Is Deepavali Window Prior 30D,Calendar & Seasonality,647
+is_christmas_window_post_7d,0.0,Is Christmas Window Post 7D,Calendar & Seasonality,648
+Column_75,0.0,Column 75,General Drivers,649
+Column_77,0.0,Column 77,General Drivers,650
+Column_79,0.0,Column 79,General Drivers,651
+is_christmas_window_prior_14d,0.0,Is Christmas Window Prior 14D,Calendar & Seasonality,652
+Column_72,0.0,Column 72,General Drivers,653
+Column_73,0.0,Column 73,General Drivers,654
+Column_74,0.0,Column 74,General Drivers,655
+Column_71,0.0,Column 71,General Drivers,656
+is_raya_window_prior_7d,0.0,Is Raya Window Prior 7D,Calendar & Seasonality,657
+is_raya_window_prior_30d,0.0,Is Raya Window Prior 30D,Calendar & Seasonality,658
+is_raya_window_prior_14d,0.0,Is Raya Window Prior 14D,Calendar & Seasonality,659
+is_raya_window_post_7d,0.0,Is Raya Window Post 7D,Calendar & Seasonality,660
+is_post_salary_7d,0.0,Is Post Salary 7D,Pay & Salary Cycles,661
+is_service_tax_8pct_active,0.0,Is Service Tax 8Pct Active,Government Policy & Subsidies,662
+market_median_change_30d,0.0,Market Median Change 30D,Market & Competitor Prices,663
+is_school_holiday_final_week,0.0,Is School Holiday Final Week,Calendar & Seasonality,664
+market_price_min,0.0,Market Price Min,Market & Competitor Prices,665
+market_price_observation_count,0.0,Market Price Observation Count,Market & Competitor Prices,666
+Column_6,0.0,Column 6,General Drivers,667
+Column_63,0.0,Column 63,General Drivers,668
+Column_64,0.0,Column 64,General Drivers,669
+Column_65,0.0,Column 65,General Drivers,670
+market_median_volatility_30d,0.0,Market Median Volatility 30D,Market & Competitor Prices,671
+is_school_holiday_first_week,0.0,Is School Holiday First Week,Calendar & Seasonality,672
+Column_67,0.0,Column 67,General Drivers,673
+Column_66,0.0,Column 66,General Drivers,674
+missing_market_price,0.0,Missing Market Price,Data Quality Indicators,675
+Column_68,0.0,Column 68,General Drivers,676
+missing_weather,0.0,Missing Weather,Data Quality Indicators,677
+planned_promo_within_30d,0.0,Planned Promo Within 30D,Promotions,678
+policy_active_flag_indicator,0.0,Policy Active Flag Indicator,Government Policy & Subsidies,679
+is_deepavali_window_prior_7d,0.0,Is Deepavali Window Prior 7D,Calendar & Seasonality,680
+is_electricity_discount_active,0.0,Is Electricity Discount Active,Government Policy & Subsidies,681
+is_minimum_wage_rm1500_active,0.0,Is Minimum Wage Rm1500 Active,Government Policy & Subsidies,682
+is_post_gov_assist_3d,0.0,Is Post Gov Assist 3D,Government Assistance,683
+Column_78,0.0,Column 78,General Drivers,684
+Column_8,0.0,Column 8,General Drivers,685
+Column_80,0.0,Column 80,General Drivers,686
+Column_83,0.0,Column 83,General Drivers,687
+Column_84,0.0,Column 84,General Drivers,688
+197,0.0,197,General Drivers,689
+192,0.0,192,General Drivers,690
+promo_active_flag,0.0,Promo Active Flag,Promotions,691
+product_shelf_life_days,0.0,Product Shelf Life Days,Product Attributes,692
+product_is_highly_perishable,0.0,Product Is Highly Perishable,Product Attributes,693
+product_is_perishable,0.0,Product Is Perishable,Product Attributes,694
+product_imported_flag,0.0,Product Imported Flag,Product Attributes,695
+policy_announced_flag_indicator,0.0,Policy Announced Flag Indicator,Government Policy & Subsidies,696
+Column_69,0.0,Column 69,General Drivers,697
+Column_35,0.0,Column 35,General Drivers,698
+Column_37,0.0,Column 37,General Drivers,699
+Column_38,0.0,Column 38,General Drivers,700
+Column_34,0.0,Column 34,General Drivers,701
+Column_44,0.0,Column 44,General Drivers,702
+Column_5,0.0,Column 5,General Drivers,703
+199,0.0,199,General Drivers,704
+187,0.0,187,General Drivers,705
+190,0.0,190,General Drivers,706
+209,0.0,209,General Drivers,707
+208,0.0,208,General Drivers,708
+Column_183,0.0,Column 183,General Drivers,709
+Column_186,0.0,Column 186,General Drivers,710
+Column_174,0.0,Column 174,General Drivers,711
+Column_182,0.0,Column 182,General Drivers,712
+Column_178,0.0,Column 178,General Drivers,713
+Column_181,0.0,Column 181,General Drivers,714
+Column_168,0.0,Column 168,General Drivers,715
+200,0.0,200,General Drivers,716
+Column_39,0.0,Column 39,General Drivers,717
+Column_4,0.0,Column 4,General Drivers,718
+Column_42,0.0,Column 42,General Drivers,719
+198,0.0,198,General Drivers,720
+Column_100,0.0,Column 100,General Drivers,721
+218,0.0,218,General Drivers,722
+215,0.0,215,General Drivers,723
+222,0.0,222,General Drivers,724
+Column_112,0.0,Column 112,General Drivers,725
+233,0.0,233,General Drivers,726
+Column_109,0.0,Column 109,General Drivers,727
+Column_104,0.0,Column 104,General Drivers,728
+240,0.0,240,General Drivers,729
+235,0.0,235,General Drivers,730
+128,0.0,128,General Drivers,731
+228,0.0,228,General Drivers,732
+129,0.0,129,General Drivers,733
+130,0.0,130,General Drivers,734
+248,0.0,248,General Drivers,735
+Column_105,0.0,Column 105,General Drivers,736
+249,0.0,249,General Drivers,737
+250,0.0,250,General Drivers,738
+252,0.0,252,General Drivers,739
+251,0.0,251,General Drivers,740
+267,0.0,267,General Drivers,741
+269,0.0,269,General Drivers,742
+271,0.0,271,General Drivers,743
+255,0.0,255,General Drivers,744
+273,0.0,273,General Drivers,745
+274,0.0,274,General Drivers,746
+242,0.0,242,General Drivers,747
+243,0.0,243,General Drivers,748
+132,0.0,132,General Drivers,749
+supplier_lead_time_gap,0.0,Supplier Lead Time Gap,Procurement & Supplier,750
+subsidy_active_flag_indicator,0.0,Subsidy Active Flag Indicator,Government Policy & Subsidies,751
+1,0.0,1,General Drivers,752

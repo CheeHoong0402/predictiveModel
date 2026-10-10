@@ -1,0 +1,9 @@
+feature_family,task,reason,evidence,affected_horizons,exclusion_scope
+historical_demand,demand,Consistently worsens validation performance across horizons,Mean WAPE impact -0.10%,1d,PHASE_14_CANDIDATE
+static_features,demand,Consistently worsens validation performance across horizons,Mean WAPE impact -0.17%,1d,PHASE_14_CANDIDATE
+calendar_festivals,price,Consistently worsens price error across folds,Mean MAE impact -10.32%,1d,PHASE_14_CANDIDATE
+interactions,price,Consistently worsens price error across folds,Mean MAE impact -5.21%,30d,PHASE_14_CANDIDATE
+inventory_stockout,price,Consistently worsens price error across folds,Mean MAE impact -4.76%,30d,PHASE_14_CANDIDATE
+policy_subsidies,price,Consistently worsens price error across folds,Mean MAE impact -0.30%,30d,PHASE_14_CANDIDATE
+supplier_procurement,price,Consistently worsens price error across folds,Mean MAE impact -0.28%,30d,PHASE_14_CANDIDATE
+weather,price,Consistently worsens price error across folds,Mean MAE impact -4.65%,1d,PHASE_14_CANDIDATE

@@ -1,0 +1,25 @@
+metric,value,note
+raw_duration_days,1461,2021-01-01 to 2024-12-31
+usable_training_duration_days,1369,2021-01-01 to 2024-09-30 (holdout excluded)
+raw_years,4.0,
+total_price_rows_all,35064,includes holdout rows (counted only)
+total_price_rows_development,32856,
+holdout_rows_counted_only,2208,not analysed
+genuine_observations,32796,non-null and not run-length forward-filled
+forward_filled_rows,60,min_run=3 heuristic; targets all EXACT
+forward_filled_pct,0.1826,
+price_change_events,32199,
+price_change_rate,0.9807,
+unique_products,6,
+unique_suppliers,6,one supplier per product
+unique_stores,4,
+series_count,24,
+median_observations_per_series,1369.0,
+lag1_autocorr_daily_changes,-0.4985,iid noise => -0.5
+variance_ratio_30d_over_1d,1.009,"iid => 2, random walk => 30"
+phase12_max_abs_feature_target_corr,0.7061,backward-looking features only
+phase12_features_audited,163,
+phase13_14_cache_leak_horizons,"[1, 7, 30]",target duplicated as feature
+max_improvement_vs_last_price_pct,31.065,
+max_improvement_vs_best_simple_baseline_pct,0.534,
+PRICE_TRAINING_DATA_SUFFICIENCY,FAIL,see price_training_sufficiency_summary.md

@@ -1,0 +1,7 @@
+operation,runtime_ms,runtime_sec
+app_initial_load_preparation,34.99,0.035
+demo_executive_payload,0.08,0.0001
+selected_product_payload,22.45,0.0225
+historical_replay_payload,4.89,0.0049
+user_upload_validation,1.03,0.001
+user_upload_batch_inference,15.84,0.0158

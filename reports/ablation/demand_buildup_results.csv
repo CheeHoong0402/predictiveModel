@@ -1,0 +1,11 @@
+stage_id,stage_name,num_features,horizon_1d_wape,horizon_7d_wape,horizon_30d_wape,mean_wape
+D1,D1_historical_demand,64,0.30998,0.13894,0.06857,0.1725
+D2,D2_plus_calendar,83,0.27777,0.14084,0.06896,0.16252
+D3,D3_plus_promotion,93,0.2779,0.14121,0.06886,0.16266
+D4,D4_plus_inventory,112,0.25637,0.13832,0.06621,0.15364
+D5,D5_plus_selling_price,121,0.25767,0.13945,0.06602,0.15438
+D6,D6_plus_holidays_festivals,159,0.25504,0.13997,0.06629,0.15376
+D7,D7_plus_weather,172,0.2576,0.13797,0.06595,0.15384
+D8,D8_plus_market_price,174,0.25747,0.1386,0.06583,0.15397
+D9,D9_plus_economic_policy,193,0.25306,0.13912,0.06586,0.15268
+D10,D10_full_model,261,0.25806,0.13953,0.06649,0.15469

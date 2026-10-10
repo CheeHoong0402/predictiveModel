@@ -1,0 +1,11 @@
+source,downloaded_phase2,processed,passed_phase8_leakage_audit,used_by_final_price_model_phase12_15,used_by_phase14_optimised_model,role,reason_or_note
+Retailer supplier purchase price (TARGET),True,True,True,True,True,TARGET + internal lag/rolling predictors,Provenance undocumented; generator not in repository; statistical profile = noise around fixed base (see audit).
+PriceCatcher (KPDN retail shelf prices),True,True,False,True,True,EXTERNAL predictor,Only 2024-01 downloaded; almost all development rows have no value.
+Exchange rates,True,True,True,True,True,EXTERNAL predictor,"Market data (yfinance); business-day, forward-filled to daily."
+Commodity prices,True,True,True,True,True,EXTERNAL predictor,7 real yfinance series; palm_oil / steel / feed_grain are seeded random walks (synthetic).
+Brent / fuel prices,True,True,True,True,True,EXTERNAL predictor,Weekly fuel (data.gov.my) forward-filled to daily; Brent inside commodities file.
+CPI,True,True,False,True,True,EXTERNAL predictor,"Monthly, publication lag applied."
+PPI,True,True,False,True,True,EXTERNAL predictor,"Monthly, publication lag applied."
+External trade (BEC/SITC),True,True,False,False,False,EXTERNAL candidate,Downloaded and cleaned but no trade feature exists in the approved price manifest.
+Subsidy / policy / budget,True,True,True,True,False,EXTERNAL predictor,Event flags; Phase 8 SAFE but excluded by Phase 13 (non-informative).
+Weather,True,False,True,True,False,EXTERNAL predictor,Phase 8 SAFE; excluded by Phase 13.

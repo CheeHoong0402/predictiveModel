@@ -1,0 +1,7 @@
+product_id,product_name,observed_sales,estimated_true_demand,estimated_lost_sales,stockout_days,total_days,stockout_rate_pct,lost_sales_pct
+PRD_CHK_01,Ayam Bulat Segar (Standard Whole Chicken),342449,402641.04,60192.04,1249,5844,21.37,17.58
+PRD_EGG_02,Telur Ayam Gred A (30 biji),235314,310413.97,75099.97,2350,5844,40.21,31.91
+PRD_OIL_05,Minyak Masak Sawit Tulen 5kg,194467,262188.22,67721.22,2465,5844,42.18,34.82
+PRD_ONN_06,Bawang Merah Kecil Import (Rose Shallots),209989,251334.74,41345.74,1416,5844,24.23,19.69
+PRD_RIC_04,Beras Putih Super Tempatan (SST 5%) 10kg,168422,256647.78,88225.78,3736,5844,63.93,52.38
+PRD_VCH_03,Kobis Bulat Cameron (Cameron Cabbage),224034,236883.24,12849.24,393,5844,6.72,5.74

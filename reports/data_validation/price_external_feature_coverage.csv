@@ -1,0 +1,32 @@
+record_type,name,role,raw_source,description,n_features,missing_pct_dev_rows,rows_with_any_value_pct,first_non_null_date,last_non_null_date,frequency,publication_lag_days_max,safe_at_origin_phase8,used_by_phase12_final_family,max_abs_corr_with_future_pct
+FEATURE_FAMILY,calendar,INTERNAL_PREDICTOR,internal,internal retailer data / derived,13.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.008691278372607813
+FEATURE_FAMILY,festival_proximity,EXTERNAL_PREDICTOR,malaysia_public_holidays_10y.csv,holiday calendar,1.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.0034253152202137777
+FEATURE_FAMILY,interactions,INTERNAL_PREDICTOR,internal,internal retailer data / derived,5.0,0.5113221329437546,99.48867786705624,2021-01-08,2024-09-30,Daily,0.0,True,True,0.005962665158329391
+FEATURE_FAMILY,inventory_state,INTERNAL_PREDICTOR,internal,internal retailer data / derived,5.0,0.014609203798392987,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.012745608008509308
+FEATURE_FAMILY,macro_commodity,EXTERNAL_PREDICTOR,commodities_10y.csv,global commodity prices,7.0,1.3983095064176145,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.004192881324394668
+FEATURE_FAMILY,macro_currency,EXTERNAL_PREDICTOR,exchange_rates_10y.csv,FX rates,7.0,1.3356986329959302,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.008886010516536341
+FEATURE_FAMILY,macro_fuel,EXTERNAL_PREDICTOR,fuel_prices.csv,fuel prices,10.0,0.5113221329437546,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.005975001966153072
+FEATURE_FAMILY,macro_inflation,EXTERNAL_PREDICTOR,cpi_headline.csv + ppi.csv,CPI / PPI,7.0,8.243765000521757,100.0,2021-01-01,2024-09-30,Monthly/Gazetted,30.0,False,True,0.0038027815137794433
+FEATURE_FAMILY,market_price,EXTERNAL_PREDICTOR,pricecatcher_2024-01.parquet,PriceCatcher retail market prices,8.0,86.32974190406622,100.0,2021-01-01,2024-09-30,Daily,0.0,False,True,0.35897904613345255
+FEATURE_FAMILY,missingness_indicator,INTERNAL_PREDICTOR,internal,internal retailer data / derived,4.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.0035912510842469087
+FEATURE_FAMILY,policy_subsidy,EXTERNAL_PREDICTOR,malaysia_subsidies_and_policies.csv,policy / subsidy flags,11.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.006403601999828951
+FEATURE_FAMILY,price_momentum,INTERNAL_PREDICTOR,internal,internal retailer data / derived,6.0,2.093985877769662,99.92695398100804,2021-01-02,2024-09-30,Daily,0.0,True,True,0.7061341172767566
+FEATURE_FAMILY,procurement_supplier,INTERNAL_PREDICTOR,internal,internal retailer data / derived,10.0,1.9722425127830532,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.002219438466030831
+FEATURE_FAMILY,purchase_price_history,INTERNAL_PREDICTOR,internal,internal retailer data / derived,8.0,2.0635500365230093,99.92695398100804,2021-01-02,2024-09-30,Daily,0.0,True,True,0.0022872095663061484
+FEATURE_FAMILY,purchase_price_rolling,INTERNAL_PREDICTOR,internal,internal retailer data / derived,21.0,2.9009704685380364,99.48867786705624,2021-01-08,2024-09-30,Daily,0.0,True,True,0.00860091688654862
+FEATURE_FAMILY,replenishment_history,INTERNAL_PREDICTOR,internal,internal retailer data / derived,4.0,1.1869978086194304,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.011097633556215819
+FEATURE_FAMILY,salary_cycle,EXTERNAL_PREDICTOR,malaysia_government_salary_dates_10y.csv,salary calendar,6.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.014895810157130937
+FEATURE_FAMILY,static_product,INTERNAL_PREDICTOR,internal,internal retailer data / derived,5.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.001921487563408019
+FEATURE_FAMILY,static_store,INTERNAL_PREDICTOR,internal,internal retailer data / derived,4.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.001532397824999835
+FEATURE_FAMILY,stockout_history,INTERNAL_PREDICTOR,internal,internal retailer data / derived,8.0,1.670927684441198,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.00806309936839089
+FEATURE_FAMILY,weather,EXTERNAL_PREDICTOR,malaysia_weather_10y.csv,weather,6.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.016360456117602666
+FEATURE_FAMILY,weather_rolling,EXTERNAL_PREDICTOR,malaysia_weather_10y.csv,weather,5.0,0.5551497443389336,99.7808619430241,2021-01-04,2024-09-30,Daily,0.0,True,True,0.0072903037301088
+FEATURE_FAMILY,weather_spells,EXTERNAL_PREDICTOR,malaysia_weather_10y.csv,weather,2.0,0.0,100.0,2021-01-01,2024-09-30,Daily,0.0,True,True,0.008426640415267065
+RAW_SOURCE,commodities_10y.csv,EXTERNAL_PREDICTOR,commodities_10y.csv,raw file,,0.0,,2015-01-02,2025-12-30,2766 rows,,,,
+RAW_SOURCE,exchange_rates_10y.csv,EXTERNAL_PREDICTOR,exchange_rates_10y.csv,raw file,,0.0,,2015-01-01,2025-12-30,2865 rows,,,,
+RAW_SOURCE,fuel_prices.csv,EXTERNAL_PREDICTOR,fuel_prices.csv,raw file,,34.93250259605399,,2017-03-30,2026-10-08,963 rows,,,,
+RAW_SOURCE,cpi_headline.csv,EXTERNAL_PREDICTOR,cpi_headline.csv,raw file,,0.0,,1980-01-01,2026-08-01,2500 rows,,,,
+RAW_SOURCE,ppi.csv,EXTERNAL_PREDICTOR,ppi.csv,raw file,,15.1618398637138,,2010-01-01,2026-08-01,587 rows,,,,
+RAW_SOURCE,pricecatcher_2024-01.parquet,EXTERNAL_PREDICTOR,pricecatcher_2024-01.parquet,raw file,,0.0,,2024-01-01,2024-01-31,2664434 rows,,,,
+RAW_SOURCE,malaysia_weather_10y.csv,EXTERNAL_PREDICTOR,malaysia_weather_10y.csv,raw file,,0.0,,2015-01-01,2024-12-31,14612 rows,,,,
+RAW_SOURCE,malaysia_subsidies_and_policies.csv,EXTERNAL_PREDICTOR,malaysia_subsidies_and_policies.csv,raw file,,0.0,,2013-10-25,2024-10-18,15 rows,,,,

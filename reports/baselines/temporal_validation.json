@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "folds": 33,
+  "maximum_information_date_lte_origin": true,
+  "validation_blocks_nonoverlapping": true,
+  "holdout_evaluated": false,
+  "holdout_start": "2024-10-01",
+  "immutable_artifacts": 55,
+  "random_splits": false,
+  "advanced_models": false
+}

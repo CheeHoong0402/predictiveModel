@@ -1,0 +1,19 @@
+dataset_name,join_keys,rows_before,rows_after,row_delta,matched_records,match_rate_pct,status,notes
+Core Skeleton,"date, store_id, product_id",0,35064,35064,35064,100.0,SUCCESS,Base operational skeleton created from active store-SKU daily records
+Point-of-Sale Sales,"date, store_id, product_id",35064,35064,0,35064,100.0,SUCCESS,
+Inventory History,"date, store_id, product_id",35064,35064,0,35064,100.0,SUCCESS,
+Purchase-price History,"date, store_id, product_id",35064,35064,0,35064,100.0,SUCCESS,
+Product Master,product_id,35064,35064,0,35064,100.0,SUCCESS,
+Store Master,store_id,35064,35064,0,35064,100.0,SUCCESS,
+Supplier Master,supplier_id,35064,35064,0,35064,100.0,SUCCESS,
+Promotion History,"date_interval, category",35064,35064,0,6000,17.11,SUCCESS,Active in 6000 store-SKU days across 20 promotional campaign windows
+PriceCatcher Market Prices,"product_id, district/state, date",35064,35064,0,624,1.78,SUCCESS,Hierarchical fallback (district->state->national). Available for 624 observations (Jan 2024 slice)
+Consumer Price Index,date,35064,35064,0,35064,100.0,SUCCESS,"Publication lag: ref_month + 1M + 24D. 100% temporally safe, zero future lookahead"
+Producer Price Index,date,35064,35064,0,35064,100.0,SUCCESS,"Publication lag: ref_month + 1M + 28D. 100% temporally safe, zero future lookahead"
+Fuel Prices,date,35064,35064,0,35064,100.0,SUCCESS,Weekly price level stepwise forward-fill until next announced revision
+Currency Exchange Rates,date,35064,35064,0,35064,100.0,SUCCESS,Forward-fill non-trading weekends/holidays. Never backfilled from future
+Commodity Prices,"date, product_id",35064,35064,0,35064,100.0,SUCCESS,"Category mapping to Palm Oil, Rice, Feed Grain, Brent Crude. Forward-fill on non-trading days"
+Weather Observations,"date, store_state, store_district",35064,35064,0,35064,100.0,SUCCESS,Exact 1-to-1 match by store district & state coordinates
+Public & School Holidays & Festivals,"date, state",35064,35064,0,2064,5.89,SUCCESS,"Attached national/state public holidays (2064 days), school holiday terms, and festival tags"
+Government Assistance,date,35064,35064,0,360,1.03,SUCCESS,"Active on 360 store-SKU disbursement dates (BR1M, BPN, BKM, STR)"
+Subsidies & Policy Regimes,date,35064,35064,0,35064,100.0,SUCCESS,"Codified announcement dates and active regimes for price ceilings, tax (SST/GST) and minimum wage"

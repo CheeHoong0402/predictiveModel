@@ -1,0 +1,29 @@
+status,filename,rows,columns,column_names,null_cells,min_date,max_date,date_column_used,category
+VALID,retail_products.csv,6,18,"['product_id', 'product_name', 'product_category', 'product_subcategory', 'product_brand', 'product_size', 'product_unit_of_measurement', 'product_pack_size']",0,1970-01-01,1970-01-01,product_shelf_life_days,Retailer Internal
+VALID,retail_suppliers.csv,6,15,"['supplier_id', 'supplier_name', 'supplier_location', 'supplier_state', 'supplier_country', 'supplier_lead_time_days', 'historical_supplier_lead_time', 'supplier_minimum_order_quantity']",0,1970-01-01,1970-01-01,supplier_lead_time_days,Retailer Internal
+VALID,retail_promotions.csv,20,7,"['promotion_id', 'promotion_name', 'promotion_type', 'promotion_start_date', 'promotion_end_date', 'discount_percentage', 'target_categories']",0,2021-01-20,2024-12-18,promotion_start_date,Retailer Internal
+VALID,retail_pos_sales.parquet,35064,14,"['date', 'store_id', 'product_id', 'historical_quantity_sold', 'historical_number_of_transactions', 'average_quantity_purchased_per_transaction', 'historical_selling_price', 'normal_selling_price']",0,2021-01-01,2024-12-31,date,Retailer Internal
+VALID,retail_inventory.parquet,35064,22,"['date', 'store_id', 'product_id', 'opening_inventory_quantity', 'closing_inventory_quantity', 'current_inventory_quantity', 'quantity_received', 'quantity_transferred_into_store']",0,2021-01-01,2024-12-31,date,Retailer Internal
+VALID,retail_purchase_prices.parquet,35064,14,"['date', 'store_id', 'product_id', 'supplier_id', 'historical_supplier_purchase_price', 'current_supplier_purchase_price', 'historical_purchase_quantity', 'purchase_order_date']",0,2021-01-01,2024-12-31,date,Retailer Internal
+VALID,retailer_operational_data.parquet,35064,94,"['date', 'store_id', 'store_name', 'store_type', 'store_district', 'store_state', 'store_latitude', 'store_longitude']",0,2021-01-01,2024-12-31,date,Retailer Internal
+VALID,pricecatcher_lookup_item.parquet,797,5,"['item_code', 'item', 'unit', 'item_group', 'item_category']",4,,,,Public External
+VALID,pricecatcher_lookup_premise.parquet,3916,6,"['premise_code', 'premise', 'address', 'premise_type', 'state', 'district']",3,,,,Public External
+VALID,pricecatcher_2024-01.parquet,2664434,4,"['date', 'premise_code', 'item_code', 'price']",0,2024-01-01,2024-01-31,date,Public External
+VALID,fuel_prices.csv,963,10,"['date', 'ron95', 'ron97', 'diesel', 'ron95_skps', 'diesel_budi', 'diesel_skds', 'series_type']",3364,2017-03-30,2026-10-08,date,Public External
+VALID,cpi_headline.csv,2500,3,"['date', 'index', 'division']",0,1980-01-01,2026-08-01,date,Public External
+VALID,cpi_core.csv,1456,3,"['date', 'index', 'division']",104,2018-01-01,2026-08-01,date,Public External
+VALID,cpi_state.csv,2500,4,"['date', 'index', 'state', 'division']",0,2010-01-01,2026-08-01,date,Public External
+VALID,ppi.csv,587,4,"['date', 'index', 'series', 'index_sa']",356,2010-01-01,2026-08-01,date,Public External
+VALID,exchange_rates_10y.csv,2865,5,"['date', 'USDMYR', 'SGDMYR', 'EURMYR', 'JPYMYR']",0,2015-01-01,2025-12-30,date,Public External
+VALID,commodities_10y.csv,2766,11,"['date', 'brent_crude_usd', 'wheat_usd', 'rice_usd', 'sugar_usd', 'cocoa_usd', 'coffee_usd', 'aluminum_usd']",0,2015-01-02,2025-12-30,date,Public External
+VALID,malaysia_weather_10y.csv,14612,17,"['date', 'state', 'district', 'latitude', 'longitude', 'max_daily_temperature', 'min_daily_temperature', 'average_daily_temperature']",0,2015-01-01,2024-12-31,date,Public External
+VALID,malaysia_public_holidays_10y.csv,598,5,"['date', 'holiday_name', 'is_national_holiday', 'state_scope', 'year']",0,2015-01-01,2025-12-25,date,Public External
+VALID,malaysia_school_holidays_10y.csv,44,4,"['term', 'start_date', 'end_date', 'year']",0,2015-03-20,2025-12-15,start_date,Public External
+VALID,iowrt_distributive_trade.csv,296,5,"['date', 'sales', 'series', 'volume', 'volume_sa']",0,2018-01-01,2026-07-01,date,Public External
+VALID,trade_headline.csv,755,9,"['date', 'total', 'series', 'balance', 'exports', 'imports', 're_exports', 'exports_domestic']",288,2000-01-01,2026-08-01,date,Public External
+VALID,trade_sitc_1d.csv,2500,4,"['date', 'exports', 'imports', 'section']",0,2000-01-01,2026-07-01,date,Public External
+VALID,trade_enduse_bec.csv,2500,5,"['bec', 'date', 'series', 'end_use', 'imports']",0,2010-01-01,2026-08-01,date,Public External
+VALID,malaysia_government_salary_dates_10y.csv,132,5,"['date', 'payment_type', 'target_group', 'year', 'month']",0,2015-01-23,2025-12-19,date,Public External
+VALID,malaysia_government_assistance_10y.csv,37,5,"['date', 'programme_name', 'phase', 'amount_per_household', 'total_allocation_bil']",0,2015-01-15,2025-11-05,date,Public External
+VALID,malaysia_subsidies_and_policies.csv,15,7,"['announcement_date', 'effective_date', 'policy_category', 'policy_name', 'sst_gst_rate', 'sugar_tax_rate', 'minimum_wage_myr']",0,2013-10-25,2024-10-18,announcement_date,Public External
+VALID,malaysia_national_budget_policies.csv,11,7,"['announcement_date', 'budget_year', 'theme', 'minimum_wage', 'sst_rate', 'sugar_tax', 'br1m_allocation_bil']",0,2014-10-10,2024-10-18,announcement_date,Public External

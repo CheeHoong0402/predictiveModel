@@ -1,0 +1,7 @@
+demand_type,ai_operational_cost,reference_operational_cost,savings_percentage,ai_stockout_rate,reference_stockout_rate
+Perishable Dairy (21d),1137207.77,683056.56,-66.49,0.3078,0.4705
+Perishable Fresh (3d),916562.62,1798010.3,49.02,0.9086,0.899
+Perishable Vegetable (5d),530036.84,771241.05,31.27,0.8376,0.8323
+Semi-Perishable Vegetable (14d),567382.9,680335.99,16.6,0.9548,0.5364
+Staple Non-Perishable (365d),587338.67,575958.7,-1.98,0.9414,0.4578
+Staple Non-Perishable (540d),597363.18,575894.11,-3.73,0.9467,0.477

@@ -1,0 +1,310 @@
+demand_lag_7: Demand 7 days ago
+rolling_mean_demand_28: Average demand over the previous 28 days
+myr_usd_change_30d: 30-day Malaysian ringgit / United States dollar movement
+demand_lag_1: Demand 1 days ago
+demand_lag_2: Demand 2 days ago
+demand_lag_3: Demand 3 days ago
+demand_lag_14: Demand 14 days ago
+demand_lag_21: Demand 21 days ago
+demand_lag_28: Demand 28 days ago
+demand_lag_35: Demand 35 days ago
+demand_lag_56: Demand 56 days ago
+demand_lag_84: Demand 84 days ago
+demand_lag_168: Demand 168 days ago
+demand_lag_364: Demand 364 days ago
+demand_mean_3d: Demand Mean 3D
+demand_median_3d: Demand Median 3D
+demand_std_3d: Demand Std 3D
+demand_min_3d: Demand Min 3D
+demand_max_3d: Demand Max 3D
+demand_sum_3d: Demand Sum 3D
+demand_cv_3d: Demand Cv 3D
+demand_mean_7d: Demand Mean 7D
+demand_median_7d: Demand Median 7D
+demand_std_7d: Demand Std 7D
+demand_min_7d: Demand Min 7D
+demand_max_7d: Demand Max 7D
+demand_sum_7d: Demand Sum 7D
+demand_cv_7d: Demand Cv 7D
+demand_mean_14d: Demand Mean 14D
+demand_median_14d: Demand Median 14D
+demand_std_14d: Demand Std 14D
+demand_min_14d: Demand Min 14D
+demand_max_14d: Demand Max 14D
+demand_sum_14d: Demand Sum 14D
+demand_cv_14d: Demand Cv 14D
+demand_mean_28d: Demand Mean 28D
+demand_median_28d: Demand Median 28D
+demand_std_28d: Demand Std 28D
+demand_min_28d: Demand Min 28D
+demand_max_28d: Demand Max 28D
+demand_sum_28d: Demand Sum 28D
+demand_cv_28d: Demand Cv 28D
+demand_mean_56d: Demand Mean 56D
+demand_median_56d: Demand Median 56D
+demand_std_56d: Demand Std 56D
+demand_min_56d: Demand Min 56D
+demand_max_56d: Demand Max 56D
+demand_sum_56d: Demand Sum 56D
+demand_cv_56d: Demand Cv 56D
+demand_mean_84d: Demand Mean 84D
+demand_median_84d: Demand Median 84D
+demand_std_84d: Demand Std 84D
+demand_min_84d: Demand Min 84D
+demand_max_84d: Demand Max 84D
+demand_sum_84d: Demand Sum 84D
+demand_cv_84d: Demand Cv 84D
+demand_ratio_7d_28d: Demand Ratio 7D 28D
+demand_ratio_14d_56d: Demand Ratio 14D 56D
+demand_growth_7d: Demand Growth 7D
+demand_growth_28d: Demand Growth 28D
+demand_trend_28d: Demand Trend 28D
+demand_vs_median_28d: Demand Vs Median 28D
+demand_dow_median_4w: Demand Dow Median 4W
+demand_dow_median_8w: Demand Dow Median 8W
+demand_lag_365: Demand 365 days ago
+demand_prior_year_week_mean: Demand Prior Year Week Mean
+sales_lag_1: Sales 1 days ago
+sales_lag_2: Sales 2 days ago
+sales_lag_3: Sales 3 days ago
+sales_lag_7: Sales 7 days ago
+sales_lag_14: Sales 14 days ago
+sales_lag_28: Sales 28 days ago
+sales_lag_364: Sales 364 days ago
+sales_mean_7d: Sales Mean 7D
+sales_std_7d: Sales Std 7D
+sales_sum_7d: Sales Sum 7D
+sales_mean_28d: Sales Mean 28D
+sales_std_28d: Sales Std 28D
+sales_sum_28d: Sales Sum 28D
+inventory_opening: Opening inventory level
+inventory_current: Current inventory level on hand
+inventory_prior_closing: Inventory Prior Closing
+inventory_incoming: Inventory Incoming
+inventory_backorder: Inventory Backorder
+stockout_flag_prior_day: Stockout Flag Prior Day
+stockout_count_7d: Stockout Count 7D
+stockout_rate_7d: Stockout Rate 7D
+stockout_count_28d: Stockout Count 28D
+stockout_rate_28d: Stockout Rate 28D
+stockout_count_56d: Stockout Count 56D
+stockout_rate_56d: Stockout Rate 56D
+days_since_last_stockout: Days Since Last Stockout
+days_since_last_replenishment: Days Since Last Replenishment
+quantity_received_7d_sum: Quantity Received 7D Sum
+quantity_received_28d_sum: Quantity Received 28D Sum
+receipt_count_30d: Receipt Count 30D
+inventory_coverage_days_7d: Inventory Coverage Days 7D
+inventory_coverage_days_28d: Inventory Coverage Days 28D
+purchase_price_lag_1: Supplier purchase price 1 days ago
+purchase_price_lag_3: Supplier purchase price 3 days ago
+purchase_price_lag_7: Supplier purchase price 7 days ago
+purchase_price_lag_14: Supplier purchase price 14 days ago
+purchase_price_lag_21: Supplier purchase price 21 days ago
+purchase_price_lag_30: Supplier purchase price 30 days ago
+purchase_price_lag_60: Supplier purchase price 60 days ago
+purchase_price_lag_90: Supplier purchase price 90 days ago
+purchase_price_mean_7d: Purchase Price Mean 7D
+purchase_price_std_7d: Purchase Price Std 7D
+purchase_price_min_7d: Purchase Price Min 7D
+purchase_price_max_7d: Purchase Price Max 7D
+purchase_price_mean_14d: Purchase Price Mean 14D
+purchase_price_std_14d: Purchase Price Std 14D
+purchase_price_min_14d: Purchase Price Min 14D
+purchase_price_max_14d: Purchase Price Max 14D
+purchase_price_mean_30d: Purchase Price Mean 30D
+purchase_price_std_30d: Purchase Price Std 30D
+purchase_price_min_30d: Purchase Price Min 30D
+purchase_price_max_30d: Purchase Price Max 30D
+purchase_price_mean_60d: Purchase Price Mean 60D
+purchase_price_std_60d: Purchase Price Std 60D
+purchase_price_min_60d: Purchase Price Min 60D
+purchase_price_max_60d: Purchase Price Max 60D
+purchase_price_mean_90d: Purchase Price Mean 90D
+purchase_price_std_90d: Purchase Price Std 90D
+purchase_price_min_90d: Purchase Price Min 90D
+purchase_price_max_90d: Purchase Price Max 90D
+purchase_price_volatility_30d: Purchase Price Volatility 30D
+purchase_price_pct_change_1d: Purchase Price Pct Change 1D
+purchase_price_pct_change_7d: Purchase Price Pct Change 7D
+purchase_price_pct_change_30d: Purchase Price Pct Change 30D
+purchase_price_vs_mean_30d: Purchase Price Vs Mean 30D
+purchase_price_vs_mean_90d: Purchase Price Vs Mean 90D
+purchase_price_acceleration: Purchase Price Acceleration
+discount_amount: Discount Amount
+discount_percentage_calculated: Discount Percentage Calculated
+selling_price_vs_normal_ratio: Selling Price Vs Normal Ratio
+selling_price_mean_7d: Selling Price Mean 7D
+selling_price_mean_28d: Selling Price Mean 28D
+selling_price_vs_mean_7d: Selling Price Vs Mean 7D
+selling_price_pct_change_7d: Selling Price Pct Change 7D
+selling_price_vs_product_median: Selling Price Vs Product Median
+price_elasticity_proxy_7d: Price Elasticity Proxy 7D
+supplier_lead_time_expected: Supplier Lead Time Expected
+supplier_lead_time_actual: Supplier Lead Time Actual
+supplier_lead_time_gap: Supplier Lead Time Gap
+supplier_moq: Supplier Moq
+supplier_pack_size_units: Supplier Pack Size Units
+supplier_lead_time_mean_30d: Supplier Lead Time Mean 30D
+supplier_lead_time_std_30d: Supplier Lead Time Std 30D
+supplier_lead_time_mean_90d: Supplier Lead Time Mean 90D
+supplier_on_time_rate_30d: Supplier On Time Rate 30D
+supplier_on_time_rate_90d: Supplier On Time Rate 90D
+promo_active_flag: Active promotion scheduled
+promo_discount_percentage: Promotion discount percentage
+promo_days_active_so_far: Days promotion active so far
+promo_days_until_end: Promo Days Until End
+promo_frequency_30d: Promo Frequency 30D
+promo_frequency_90d: Promo Frequency 90D
+days_since_previous_promo: Days Since Previous Promo
+planned_promo_within_7d: Promotion scheduled within next 7 days
+planned_promo_within_14d: Promotion scheduled within next 14 days
+planned_promo_within_30d: Promotion scheduled within next 30 days
+cal_day_of_week: Cal Day Of Week
+cal_day_of_month: Cal Day Of Month
+cal_week_of_year: Cal Week Of Year
+cal_month: Cal Month
+cal_quarter: Cal Quarter
+cal_year: Cal Year
+cal_is_weekend: Cal Is Weekend
+cal_is_month_start: Cal Is Month Start
+cal_is_month_end: Cal Is Month End
+cal_sin_day_of_week: Cal Sin Day Of Week
+cal_cos_day_of_week: Cal Cos Day Of Week
+cal_sin_month: Cal Sin Month
+cal_cos_month: Cal Cos Month
+holiday_lead_1d: Holiday Lead 1D
+holiday_lead_2d: Holiday Lead 2D
+holiday_lead_3d: Holiday Lead 3D
+holiday_lead_7d: Holiday Lead 7D
+holiday_lag_1d: Holiday Lag 1D
+holiday_lag_2d: Holiday Lag 2D
+holiday_lag_3d: Holiday Lag 3D
+holiday_lag_7d: Holiday Lag 7D
+days_until_cny: Days Until Cny
+days_since_cny: Days Since Cny
+is_cny_window_prior_7d: Is Cny Window Prior 7D
+is_cny_window_prior_14d: Is Cny Window Prior 14D
+is_cny_window_prior_30d: Is Cny Window Prior 30D
+is_cny_window_post_7d: Is Cny Window Post 7D
+days_until_raya: Days Until Raya
+days_since_raya: Days Since Raya
+is_raya_window_prior_7d: Is Raya Window Prior 7D
+is_raya_window_prior_14d: Is Raya Window Prior 14D
+is_raya_window_prior_30d: Is Raya Window Prior 30D
+is_raya_window_post_7d: Is Raya Window Post 7D
+days_until_deepavali: Days Until Deepavali
+days_since_deepavali: Days Since Deepavali
+is_deepavali_window_prior_7d: Is Deepavali Window Prior 7D
+is_deepavali_window_prior_14d: Is Deepavali Window Prior 14D
+is_deepavali_window_prior_30d: Is Deepavali Window Prior 30D
+is_deepavali_window_post_7d: Is Deepavali Window Post 7D
+days_until_christmas: Days Until Christmas
+days_since_christmas: Days Since Christmas
+is_christmas_window_prior_7d: Is Christmas Window Prior 7D
+is_christmas_window_prior_14d: Is Christmas Window Prior 14D
+is_christmas_window_prior_30d: Is Christmas Window Prior 30D
+is_christmas_window_post_7d: Is Christmas Window Post 7D
+major_festival_window_active: Major Festival Window Active
+is_govt_salary_day: Is Govt Salary Day
+days_until_salary_day: Days Until Salary Day
+days_since_salary_day: Days Since Salary Day
+is_post_salary_3d: Is Post Salary 3D
+is_post_salary_7d: Is Post Salary 7D
+is_month_end_salary_window: Is Month End Salary Window
+days_since_last_gov_assist: Days Since Last Gov Assist
+is_post_gov_assist_3d: Is Post Gov Assist 3D
+is_post_gov_assist_7d: Is Post Gov Assist 7D
+school_holiday_days_since_start: School Holiday Days Since Start
+school_holiday_days_until_end: School Holiday Days Until End
+school_holiday_duration: School Holiday Duration
+is_school_holiday_first_week: Is School Holiday First Week
+is_school_holiday_final_week: Is School Holiday Final Week
+weather_temp_max: Weather Temp Max
+weather_temp_min: Weather Temp Min
+weather_temp_avg: Weather Temp Avg
+weather_rainfall_mm: Weather Rainfall Mm
+weather_humidity_pct: Weather Humidity Pct
+weather_precip_hours: Weather Precip Hours
+weather_rainfall_sum_3d: Weather Rainfall Sum 3D
+weather_rainfall_sum_7d: Weather Rainfall Sum 7D
+weather_rainfall_sum_14d: Weather Rainfall Sum 14D
+weather_temp_mean_7d: Weather Temp Mean 7D
+weather_temp_max_7d: Weather Temp Max 7D
+weather_consecutive_rain_days: Weather Consecutive Rain Days
+weather_consecutive_hot_days: Weather Consecutive Hot Days
+market_price_median: Market Price Median
+market_price_mean: Market Price Mean
+market_price_min: Market Price Min
+market_price_max: Market Price Max
+market_price_observation_count: Market Price Observation Count
+price_vs_market_diff: Price Vs Market Diff
+price_vs_market_ratio: Price Vs Market Ratio
+market_median_change_7d: Market Median Change 7D
+market_median_change_30d: Market Median Change 30D
+market_median_volatility_30d: Market Median Volatility 30D
+fuel_petrol_subsidised: 'Fuel price index: Petrol Subsidised'
+fuel_petrol_unsubsidised: 'Fuel price index: Petrol Unsubsidised'
+fuel_diesel_subsidised: 'Fuel price index: Diesel Subsidised'
+fuel_diesel_unsubsidised: 'Fuel price index: Diesel Unsubsidised'
+fuel_diesel_effective: 'Fuel price index: Diesel Effective'
+fuel_petrol_effective: 'Fuel price index: Petrol Effective'
+fuel_petrol_pct_change_7d: 'Fuel price index: Petrol Pct Change 7D'
+fuel_petrol_pct_change_28d: 'Fuel price index: Petrol Pct Change 28D'
+fuel_diesel_pct_change_7d: 'Fuel price index: Diesel Pct Change 7D'
+fuel_diesel_pct_change_28d: 'Fuel price index: Diesel Pct Change 28D'
+fx_rate: Malaysian ringgit / US dollar exchange rate
+fx_change_1d: 1-day MYR/USD exchange rate change
+fx_pct_change_7d: 7d MYR/USD exchange rate movement
+fx_pct_change_30d: 30-day Malaysian ringgit / United States dollar movement
+fx_mean_30d: Fx Mean 30D
+fx_volatility_30d: Fx Volatility 30D
+fx_vs_mean_30d: Fx Vs Mean 30D
+commodity_price: 'Commodity index: Price'
+commodity_mean_7d: 'Commodity index: Mean 7D'
+commodity_mean_30d: 'Commodity index: Mean 30D'
+commodity_pct_change_7d: 'Commodity index: Pct Change 7D'
+commodity_pct_change_30d: 'Commodity index: Pct Change 30D'
+commodity_volatility_30d: 'Commodity index: Volatility 30D'
+commodity_vs_mean_30d: 'Commodity index: Vs Mean 30D'
+cpi_headline: 'Inflation index: Headline'
+cpi_category: 'Inflation index: Category'
+ppi_headline: Ppi Headline
+ppi_industry: Ppi Industry
+cpi_pct_change_30d: 'Inflation index: Pct Change 30D'
+cpi_pct_change_365d: 'Inflation index: Pct Change 365D'
+ppi_pct_change_30d: Ppi Pct Change 30D
+ppi_pct_change_365d: Ppi Pct Change 365D
+subsidy_announced_flag_indicator: Subsidy Announced Flag Indicator
+subsidy_active_flag_indicator: Subsidy Active Flag Indicator
+policy_announced_flag_indicator: Policy Announced Flag Indicator
+policy_active_flag_indicator: Policy Active Flag Indicator
+is_chicken_subsidy_active: Chicken price ceiling/subsidy policy active
+is_diesel_rationalisation_active: Diesel subsidy rationalisation policy active
+is_electricity_discount_active: Is Electricity Discount Active
+is_minimum_wage_rm1500_active: Minimum wage RM1500 policy active
+is_service_tax_8pct_active: Is Service Tax 8Pct Active
+days_since_subsidy_announced: Days Since Subsidy Announced
+days_since_policy_announced: Days Since Policy Announced
+product_shelf_life_days: Product Shelf Life Days
+product_imported_flag: Product Imported Flag
+product_is_perishable: Product Is Perishable
+product_is_highly_perishable: Product Is Highly Perishable
+product_is_controlled_goods: Product Is Controlled Goods
+store_storage_capacity_units: Store Storage Capacity Units
+store_geo_latitude: Store Geo Latitude
+store_geo_longitude: Store Geo Longitude
+store_relative_capacity_ratio: Store Relative Capacity Ratio
+interaction_promo_x_festival: Interaction Promo X Festival
+interaction_promo_x_discount: Interaction Promo X Discount
+interaction_rainfall_x_vegetables: Interaction Rainfall X Vegetables
+interaction_temp_x_poultry: Interaction Temp X Poultry
+interaction_diesel_change_x_lead_time: Interaction Diesel Change X Lead Time
+interaction_fx_change_x_imported: Interaction Fx Change X Imported
+interaction_commodity_change_x_product: Interaction Commodity Change X Product
+interaction_gov_assist_x_essential: Interaction Gov Assist X Essential
+interaction_price_gap_x_promo: Interaction Price Gap X Promo
+missing_market_price: Missing Market Price
+missing_weather: Missing Weather
+missing_commodity_price: Missing Commodity Price
+missing_exchange_rate: Missing Exchange Rate

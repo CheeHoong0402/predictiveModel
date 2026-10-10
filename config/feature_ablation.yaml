@@ -1,0 +1,211 @@
+# Configuration for Phase 13 Feature Ablation and External-Data Value Testing
+evaluation:
+  horizons: [1, 3, 7, 14, 21, 30]
+  priority_horizons: [1, 7, 30]
+  seed: 42
+  holdout_start: '2024-10-01'
+  holdout_end: '2024-12-31'
+  screening_folds_step: 3 # Representative subset of 33 folds for fast screening (folds 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 33)
+  confirmed_folds: 'all'  # All 33 folds for confirmation of key families
+
+models:
+  demand:
+    family: 'catboost' # Phase 11 champion on 7d, 14d, 21d, 30d
+    params:
+      iterations: 80
+      learning_rate: 0.05
+      depth: 6
+      l2_leaf_reg: 3.0
+      random_seed: 42
+      thread_count: -1
+      verbose: 0
+      nan_mode: 'Min'
+
+  price:
+    family: 'lightgbm_pct_change' # Phase 12 champion on 1d, 14d, 21d; ultra-fast & highly responsive to macro shocks
+    approach: 'percentage_change'
+    params:
+      n_estimators: 80
+      learning_rate: 0.05
+      num_leaves: 31
+      max_depth: 6
+      min_child_samples: 20
+      subsample: 0.8
+      colsample_bytree: 0.8
+      random_state: 42
+      n_jobs: -1
+      verbose: -1
+
+classification_thresholds:
+  critical: 0.05       # >= +5.0% error increase when removed
+  high_value: 0.02     # >= +2.0% and < 5.0%
+  moderate_value: 0.005 # >= +0.5% and < 2.0%
+  low_value: 0.0005    # >= +0.05% and < 0.5%
+  no_value_bound: 0.0005 # Between -0.05% and +0.05%
+  harmful: -0.0005     # < -0.05% (performance improves when removed)
+
+demand_family_groups:
+  historical_demand:
+    - demand_history
+    - rolling_demand
+    - demand_momentum
+    - weekly_seasonality
+    - annual_seasonality
+  observed_sales:
+    - observed_sales
+  inventory:
+    - inventory_state
+    - inventory_coverage
+    - stockout_history
+    - replenishment_history
+  selling_price:
+    - selling_price
+    - price_elasticity_proxy
+  promotion:
+    - promotion
+  calendar:
+    - calendar
+  holidays_festivals:
+    - holiday_proximity
+    - festival_proximity
+  school_holiday:
+    - school_holiday
+  salary_cycle:
+    - salary_cycle
+  government_assistance:
+    - government_assistance
+  weather:
+    - weather
+    - weather_rolling
+    - weather_spells
+  market_price:
+    - market_price
+    - missingness_indicator
+  economic_indicators:
+    - macro_inflation
+    - macro_fuel
+  policy_subsidy:
+    - policy_subsidy
+  purchase_price_history:
+    - purchase_price_history
+    - purchase_price_rolling
+    - price_momentum
+    - procurement_supplier
+  static_features:
+    - static_product
+    - static_store
+  interactions:
+    - interactions
+
+price_family_groups:
+  historical_purchase_price:
+    - purchase_price_history
+    - purchase_price_rolling
+    - price_momentum
+  supplier_procurement:
+    - procurement_supplier
+    - replenishment_history
+  fuel_energy:
+    - macro_fuel
+  exchange_rates:
+    - macro_currency
+  commodity_prices:
+    - macro_commodity
+  inflation_macro:
+    - macro_inflation
+  market_price:
+    - market_price
+    - missingness_indicator
+  policy_subsidies:
+    - policy_subsidy
+  calendar_festivals:
+    - calendar
+    - festival_proximity
+    - salary_cycle
+  weather:
+    - weather
+    - weather_rolling
+    - weather_spells
+  inventory_stockout:
+    - inventory_state
+    - stockout_history
+  static_features:
+    - static_product
+    - static_store
+  interactions:
+    - interactions
+
+buildup_stages:
+  demand:
+    - name: 'D1_historical_demand'
+      families: ['historical_demand']
+    - name: 'D2_plus_calendar'
+      families: ['historical_demand', 'calendar', 'salary_cycle']
+    - name: 'D3_plus_promotion'
+      families: ['historical_demand', 'calendar', 'salary_cycle', 'promotion']
+    - name: 'D4_plus_inventory'
+      families: ['historical_demand', 'calendar', 'salary_cycle', 'promotion', 'inventory']
+    - name: 'D5_plus_selling_price'
+      families: ['historical_demand', 'calendar', 'salary_cycle', 'promotion', 'inventory', 'selling_price']
+    - name: 'D6_plus_holidays_festivals'
+      families: ['historical_demand', 'calendar', 'salary_cycle', 'promotion', 'inventory', 'selling_price', 'holidays_festivals', 'school_holiday']
+    - name: 'D7_plus_weather'
+      families: ['historical_demand', 'calendar', 'salary_cycle', 'promotion', 'inventory', 'selling_price', 'holidays_festivals', 'school_holiday', 'weather']
+    - name: 'D8_plus_market_price'
+      families: ['historical_demand', 'calendar', 'salary_cycle', 'promotion', 'inventory', 'selling_price', 'holidays_festivals', 'school_holiday', 'weather', 'market_price']
+    - name: 'D9_plus_economic_policy'
+      families: ['historical_demand', 'calendar', 'salary_cycle', 'promotion', 'inventory', 'selling_price', 'holidays_festivals', 'school_holiday', 'weather', 'market_price', 'economic_indicators', 'policy_subsidy', 'government_assistance']
+    - name: 'D10_full_model'
+      families: 'ALL'
+
+  price:
+    - name: 'P1_historical_price'
+      families: ['historical_purchase_price']
+    - name: 'P2_plus_supplier'
+      families: ['historical_purchase_price', 'supplier_procurement']
+    - name: 'P3_plus_fuel'
+      families: ['historical_purchase_price', 'supplier_procurement', 'fuel_energy']
+    - name: 'P4_plus_currency'
+      families: ['historical_purchase_price', 'supplier_procurement', 'fuel_energy', 'exchange_rates']
+    - name: 'P5_plus_commodity'
+      families: ['historical_purchase_price', 'supplier_procurement', 'fuel_energy', 'exchange_rates', 'commodity_prices']
+    - name: 'P6_plus_inflation'
+      families: ['historical_purchase_price', 'supplier_procurement', 'fuel_energy', 'exchange_rates', 'commodity_prices', 'inflation_macro']
+    - name: 'P7_plus_market_price'
+      families: ['historical_purchase_price', 'supplier_procurement', 'fuel_energy', 'exchange_rates', 'commodity_prices', 'inflation_macro', 'market_price']
+    - name: 'P8_plus_policy'
+      families: ['historical_purchase_price', 'supplier_procurement', 'fuel_energy', 'exchange_rates', 'commodity_prices', 'inflation_macro', 'market_price', 'policy_subsidies']
+    - name: 'P9_full_model'
+      families: 'ALL'
+
+internal_vs_external:
+  demand:
+    internal_families:
+      - historical_demand
+      - observed_sales
+      - inventory
+      - selling_price
+      - static_features
+    external_families:
+      - weather
+      - holidays_festivals
+      - school_holiday
+      - salary_cycle
+      - government_assistance
+      - market_price
+      - economic_indicators
+      - policy_subsidy
+  price:
+    internal_families:
+      - historical_purchase_price
+      - supplier_procurement
+      - inventory_stockout
+      - static_features
+    external_families:
+      - fuel_energy
+      - exchange_rates
+      - commodity_prices
+      - inflation_macro
+      - market_price
+      - policy_subsidies
+      - weather

@@ -1,0 +1,22 @@
+dataset_name,source_file,clean_file,original_rows,cleaned_rows,delta_rows,pct_retained
+Point-of-Sale Sales,retail_pos_sales.parquet,pos_sales_clean.parquet,35064,35064,0,100.0
+Inventory,retail_inventory.parquet,inventory_clean.parquet,35064,35064,0,100.0
+Purchase-price History,retail_purchase_prices.parquet,purchase_prices_clean.parquet,35064,35064,0,100.0
+Product Master,retail_products.csv,product_master_clean.parquet,6,6,0,100.0
+Supplier Master,retail_suppliers.csv,supplier_master_clean.parquet,6,6,0,100.0
+Store Master,retail_stores.csv,store_master_clean.parquet,4,4,0,100.0
+Promotion History,retail_promotions.csv,promotions_clean.parquet,20,20,0,100.0
+Malaysian Market Prices (PriceCatcher),pricecatcher_2024-01.parquet,pricecatcher_clean.parquet,2664434,2664434,0,100.0
+Consumer Price Index,cpi_headline.csv,consumer_price_index_clean.parquet,2500,560,-1940,22.4
+Producer Price Index,ppi.csv,producer_price_index_clean.parquet,587,200,-387,34.07
+Fuel Prices,fuel_prices.csv,fuel_prices_clean.parquet,963,963,0,100.0
+Currency Exchange Rates,exchange_rates_10y.csv,exchange_rates_clean.parquet,2865,2865,0,100.0
+Commodity Prices,commodities_10y.csv,commodity_prices_clean.parquet,2766,2766,0,100.0
+Weather,malaysia_weather_10y.csv,weather_clean.parquet,14612,14612,0,100.0
+Public Holidays,malaysia_public_holidays_10y.csv,public_holidays_clean.parquet,598,598,0,100.0
+School Holidays,malaysia_school_holidays_10y.csv,school_holidays_clean.parquet,44,44,0,100.0
+Wholesale & Retail Activity,iowrt_distributive_trade.csv,trade_activity_clean.parquet,296,103,-193,34.8
+External Trade Statistics,trade_headline.csv,external_trade_clean.parquet,755,320,-435,42.38
+Government Assistance,malaysia_government_assistance_10y.csv,government_assistance_clean.parquet,37,37,0,100.0
+Government Subsidies & Policies,malaysia_subsidies_and_policies.csv,subsidies_and_policies_clean.parquet,15,15,0,100.0
+National Budget Policies,malaysia_national_budget_policies.csv,budget_policies_clean.parquet,11,11,0,100.0

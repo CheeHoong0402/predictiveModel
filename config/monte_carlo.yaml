@@ -1,0 +1,35 @@
+# Monte Carlo Risk Simulation Configuration (Phase 19)
+version: "1.0.0"
+
+reproducibility:
+  random_seed: 42
+
+simulation:
+  fast_mode_scenarios: 2000
+  detailed_mode_scenarios: 10000
+  convergence_scenario_counts: [1000, 2000, 5000, 10000]
+  time_horizon_days: 30
+  numerical_precision: "float32"
+
+risk_tolerance_profiles:
+  balanced:
+    max_stockout_probability: 0.10
+    max_cvar95_cost_multiplier: 2.5
+    target_service_level: 0.90
+  high_service:
+    max_stockout_probability: 0.05
+    max_cvar95_cost_multiplier: 2.0
+    target_service_level: 0.95
+  cost_focused:
+    max_stockout_probability: 0.20
+    max_cvar95_cost_multiplier: 3.5
+    target_service_level: 0.80
+
+thresholds:
+  overstock_demand_multiplier: 1.5
+  perishable_shelf_life_margin_days: 0.0
+  extreme_cvar_cost_spike_threshold_rm: 10000.0
+
+performance:
+  batch_size: 50
+  num_workers: 2

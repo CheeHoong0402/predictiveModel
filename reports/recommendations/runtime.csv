@@ -1,0 +1,5 @@
+task,count,runtime_seconds,runtime_ms
+single_product_recommendation,1,0.0573,57.29
+100_recommendations_batch,96,2.123,2123.04
+production_catalog_batch,24,0.2864,286.39
+end_to_end_pipeline,24,2.4915,2491.54

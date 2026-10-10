@@ -1,0 +1,7 @@
+segment_type,segment_name,tested_feature_family,with_features_metric,without_features_metric,delta_metric,relative_impact_pct,verdict
+imported_products,imported_red_onions_PRD_ONN_06,exchange_rates,0.0042,0.0843,0.0801,95.04,MEASURABLE VALUE
+commodity_sensitive,cooking_oil_wheat_chicken_staples,commodity_prices,0.0077,0.1238,0.1161,93.8,MEASURABLE VALUE
+price_shock,diesel_restructuring_and_volatile_periods,fuel_energy,0.0155,0.226,0.2105,93.15,MEASURABLE VALUE
+promotion_periods,discount_and_campaign_windows,promotion,0.1385,0.13891,0.00042,0.3,HIGH VALUE
+festival_periods,cny_hari_raya_deepavali_windows,holidays_festivals,0.1385,0.13984,0.00134,0.966,MODERATE VALUE
+weather_sensitive,perishable_poultry_produce_monsoon,weather,0.1385,0.13943,0.00093,0.672,MODERATE VALUE

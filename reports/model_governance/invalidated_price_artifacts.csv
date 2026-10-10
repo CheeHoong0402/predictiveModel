@@ -1,0 +1,12 @@
+artifact_path,artifact_type,source_phase,invalidation_status,invalidation_reason,exists_on_disk,safe_for_decision,safe_for_display,marked_at
+models/calibration/price,DIRECTORY,Phase 16 (Calibration),STALE_UPSTREAM_PRICE_MODEL_INVALID,Residual calibration derived from unvalidated price predictions,True,False,False,2026-10-11T06:20:00
+data/predictions/final_calibrated_price_predictions.parquet,FILE,Phase 16 (Calibration),STALE_UPSTREAM_PRICE_MODEL_INVALID,Calibrated price prediction outputs derived from unvalidated upstream price models,True,False,False,2026-10-11T06:20:00
+data/predictions/final_precalibration_price_predictions.parquet,FILE,Phase 15 (Ensemble),STALE_UPSTREAM_PRICE_MODEL_INVALID,Pre-calibration ensemble price predictions with zero predictive skill over simple baselines,True,False,False,2026-10-11T06:20:00
+reports/uncertainty/price_calibration_by_horizon.csv,FILE,Phase 16 (Calibration),STALE_UPSTREAM_PRICE_MODEL_INVALID,Calibration metrics computed on unvalidated price forecasts,True,False,False,2026-10-11T06:20:00
+reports/explainability/global_price_importance.csv,FILE,Phase 17 (Explainability),STALE_UPSTREAM_PRICE_MODEL_INVALID,SHAP feature importance calculated on unvalidated price model,True,False,False,2026-10-11T06:20:00
+reports/inventory/price_timing_analysis.csv,FILE,Phase 18 (Optimization),STALE_UPSTREAM_PRICE_MODEL_INVALID,Price arbitrage timing savings derived from unvalidated price forecasts,True,False,False,2026-10-11T06:20:00
+reports/monte_carlo/price_decision_risk.csv,FILE,Phase 19 (Simulation),STALE_UPSTREAM_PRICE_MODEL_INVALID,Probabilistic price-risk payoffs derived from unvalidated price models,True,False,False,2026-10-11T06:20:00
+reports/recommendations/price_decision_summary.csv,FILE,Phase 21 (Recommendations),STALE_UPSTREAM_PRICE_MODEL_INVALID,Aggregated price recommendation criteria derived from unvalidated price forecasts,True,False,False,2026-10-11T06:20:00
+reports/optimisation/price_best_parameters.csv,FILE,Phase 14 (Optimisation),STALE_UPSTREAM_PRICE_MODEL_INVALID,Hyperparameters tuned against target-leaked cache,True,False,False,2026-10-11T06:20:00
+reports/optimisation/price_trials.csv,FILE,Phase 14 (Optimisation),STALE_UPSTREAM_PRICE_MODEL_INVALID,Optimization trials containing target-leaked evaluation metrics,True,False,False,2026-10-11T06:20:00
+reports/optimisation/before_after_optimisation.csv,FILE,Phase 14 (Optimisation),STALE_UPSTREAM_PRICE_MODEL_INVALID,Contains invalid 98% relative improvement claims due to target leakage,True,False,False,2026-10-11T06:20:00

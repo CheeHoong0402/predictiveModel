@@ -1,0 +1,41 @@
+# Inventory Optimisation Configuration - Phase 18
+
+evaluation:
+  min_coverage_days: 1
+  max_coverage_days: 30
+  step_days: 1
+  reference_strategy_days: 14
+
+service_levels:
+  balanced:
+    name: "Balanced"
+    target_service_level: 0.80
+    quantile_multiplier: 0.75  # 0.75 * (P90 - P50)
+  high_service:
+    name: "High Service"
+    target_service_level: 0.90
+    quantile_multiplier: 1.00  # P90 - P50
+  cost_minimisation:
+    name: "Cost Minimisation"
+    target_service_level: 0.70
+    quantile_multiplier: 0.50  # 0.50 * (P90 - P50)
+
+default_service_level: "balanced"
+
+strategies:
+  low_stock:
+    coverage_days: 7
+    description: "Lean inventory policy minimizing holding costs"
+  balanced:
+    description: "Cost-optimal coverage balancing holding and stockout risk"
+  high_safety:
+    coverage_days: 21
+    description: "Buffer inventory policy prioritizing near-zero stockout risk"
+
+decision_thresholds:
+  price_increase_timing_threshold_pct: 1.0  # % increase above which buying ahead is evaluated
+  price_decrease_wait_threshold_pct: -1.5   # % decrease justifying waiting if stock allows
+  lead_time_buffer_days: 1.0               # Extra safety buffer for lead time
+  overstock_days_threshold: 45             # Coverage days considered overstocked
+  critical_stockout_days: 2.0              # Days of stock remaining triggering critical status
+  robustness_tolerance_pct: 0.25           # Order quantity variation tolerance for robustness

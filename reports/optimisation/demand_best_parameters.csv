@@ -1,0 +1,7 @@
+horizon,model_family,best_parameters_summary,best_objective_wape,best_trial,best_iteration,avoided_iterations,single_row_inference_ms,batch_50_inference_ms,model_size_kb,optimisation_status
+1,lightgbm,"leaves=48, depth=8, lr=0.094",0.2494,6,120,180,1.0,0.0,598.0,OPTIMISED
+3,lightgbm,"leaves=31, depth=6, lr=0.050",0.18606,0,120,180,0.0,1.5,423.2,CARRIED_FORWARD
+7,lightgbm,"leaves=49, depth=9, lr=0.078",0.13823,10,120,180,0.0,1.5,650.1,OPTIMISED
+14,lightgbm,"leaves=31, depth=6, lr=0.050",0.0966,0,120,180,1.0,1.0,413.8,CARRIED_FORWARD
+21,lightgbm,"leaves=31, depth=6, lr=0.050",0.07941,0,120,180,1.0,1.0,411.7,CARRIED_FORWARD
+30,lightgbm,"leaves=32, depth=9, lr=0.094",0.06892,4,120,180,1.0,0.0,434.5,OPTIMISED

@@ -1,0 +1,4 @@
+run_type,scenario_count,runtime_seconds
+Fast Screening (Single SKU),2000,0.045
+Detailed Final (Single SKU),10000,0.165
+Total Batch Pipeline (24 SKUs),10000,2.746

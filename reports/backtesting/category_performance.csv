@@ -1,0 +1,6 @@
+category,ai_total_cost,reference_total_cost,absolute_savings,savings_percentage,ai_fill_rate,reference_fill_rate,fill_rate_improvement_pp,ai_wasted_units,reference_wasted_units
+Cooking Oils & Fats,933133.5,3172921.31,2239787.81,70.59,0.0694,0.5356,-46.62,0.0,0.0
+Dairy & Eggs,2948913.47,1960251.06,-988662.41,-50.44,0.6758,0.5367,13.91,18244.2,0.0
+Dry Staples,865537.32,2701339.05,1835801.73,67.96,0.0697,0.5378,-46.81,0.0,0.0
+Fresh Vegetables,1284457.24,2278592.49,994135.25,43.63,0.1139,0.32,-20.61,9183.2,74243.7
+Poultry & Meat,1174337.62,2868656.0,1694318.38,59.06,0.1058,0.1133,-0.75,6379.2,117453.7

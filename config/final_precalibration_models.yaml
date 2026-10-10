@@ -1,0 +1,78 @@
+demand:
+  1d:
+    type: ensemble
+    selected_model: weighted_ensemble
+    members:
+    - model: catboost
+      weight: 0.4999341714320568
+    - model: lightgbm
+      weight: 0.5000658285679431
+  3d:
+    type: single_model
+    selected_model: xgboost
+    members:
+    - model: xgboost
+      weight: 1.0
+  7d:
+    type: single_model
+    selected_model: catboost
+    members:
+    - model: catboost
+      weight: 1.0
+  14d:
+    type: single_model
+    selected_model: catboost
+    members:
+    - model: catboost
+      weight: 1.0
+  21d:
+    type: single_model
+    selected_model: catboost
+    members:
+    - model: catboost
+      weight: 1.0
+  30d:
+    type: single_model
+    selected_model: catboost
+    members:
+    - model: catboost
+      weight: 1.0
+price:
+  1d:
+    type: single_model
+    selected_model: lightgbm_pct_change
+    members:
+    - model: lightgbm_pct_change
+      weight: 1.0
+  3d:
+    type: single_model
+    selected_model: catboost_pct_change
+    members:
+    - model: catboost_pct_change
+      weight: 1.0
+  7d:
+    type: single_model
+    selected_model: catboost_pct_change
+    members:
+    - model: catboost_pct_change
+      weight: 1.0
+  14d:
+    type: ensemble
+    selected_model: optimised_weighted_ensemble
+    members:
+    - model: catboost_pct_change
+      weight: 0.0
+    - model: lightgbm_pct_change
+      weight: 1.0
+  21d:
+    type: single_model
+    selected_model: lightgbm_pct_change
+    members:
+    - model: lightgbm_pct_change
+      weight: 1.0
+  30d:
+    type: single_model
+    selected_model: catboost_pct_change
+    members:
+    - model: catboost_pct_change
+      weight: 1.0

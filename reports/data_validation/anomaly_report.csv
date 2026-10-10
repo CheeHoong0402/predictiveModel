@@ -1,0 +1,11 @@
+filename,anomaly_description
+cpi_core.csv,Found 1456 duplicated business keys on ['date']
+cpi_headline.csv,Found 2500 duplicated business keys on ['date']
+cpi_state.csv,Found 2500 duplicated business keys on ['date']
+fuel_prices.csv,Found 962 duplicated business keys on ['date']
+iowrt_distributive_trade.csv,Found 295 duplicated business keys on ['date']
+malaysia_public_holidays_10y.csv,Found 248 duplicated business keys on ['date']
+ppi.csv,Found 586 duplicated business keys on ['date']
+trade_enduse_bec.csv,Found 2500 duplicated business keys on ['date']
+trade_headline.csv,Found 658 duplicated business keys on ['date']
+trade_sitc_1d.csv,Found 2500 duplicated business keys on ['date']

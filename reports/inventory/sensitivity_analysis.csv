@@ -1,0 +1,5 @@
+holding_cost_multiplier,mean_recommended_coverage_days,mean_order_quantity,total_portfolio_cost
+0.5,1.1,12.5,5408.1
+1.0,1.0,11.7,5546.77
+1.5,0.9,11.2,5685.44
+2.0,0.9,10.9,5824.11

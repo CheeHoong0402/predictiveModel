@@ -1,0 +1,47 @@
+# Configuration for Phase 11 Demand Forecasting Models
+# Conservative default hyperparameters for model-family comparison; no extensive tuning yet.
+
+evaluation:
+  horizons: [1, 3, 7, 14, 21, 30]
+  seed: 42
+  holdout_start: '2024-10-01'
+  holdout_end: '2024-12-31'
+  sample_weighting: 'uniform'  # Documented: equal sample weighting across all products to ensure high, medium, and low volume representation
+
+models:
+  lightgbm:
+    n_estimators: 100
+    learning_rate: 0.05
+    num_leaves: 31
+    max_depth: 6
+    min_child_samples: 20
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+    n_jobs: -1
+    verbose: -1
+
+  catboost:
+    iterations: 120
+    learning_rate: 0.05
+    depth: 6
+    l2_leaf_reg: 3.0
+    random_seed: 42
+    thread_count: -1
+    verbose: 0
+    nan_mode: 'Min'
+
+  xgboost:
+    n_estimators: 100
+    learning_rate: 0.05
+    max_depth: 6
+    subsample: 0.8
+    colsample_bytree: 0.8
+    tree_method: 'hist'
+    random_state: 42
+    n_jobs: -1
+
+probabilistic:
+  quantiles: [0.1, 0.5, 0.9]
+  method: 'empirical_residual_quantiles'
+  label: 'raw_uncalibrated_quantiles'

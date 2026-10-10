@@ -1,0 +1,2 @@
+component,allocated_threads,observed_peak_ram_gb,gpu_allocated,observed_peak_vram_gb,pruning_ratio_pct
+LightGBM_CPU,14,4.8,NVIDIA RTX 4060,1.2,45.1

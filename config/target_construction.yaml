@@ -1,0 +1,25 @@
+# Phase 9 canonical labels. Timing and demand-source names are inherited from
+# feature_engineering.yaml, not redefined here. All windows use calendar days.
+horizons: [1, 3, 7, 14, 21, 30]
+demand_target:
+  minimum_coverage: 1.0
+  create_direct_targets: true
+  # Existing exports omit activity flags; observed operational rows are assumed
+  # active only when flags are absent. Null flags and missing dates are invalid.
+  missing_activity_policy: observed_records_assumed_active
+price_target:
+  # Daily price observations have 100% coverage and one-day spacing. Default
+  # exact-day labels avoid introducing a horizon offset without a data need.
+  tolerance_days: 0
+  allow_effective_price_carry_forward: false
+  maximum_carry_forward_days: 7
+  current_price_maximum_age_days: 7
+  flat_tolerance: 0.005
+  extreme_change_threshold: 0.50
+  # purchase_price is a recorded daily supplier price, including non-purchase
+  # days; purchase_quantity is not used as a price availability flag.
+outliers:
+  iqr_multiplier: 3.0
+manual_checks:
+  seed: 9
+  sample_count: 3

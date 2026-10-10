@@ -1,0 +1,10 @@
+stage_id,stage_name,num_features,horizon_1d_mae,horizon_7d_mae,horizon_30d_mae,mean_mae
+P1,P1_historical_price,35,0.00809,0.01228,0.01422,0.01153
+P2,P2_plus_supplier,49,0.00955,0.0153,0.01673,0.01386
+P3,P3_plus_fuel,59,0.00774,0.01256,0.01216,0.01082
+P4,P4_plus_currency,66,0.00944,0.01653,0.01208,0.01268
+P5,P5_plus_commodity,73,0.01037,0.01327,0.01375,0.01246
+P6,P6_plus_inflation,73,0.01037,0.01327,0.01375,0.01246
+P7,P7_plus_market_price,77,0.01004,0.01322,0.01345,0.01224
+P8,P8_plus_policy,88,0.00955,0.00994,0.01425,0.01125
+P9,P9_full_model,148,0.01124,0.01232,0.01439,0.01265

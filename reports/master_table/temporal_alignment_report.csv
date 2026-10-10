@@ -1,0 +1,14 @@
+dataset,frequency,temporal_rule,lag_applied_days,leakage_risk
+Point-of-Sale Sales,Daily,Exact calendar date match,0,None
+Inventory,Daily,Exact calendar date match,0,None
+Purchase Prices,Daily,Exact calendar date match,0,None
+PriceCatcher,Daily,Exact calendar date match,0,None
+Consumer Price Index,Monthly,Publication lag: ref_month + 1M + 24D,54,Zero (Strictly historically published)
+Producer Price Index,Monthly,Publication lag: ref_month + 1M + 28D,58,Zero (Strictly historically published)
+Fuel Prices,Weekly,Effective date stepwise forward-fill,0,None
+Exchange Rates,Daily,Forward-fill weekend non-trading days only,0,Zero (No backfilling)
+Commodity Prices,Daily,Forward-fill weekend non-trading days only,0,Zero (No backfilling)
+Weather,Daily,Exact calendar date match,0,None
+Public/School Holidays,Calendar,Pre-scheduled calendar events,0,None
+Government Assistance,Event-based,Actual historical payment dates,0,None
+Subsidies & Policies,Event-based,Announcement date / Effective date,0,None

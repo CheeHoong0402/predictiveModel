@@ -1,0 +1,65 @@
+# Cost Assumptions Registry - Phase 18
+# Every cost parameter is explicitly tagged with its provenance
+
+parameters:
+  inventory_holding_cost_per_unit_per_day:
+    value: 0.25
+    unit: "MYR/unit/day"
+    source: "retailer_provided"
+    description: "Daily per-unit physical warehousing and handling cost from POS inventory telemetry"
+    status: "VERIFIED"
+
+  storage_cost_per_unit_per_day:
+    value: 0.15
+    unit: "MYR/unit/day"
+    source: "retailer_provided"
+    description: "Cold-chain and store shelf space cost from store operational data"
+    status: "VERIFIED"
+
+  stockout_cost_per_unit:
+    value: 3.50
+    unit: "MYR/unit"
+    source: "retailer_provided"
+    description: "Direct retailer-recorded penalty per unit of unfulfilled demand"
+    status: "VERIFIED"
+
+  unit_lost_gross_margin:
+    unit: "MYR/unit"
+    source: "derived"
+    description: "Calculated as selling_price minus current_purchase_price at decision time"
+    status: "DYNAMIC"
+
+  wastage_cost_per_unit:
+    value: 7.20
+    unit: "MYR/unit"
+    source: "retailer_provided"
+    description: "Write-off cost per expired perishable item from procurement loss records"
+    status: "VERIFIED"
+
+  ordering_cost_per_po:
+    value: 50.00
+    unit: "MYR/order"
+    source: "default_assumption"
+    description: "Fixed administrative and PO processing transaction fee per replenishment order"
+    status: "ASSUMED_COST"
+
+  annual_capital_holding_rate:
+    value: 0.15
+    unit: "decimal"
+    source: "default_assumption"
+    description: "Annual cost of capital tied up in inventory inventory (15% p.a.)"
+    status: "ASSUMED_COST"
+
+  goodwill_penalty_multiplier:
+    value: 1.00
+    unit: "multiplier"
+    source: "default_assumption"
+    description: "Multiplier applied to lost margin representing customer brand erosion"
+    status: "ASSUMED_COST"
+
+  emergency_replenishment_surcharge:
+    value: 0.00
+    unit: "MYR/unit"
+    source: "unavailable"
+    description: "Expedited delivery premium not provided in baseline operational dataset"
+    status: "UNAVAILABLE"

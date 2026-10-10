@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "decision_date": "2024-08-17",
+    "store_id": "STR_JHR_003",
+    "product_id": "PRD_CHK_01",
+    "supplier_id": "SUP_KLS_01"
+  },
+  "decision_comparison": {
+    "phase18_action": "URGENT_REORDER",
+    "phase18_order_quantity": 50.0,
+    "phase18_coverage_days": 1,
+    "phase19_action": "URGENT_REORDER",
+    "phase19_order_quantity": 50.0,
+    "phase19_coverage_days": 1,
+    "recommendation_changed": false,
+    "change_reason": "Phase 18 recommendation validated: simulated stockout risk within acceptable tolerance and CVaR95 optimal.",
+    "robustness_status": "UNCERTAINTY_SENSITIVE"
+  },
+  "risk_mitigation": {
+    "stockout_probability_before_pct": 94.37,
+    "stockout_probability_after_pct": 42.91,
+    "overstock_probability_pct": 5.61,
+    "wastage_probability_pct": 0.0,
+    "service_probability_pct": 57.09,
+    "expected_lost_units": 11.39,
+    "expected_excess_units": 0.81,
+    "late_delivery_probability_pct": 5.11
+  },
+  "cost_distribution": {
+    "expected_total_cost": 476.74,
+    "cost_p10": 433.6,
+    "cost_p50": 454.6,
+    "cost_p90": 557.75,
+    "cost_var95": 606.11,
+    "cost_cvar95": 667.3
+  },
+  "strategy_comparison": [
+    {
+      "strategy": "NO_ACTION",
+      "order_quantity": 0.0,
+      "coverage_days": 1,
+      "expected_total_cost": 172.3,
+      "stockout_probability": 94.4,
+      "overstock_probability": 0.1,
+      "wastage_probability": 0.0,
+      "service_probability": 5.6,
+      "cost_cvar95": 429.65,
+      "mean_regret": 0.0
+    },
+    {
+      "strategy": "BALANCED_STRATEGY",
+      "order_quantity": 50.0,
+      "coverage_days": 1,
+      "expected_total_cost": 476.74,
+      "stockout_probability": 42.9,
+      "overstock_probability": 5.6,
+      "wastage_probability": 0.0,
+      "service_probability": 57.1,
+      "cost_cvar95": 667.3,
+      "mean_regret": 304.44
+    },
+    {
+      "strategy": "LOW_STOCK_STRATEGY",
+      "order_quantity": 150.0,
+      "coverage_days": 3,
+      "expected_total_cost": 1723.63,
+      "stockout_probability": 69.5,
+      "overstock_probability": 0.2,
+      "wastage_probability": 89.4,
+      "service_probability": 30.5,
+      "cost_cvar95": 2162.73,
+      "mean_regret": 1551.33
+    },
+    {
+      "strategy": "HIGH_SAFETY_STRATEGY",
+      "order_quantity": 150.0,
+      "coverage_days": 3,
+      "expected_total_cost": 1723.63,
+      "stockout_probability": 69.5,
+      "overstock_probability": 0.2,
+      "wastage_probability": 89.4,
+      "service_probability": 30.5,
+      "cost_cvar95": 2162.73,
+      "mean_regret": 1551.33
+    }
+  ]
+}

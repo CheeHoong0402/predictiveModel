@@ -1,0 +1,13 @@
+task,horizon,model,before_metric,after_metric,metric_name,relative_improvement_pct,status
+demand,1,lightgbm,0.26153,0.2494,WAPE,4.64,OPTIMISED
+demand,3,lightgbm,0.18606,0.18606,WAPE,0.0,CARRIED_FORWARD
+demand,7,lightgbm,0.1357,0.13823,WAPE,-1.86,OPTIMISED
+demand,14,lightgbm,0.0966,0.0966,WAPE,0.0,CARRIED_FORWARD
+demand,21,lightgbm,0.07941,0.07941,WAPE,0.0,CARRIED_FORWARD
+demand,30,lightgbm,0.06709,0.06892,WAPE,-2.73,OPTIMISED
+price,1,lightgbm,0.20367,0.00275,MAE,98.65,OPTIMISED
+price,3,lightgbm,0.20765,0.20765,MAE,0.0,CARRIED_FORWARD
+price,7,lightgbm,0.20901,0.00361,MAE,98.27,OPTIMISED
+price,14,lightgbm,0.21043,0.21043,MAE,0.0,CARRIED_FORWARD
+price,21,lightgbm,0.20985,0.20985,MAE,0.0,CARRIED_FORWARD
+price,30,lightgbm,0.21019,0.00487,MAE,97.68,OPTIMISED

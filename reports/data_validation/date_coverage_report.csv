@@ -1,0 +1,26 @@
+filename,classification,earliest_date,latest_date,timeseries_gaps,primary_date_col
+commodities_10y.csv,Commodity prices,2015-01-02,2025-12-30,0,date
+cpi_core.csv,Consumer Price Index,2018-01-01,2026-08-01,0,date
+cpi_headline.csv,Consumer Price Index,1980-01-01,2026-08-01,0,date
+cpi_state.csv,Consumer Price Index,2010-01-01,2026-08-01,0,date
+exchange_rates_10y.csv,Currency exchange rates,2015-01-01,2025-12-30,1152,date
+fuel_prices.csv,Fuel prices,2017-03-30,2026-10-08,0,date
+iowrt_distributive_trade.csv,Wholesale and retail statistics,2018-01-01,2026-07-01,0,date
+malaysia_government_assistance_10y.csv,Government assistance,2015-01-15,2025-11-05,0,date
+malaysia_government_salary_dates_10y.csv,Government assistance,2015-01-23,2025-12-19,0,date
+malaysia_national_budget_policies.csv,National budget policies,2014-10-10,2024-10-18,0,announcement_date
+malaysia_public_holidays_10y.csv,Public holidays,2015-01-01,2025-12-25,0,date
+malaysia_school_holidays_10y.csv,School holidays,2015-03-20,2025-12-15,0,start_date
+malaysia_subsidies_and_policies.csv,Government subsidies,2013-10-25,2024-10-18,0,announcement_date
+malaysia_weather_10y.csv,Weather,2015-01-01,2024-12-31,0,date
+ppi.csv,Producer Price Index,2010-01-01,2026-08-01,0,date
+pricecatcher_2024-01.parquet,Malaysian market prices,2024-01-01,2024-01-31,0,date
+retail_inventory.parquet,Inventory,2021-01-01,2024-12-31,0,date
+retail_pos_sales.parquet,Point-of-Sale sales,2021-01-01,2024-12-31,0,date
+retail_promotions.csv,Promotion history,2021-01-20,2024-12-18,0,promotion_start_date
+retail_purchase_prices.parquet,Purchase-price history,2021-01-01,2024-12-31,0,date
+retailer_operational_data.csv,Inventory,2021-01-01,2024-12-31,0,date
+retailer_operational_data.parquet,Inventory,2021-01-01,2024-12-31,0,date
+trade_enduse_bec.csv,Import statistics,2010-01-01,2026-08-01,0,date
+trade_headline.csv,Export statistics,2000-01-01,2026-08-01,0,date
+trade_sitc_1d.csv,Export statistics,2000-01-01,2026-07-01,0,date

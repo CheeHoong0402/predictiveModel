@@ -1,0 +1,30 @@
+# Configuration for Purchase-Price Decision Criteria in Procurement
+price_decision:
+  thresholds:
+    minimum_price_change_pct: 2.0
+    strong_price_change_pct: 5.0
+    minimum_direction_probability: 0.60
+    strong_direction_probability: 0.75
+    minimum_net_timing_benefit_rm: 5.0
+    minimum_net_price_timing_benefit_rm: 5.0
+    maximum_extra_coverage_days_due_to_price: 7
+    maximum_price_driven_quantity_increase_pct: 50.0
+    price_uncertainty_penalty_threshold: 0.35
+    holding_cost_daily_pct: 0.05
+
+  signal_classes:
+    strong_buy_early: "STRONG_BUY_EARLY_SIGNAL"
+    moderate_buy_early: "MODERATE_BUY_EARLY_SIGNAL"
+    neutral: "NEUTRAL_PRICE_SIGNAL"
+    moderate_wait: "MODERATE_WAIT_SIGNAL"
+    strong_wait: "STRONG_WAIT_SIGNAL"
+
+  overrides:
+    stockout_critical_override: true
+    shelf_life_strict_override: true
+    capacity_strict_override: true
+    budget_strict_override: true
+
+  economics:
+    holding_cost_penalty_rate: 1.0
+    spoilage_penalty_rate: 1.0

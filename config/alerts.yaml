@@ -1,0 +1,55 @@
+# Telegram and System Alerts Configuration (Phase 21)
+version: "1.0.0"
+
+triggers:
+  urgent_reorder:
+    enabled: true
+    min_urgency: "HIGH"
+  high_stockout_risk:
+    enabled: true
+    stockout_probability_threshold: 0.20
+  large_price_increase:
+    enabled: true
+    price_increase_threshold_pct: 3.0
+  overstock_warning:
+    enabled: true
+    overstock_probability_threshold: 0.35
+  wastage_risk:
+    enabled: true
+    wastage_probability_threshold: 0.10
+  supplier_delay_risk:
+    enabled: true
+    late_delivery_probability_threshold: 0.10
+
+cooldown:
+  cooldown_window_hours: 24
+  deduplicate_keys:
+    - "store_id"
+    - "product_id"
+    - "reason_code"
+
+security:
+  bot_token_env_var: "TELEGRAM_BOT_TOKEN"
+  chat_id_env_var: "TELEGRAM_CHAT_ID"
+  allow_mock_dispatch: true
+
+templates:
+  urgent_reorder: |
+    🚨 *URGENT REORDER ALERT*
+    🏬 *Store:* {store_id}
+    📦 *Product:* {product_name} ({product_id})
+    📊 *Current Stock:* {current_inventory:.0f} units ({current_coverage_days:.1f} days)
+    🛒 *Recommended Order:* {final_order_quantity:.0f} units ({final_coverage_days:.0f} days)
+    📉 *Stockout Risk:* {stockout_before:.1%} → {stockout_after:.1%}
+    💵 *Price Outlook:* {price_change_pct:+.1f}% ({price_direction})
+    💡 *Main Reason:* {top_reason}
+
+  daily_summary: |
+    📋 *TODAY'S INVENTORY PRIORITIES*
+    📅 *Date:* {decision_date}
+    🚨 *Urgent Reorders:* {urgent_reorder_count}
+    ⚠️ *High-Risk Products:* {high_risk_count}
+    📦 *Overstock Warnings:* {overstock_count}
+    💰 *Recommended Spend:* RM {total_procurement_spend:,.2f}
+    ✨ *Expected Savings:* RM {expected_savings:,.2f}
+    🏆 *Top Priority Action:* {top_action}

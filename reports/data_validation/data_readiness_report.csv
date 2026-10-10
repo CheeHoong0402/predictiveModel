@@ -1,0 +1,33 @@
+filename,classification,rows,status,justification
+commodities_10y.csv,Commodity prices,2766,READY,Dataset passed all baseline checks cleanly
+cpi_core.csv,Consumer Price Index,1456,WARNING,Contains 1456 duplicate business keys
+cpi_headline.csv,Consumer Price Index,2500,WARNING,Contains 2500 duplicate business keys
+cpi_state.csv,Consumer Price Index,2500,WARNING,Contains 2500 duplicate business keys
+exchange_rates_10y.csv,Currency exchange rates,2865,READY,Dataset passed all baseline checks cleanly
+fuel_prices.csv,Fuel prices,963,WARNING,Contains 962 duplicate business keys; Overall missing cell percentage is high (34.93%)
+iowrt_distributive_trade.csv,Wholesale and retail statistics,296,WARNING,Contains 295 duplicate business keys
+malaysia_government_assistance_10y.csv,Government assistance,37,READY,Dataset passed all baseline checks cleanly
+malaysia_government_salary_dates_10y.csv,Government assistance,132,READY,Dataset passed all baseline checks cleanly
+malaysia_national_budget_policies.csv,National budget policies,11,READY,Dataset passed all baseline checks cleanly
+malaysia_public_holidays_10y.csv,Public holidays,598,WARNING,Contains 248 duplicate business keys
+malaysia_school_holidays_10y.csv,School holidays,44,READY,Dataset passed all baseline checks cleanly
+malaysia_subsidies_and_policies.csv,Government subsidies,15,READY,Dataset passed all baseline checks cleanly
+malaysia_weather_10y.csv,Weather,14612,READY,Dataset passed all baseline checks cleanly
+ppi.csv,Producer Price Index,587,WARNING,Contains 586 duplicate business keys; Overall missing cell percentage is high (15.16%)
+pricecatcher_2024-01.parquet,Malaysian market prices,2664434,READY,Dataset passed all baseline checks cleanly
+pricecatcher_lookup_item.csv,Malaysian market prices,797,READY,Dataset passed all baseline checks cleanly
+pricecatcher_lookup_item.parquet,Malaysian market prices,797,READY,Dataset passed all baseline checks cleanly
+pricecatcher_lookup_premise.csv,Malaysian market prices,3921,READY,Dataset passed all baseline checks cleanly
+pricecatcher_lookup_premise.parquet,Malaysian market prices,3916,READY,Dataset passed all baseline checks cleanly
+retail_inventory.parquet,Inventory,35064,READY,Dataset passed all baseline checks cleanly
+retail_pos_sales.parquet,Point-of-Sale sales,35064,READY,Dataset passed all baseline checks cleanly
+retail_products.csv,Product master,6,READY,Dataset passed all baseline checks cleanly
+retail_promotions.csv,Promotion history,20,READY,Dataset passed all baseline checks cleanly
+retail_purchase_prices.parquet,Purchase-price history,35064,READY,Dataset passed all baseline checks cleanly
+retail_stores.csv,Store master,4,READY,Dataset passed all baseline checks cleanly
+retail_suppliers.csv,Supplier master,6,READY,Dataset passed all baseline checks cleanly
+retailer_operational_data.csv,Inventory,35064,READY,Dataset passed all baseline checks cleanly
+retailer_operational_data.parquet,Inventory,35064,READY,Dataset passed all baseline checks cleanly
+trade_enduse_bec.csv,Import statistics,2500,WARNING,Contains 2500 duplicate business keys
+trade_headline.csv,Export statistics,755,WARNING,Contains 658 duplicate business keys
+trade_sitc_1d.csv,Export statistics,2500,WARNING,Contains 2500 duplicate business keys

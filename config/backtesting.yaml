@@ -1,0 +1,40 @@
+# Historical Business Backtesting and Economic Impact Validation Configuration (Phase 20)
+version: "1.0.0"
+
+backtest:
+  start_origin_date: "2021-12-31"
+  end_origin_date: "2024-08-17"
+  evaluation_end_date: "2024-09-16"
+  holdout_quarantine_start: "2024-10-01"
+  holdout_quarantine_end: "2024-12-31"
+  prediction_source: "OUT_OF_FOLD"
+  true_demand_column: "estimated_true_demand_training_safe"
+
+strategies:
+  evaluated:
+    - "NO_ACTION"
+    - "FIXED_7_DAY"
+    - "FIXED_14_DAY"
+    - "FIXED_30_DAY"
+    - "REORDER_POINT"
+    - "PHASE18_OPTIMISER"
+    - "PHASE20_AI_STRATEGY"
+  reference_benchmark: "FIXED_14_DAY"
+
+costs:
+  inventory_holding_cost_per_unit_per_day: 0.25
+  storage_cost_per_unit_per_day: 0.15
+  stockout_cost_per_unit: 3.50
+  ordering_cost_per_po: 50.00
+  wastage_cost_per_unit_default: 7.20
+
+simulation:
+  monte_carlo_scenarios_for_ai: 1000
+  numerical_precision: "float32"
+  random_seed: 42
+  risk_tolerance_threshold: 0.10
+
+sensitivity:
+  holding_cost_variations: [-0.20, 0.20]
+  stockout_cost_variations: [-0.20, 0.20]
+  wastage_cost_variations: [-0.20, 0.20]

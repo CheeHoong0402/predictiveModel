@@ -1,0 +1,2 @@
+total_records,unique_date_store_product_keys,duplicate_primary_keys,null_dates,null_stores,null_products,validation_status
+35064,35064,0,0,0,0,PASSED

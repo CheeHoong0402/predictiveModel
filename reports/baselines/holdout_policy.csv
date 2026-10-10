@@ -1,0 +1,2 @@
+holdout_start,holdout_end,evaluated,unscored_development_tail_start,unscored_development_tail_end,reason
+2024-10-01,2024-12-31,False,2024-09-17,2024-09-30,Tail shorter than configured full validation window

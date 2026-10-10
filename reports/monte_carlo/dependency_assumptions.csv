@@ -1,0 +1,4 @@
+variables,assumed_dependence,method,evidence,limitation
+Demand vs Purchase Price,INDEPENDENCE ASSUMPTION,Separate sampling of calibrated quantiles,No statistically significant high-frequency residual co-movement in historical POS vs supplier pricing,Severe macroeconomic hyperinflationary shocks would induce correlated shifts
+Demand vs Supplier Lead Time,INDEPENDENCE ASSUMPTION,Independent empirical lead-time sampling,Supplier delivery logistics operate independently of store-level daily consumer walk-in traffic,Nationwide transport disruptions (e.g. severe monsoon flooding) could impact both
+Lead Time vs Delivery Fill Rate,WEAK EMPIRICAL DEPENDENCE,Independent conditional sampling based on supplier reliability master,Delayed orders display modest fill-rate shortfalls in purchase order history,Suppliers occasionally consolidate split deliveries over multiple days

@@ -1,0 +1,7 @@
+horizon,task,champion_model,family,approach,mae,baseline_mae,mae_reduction_pct,status
+1,regression,lightgbm_pct_change,lightgbm,percentage_change,0.20367453416912795,0.2030803872053873,-0.2925673778333721,BEST_CANDIDATE_PRICE_MODEL
+3,regression,catboost_pct_change,catboost,percentage_change,0.20765398042862424,0.2072790404040403,-0.18088660766331294,BEST_CANDIDATE_PRICE_MODEL
+7,regression,catboost_pct_change,catboost,percentage_change,0.2090099528896679,0.2094600168350169,0.21486866665512164,BEST_CANDIDATE_PRICE_MODEL
+14,regression,lightgbm_pct_change,lightgbm,percentage_change,0.21042579013414342,0.212361111111111,0.9113349270220136,BEST_CANDIDATE_PRICE_MODEL
+21,regression,lightgbm_pct_change,lightgbm,percentage_change,0.20985254933730116,0.210611531986532,0.36037088856055116,BEST_CANDIDATE_PRICE_MODEL
+30,regression,catboost_pct_change,catboost,percentage_change,0.2101948691467653,0.2110803872053872,0.41951697661055204,BEST_CANDIDATE_PRICE_MODEL

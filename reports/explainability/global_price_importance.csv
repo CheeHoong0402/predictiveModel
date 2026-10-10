@@ -1,0 +1,251 @@
+raw_feature_name,mean_abs_shap,display_name,business_family,rank
+Column_81,0.0207758060132619,Column 81,General Drivers,1
+Column_82,0.017281204753089696,Column 82,General Drivers,2
+49,0.012388544855639338,49,General Drivers,3
+50,0.00652550789527595,50,General Drivers,4
+Column_66,0.0017327803652733564,Column 66,General Drivers,5
+Column_63,0.0009974576532840729,Column 63,General Drivers,6
+107,0.000843003173940815,107,General Drivers,7
+Column_64,0.000782752234954387,Column 64,General Drivers,8
+106,0.0006915498961461708,106,General Drivers,9
+Column_65,0.0006558439927175641,Column 65,General Drivers,10
+Column_80,0.000562922837464915,Column 80,General Drivers,11
+16,0.0005324690755514894,16,General Drivers,12
+Column_70,0.000437519319045047,Column 70,General Drivers,13
+104,0.00041182609129464254,104,General Drivers,14
+Column_62,0.00040530193534020026,Column 62,General Drivers,15
+117,0.0003864301979774609,117,General Drivers,16
+Column_49,0.00036980353373413283,Column 49,General Drivers,17
+47,0.0003654603206086904,47,General Drivers,18
+119,0.00034145416793762706,119,General Drivers,19
+24,0.00033844731660792604,24,General Drivers,20
+Column_51,0.00033312598437381286,Column 51,General Drivers,21
+42,0.00032428432677988894,42,General Drivers,22
+128,0.00030298178899101913,128,General Drivers,23
+46,0.0002991238861795864,46,General Drivers,24
+59,0.00029536508736782707,59,General Drivers,25
+127,0.00029184832965256646,127,General Drivers,26
+15,0.00027060832508141175,15,General Drivers,27
+Column_5,0.0002679518916390104,Column 5,General Drivers,28
+Column_56,0.0002578985634803151,Column 56,General Drivers,29
+125,0.0002459389688738156,125,General Drivers,30
+103,0.0002360879643674707,103,General Drivers,31
+34,0.00023538809023193608,34,General Drivers,32
+22,0.00022491812524094712,22,General Drivers,33
+Column_3,0.000223340498592961,Column 3,General Drivers,34
+132,0.00022026634883332008,132,General Drivers,35
+92,0.00021566734358202666,92,General Drivers,36
+Column_1,0.0002085581436404027,Column 1,General Drivers,37
+Column_72,0.00020804635035650185,Column 72,General Drivers,38
+126,0.00019904282680727192,126,General Drivers,39
+58,0.00019809566583717242,58,General Drivers,40
+Column_6,0.00019349130404104167,Column 6,General Drivers,41
+Column_52,0.00019299611449241638,Column 52,General Drivers,42
+108,0.00018317859030503314,108,General Drivers,43
+122,0.00018151912900066236,122,General Drivers,44
+Column_8,0.000181134664065515,Column 8,General Drivers,45
+38,0.0001789272155292565,38,General Drivers,46
+Column_78,0.0001784332125680521,Column 78,General Drivers,47
+Column_76,0.0001749841273219014,Column 76,General Drivers,48
+Column_67,0.0001694168992495785,Column 67,General Drivers,49
+Column_26,0.0001648488687351346,Column 26,General Drivers,50
+91,0.00016432115967290883,91,General Drivers,51
+41,0.00016247781172751274,41,General Drivers,52
+129,0.00016244215228766734,129,General Drivers,53
+Column_79,0.00015633315463977246,Column 79,General Drivers,54
+Column_25,0.0001553179196586522,Column 25,General Drivers,55
+113,0.00015245987532352956,113,General Drivers,56
+Column_77,0.00014839687598093101,Column 77,General Drivers,57
+124,0.0001459270715713501,124,General Drivers,58
+118,0.00013749105937677086,118,General Drivers,59
+Column_73,0.00013312707797474843,Column 73,General Drivers,60
+Column_85,0.00013262147452527037,Column 85,General Drivers,61
+Column_20,0.00012920464844986176,Column 20,General Drivers,62
+33,0.00012109511226299219,33,General Drivers,63
+Column_23,0.00011465702376748747,Column 23,General Drivers,64
+Column_7,0.00010914654437025699,Column 7,General Drivers,65
+Column_4,0.000109032053539219,Column 4,General Drivers,66
+101,0.0001089239200382508,101,General Drivers,67
+Column_50,0.00010849363267576943,Column 50,General Drivers,68
+Column_60,0.00010158920000928144,Column 60,General Drivers,69
+83,9.955180212273262e-05,83,General Drivers,70
+61,9.586465603206307e-05,61,General Drivers,71
+82,9.118154957832303e-05,82,General Drivers,72
+112,8.823228756682511e-05,112,General Drivers,73
+Column_53,8.737248936085962e-05,Column 53,General Drivers,74
+Column_58,8.560747786153418e-05,Column 58,General Drivers,75
+Column_21,8.478963233452912e-05,Column 21,General Drivers,76
+Column_75,8.28776101116091e-05,Column 75,General Drivers,77
+Column_48,8.103570563851766e-05,Column 48,General Drivers,78
+90,7.948466281959554e-05,90,General Drivers,79
+19,7.904928861535154e-05,19,General Drivers,80
+144,7.734918290225323e-05,144,General Drivers,81
+130,7.708295925112907e-05,130,General Drivers,82
+10,7.53459021893832e-05,10,General Drivers,83
+Column_55,7.351476233452559e-05,Column 55,General Drivers,84
+Column_74,7.169798376101728e-05,Column 74,General Drivers,85
+Column_2,6.94991855804498e-05,Column 2,General Drivers,86
+45,6.692559736620751e-05,45,General Drivers,87
+9,6.324566675175447e-05,9,General Drivers,88
+Column_68,6.180389512640734e-05,Column 68,General Drivers,89
+74,6.161076271382626e-05,74,General Drivers,90
+116,5.82329795406622e-05,116,General Drivers,91
+Column_57,5.561868844476218e-05,Column 57,General Drivers,92
+Column_0,5.4554859768056e-05,Column 0,General Drivers,93
+Column_61,5.413588951341808e-05,Column 61,General Drivers,94
+89,5.303721707150544e-05,89,General Drivers,95
+143,5.2851315103907837e-05,143,General Drivers,96
+Column_19,4.968912738452976e-05,Column 19,General Drivers,97
+Column_59,4.88842392769584e-05,Column 59,General Drivers,98
+Column_22,4.860165427089669e-05,Column 22,General Drivers,99
+145,4.795972563442774e-05,145,General Drivers,100
+65,4.7956018079275964e-05,65,General Drivers,101
+43,4.599980411512661e-05,43,General Drivers,102
+Column_39,4.544941596880866e-05,Column 39,General Drivers,103
+156,4.359442493750976e-05,156,General Drivers,104
+131,4.2126730818381475e-05,131,General Drivers,105
+Column_9,4.20770926818174e-05,Column 9,General Drivers,106
+36,4.13574707636144e-05,36,General Drivers,107
+84,3.900401952705579e-05,84,General Drivers,108
+Column_54,3.794267726675571e-05,Column 54,General Drivers,109
+35,3.677774583366045e-05,35,General Drivers,110
+29,3.367538135989889e-05,29,General Drivers,111
+14,3.189745621057227e-05,14,General Drivers,112
+111,3.082587863900699e-05,111,General Drivers,113
+48,3.053926320717437e-05,48,General Drivers,114
+Column_32,2.732779588162278e-05,Column 32,General Drivers,115
+55,2.666502771830892e-05,55,General Drivers,116
+Column_69,2.5737380534944048e-05,Column 69,General Drivers,117
+23,2.457952177792322e-05,23,General Drivers,118
+Column_24,2.3881127011312248e-05,Column 24,General Drivers,119
+11,2.3347666228801245e-05,11,General Drivers,120
+Column_41,2.311249348470786e-05,Column 41,General Drivers,121
+30,2.2758927002541895e-05,30,General Drivers,122
+114,2.167854347590037e-05,114,General Drivers,123
+25,2.118173779308563e-05,25,General Drivers,124
+31,2.1088441854111295e-05,31,General Drivers,125
+73,2.0795179807464592e-05,73,General Drivers,126
+56,1.9895146124326857e-05,56,General Drivers,127
+88,1.9568182324292138e-05,88,General Drivers,128
+64,1.8544383578955603e-05,64,General Drivers,129
+Column_42,1.751217375082585e-05,Column 42,General Drivers,130
+Column_71,1.74066793382129e-05,Column 71,General Drivers,131
+78,1.7366646773098182e-05,78,General Drivers,132
+Column_83,1.7190234605853522e-05,Column 83,General Drivers,133
+28,1.5654974561130075e-05,28,General Drivers,134
+62,1.5609440595198976e-05,62,General Drivers,135
+Column_30,1.55244670168031e-05,Column 30,General Drivers,136
+44,1.3558092859966564e-05,44,General Drivers,137
+20,1.2192351221074205e-05,20,General Drivers,138
+37,1.1533877682268212e-05,37,General Drivers,139
+120,1.065302512870403e-05,120,General Drivers,140
+32,1.0273818588757422e-05,32,General Drivers,141
+77,9.878834418941551e-06,77,General Drivers,142
+51,9.396031261488247e-06,51,General Drivers,143
+52,8.844845183375583e-06,52,General Drivers,144
+17,8.5370922988659e-06,17,General Drivers,145
+0,8.467777433907031e-06,0,General Drivers,146
+67,7.387320010820986e-06,67,General Drivers,147
+123,6.924730001856005e-06,123,General Drivers,148
+Column_84,6.708371207272042e-06,Column 84,General Drivers,149
+148,6.590462930944341e-06,148,General Drivers,150
+69,6.217752797965659e-06,69,General Drivers,151
+152,6.0911677337571746e-06,152,General Drivers,152
+154,5.985807661090803e-06,154,General Drivers,153
+153,5.825098810419149e-06,153,General Drivers,154
+1,4.882840471509553e-06,1,General Drivers,155
+6,4.462346510081261e-06,6,General Drivers,156
+39,4.156924433118547e-06,39,General Drivers,157
+Column_47,4.009822381097668e-06,Column 47,General Drivers,158
+13,3.7968316064507235e-06,13,General Drivers,159
+3,3.2730995371821336e-06,3,General Drivers,160
+158,3.0986377623776207e-06,158,General Drivers,161
+81,3.0389301173272543e-06,81,General Drivers,162
+57,3.021904831257416e-06,57,General Drivers,163
+110,2.497317723282322e-06,110,General Drivers,164
+97,2.2652830509173327e-06,97,General Drivers,165
+27,2.245470795969595e-06,27,General Drivers,166
+80,2.0549746295728255e-06,80,General Drivers,167
+60,1.8345705257161171e-06,60,General Drivers,168
+8,1.7148626056950889e-06,8,General Drivers,169
+157,1.605609497801197e-06,157,General Drivers,170
+Column_31,1.5978871488186996e-06,Column 31,General Drivers,171
+26,1.578150772729714e-06,26,General Drivers,172
+70,1.5158112773860921e-06,70,General Drivers,173
+151,1.2609210813252503e-06,151,General Drivers,174
+Column_11,1.2241304337597587e-06,Column 11,General Drivers,175
+75,1.1014906249329215e-06,75,General Drivers,176
+63,1.059207420439634e-06,63,General Drivers,177
+79,1.006452293950133e-06,79,General Drivers,178
+Column_16,9.472541175152097e-07,Column 16,General Drivers,179
+12,9.060532306648383e-07,12,General Drivers,180
+21,8.761919616517844e-07,21,General Drivers,181
+Column_12,8.423360403260934e-07,Column 12,General Drivers,182
+Column_33,8.054964647878174e-07,Column 33,General Drivers,183
+Column_10,6.904707395468298e-07,Column 10,General Drivers,184
+115,6.826502651491317e-07,115,General Drivers,185
+109,4.461245168840833e-07,109,General Drivers,186
+53,4.3418643258519296e-07,53,General Drivers,187
+Column_43,3.858019302545775e-07,Column 43,General Drivers,188
+99,3.3132620558262715e-07,99,General Drivers,189
+133,3.242601849251514e-07,133,General Drivers,190
+150,2.877059728234599e-07,150,General Drivers,191
+93,2.640667275954911e-07,93,General Drivers,192
+2,1.8821023672899173e-07,2,General Drivers,193
+Column_86,1.8305111855928166e-07,Column 86,General Drivers,194
+155,1.6454108830998848e-07,155,General Drivers,195
+Column_34,1.270643015989966e-07,Column 34,General Drivers,196
+87,1.1657017040533901e-07,87,General Drivers,197
+Column_40,6.851036005173228e-08,Column 40,General Drivers,198
+102,6.358153115115783e-08,102,General Drivers,199
+134,6.270353480886115e-08,134,General Drivers,200
+95,5.5287743716547766e-08,95,General Drivers,201
+98,5.2758078794568064e-08,98,General Drivers,202
+4,4.184034452237029e-08,4,General Drivers,203
+Column_45,3.367226971325484e-08,Column 45,General Drivers,204
+135,0.0,135,General Drivers,205
+121,0.0,121,General Drivers,206
+138,0.0,138,General Drivers,207
+136,0.0,136,General Drivers,208
+100,0.0,100,General Drivers,209
+105,0.0,105,General Drivers,210
+142,0.0,142,General Drivers,211
+141,0.0,141,General Drivers,212
+140,0.0,140,General Drivers,213
+139,0.0,139,General Drivers,214
+137,0.0,137,General Drivers,215
+146,0.0,146,General Drivers,216
+147,0.0,147,General Drivers,217
+149,0.0,149,General Drivers,218
+5,0.0,5,General Drivers,219
+54,0.0,54,General Drivers,220
+40,0.0,40,General Drivers,221
+18,0.0,18,General Drivers,222
+159,0.0,159,General Drivers,223
+162,0.0,162,General Drivers,224
+161,0.0,161,General Drivers,225
+160,0.0,160,General Drivers,226
+Column_29,0.0,Column 29,General Drivers,227
+Column_28,0.0,Column 28,General Drivers,228
+71,0.0,71,General Drivers,229
+72,0.0,72,General Drivers,230
+66,0.0,66,General Drivers,231
+68,0.0,68,General Drivers,232
+86,0.0,86,General Drivers,233
+85,0.0,85,General Drivers,234
+76,0.0,76,General Drivers,235
+7,0.0,7,General Drivers,236
+Column_27,0.0,Column 27,General Drivers,237
+Column_17,0.0,Column 17,General Drivers,238
+Column_15,0.0,Column 15,General Drivers,239
+Column_18,0.0,Column 18,General Drivers,240
+Column_13,0.0,Column 13,General Drivers,241
+Column_14,0.0,Column 14,General Drivers,242
+96,0.0,96,General Drivers,243
+94,0.0,94,General Drivers,244
+Column_46,0.0,Column 46,General Drivers,245
+Column_44,0.0,Column 44,General Drivers,246
+Column_36,0.0,Column 36,General Drivers,247
+Column_35,0.0,Column 35,General Drivers,248
+Column_37,0.0,Column 37,General Drivers,249
+Column_38,0.0,Column 38,General Drivers,250

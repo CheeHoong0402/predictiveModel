@@ -1,0 +1,164 @@
+name,description,source_columns,calculation,data_type,feature_family,known_at_prediction_time,expected_missingness,target_model_applicability,leakage_risk
+inventory_opening,Opening inventory quantity on observation date T,opening_inventory,Direct observation known at start of day T,float64,inventory_state,True,low,both,none
+inventory_current,Current inventory stock quantity known on date T,current_inventory,Direct inventory snapshot,float64,inventory_state,True,low,both,none
+inventory_prior_closing,Closing inventory quantity of previous day T-1,closing_inventory,shift(1) of closing_inventory,float64,inventory_state,True,low,both,none
+inventory_incoming,Known incoming inventory quantity in transit,incoming_inventory,Direct observation known at T,float64,inventory_state,True,low,both,none
+inventory_backorder,Outstanding backorder quantity on date T,backorder_quantity,Direct observation known at T,float64,inventory_state,True,low,both,none
+stockout_flag_prior_day,Binary stockout flag on previous day T-1,stockout_flag,shift(1) of stockout_flag,float64,stockout_history,True,low,both,none
+stockout_count_7d,Number of stockout days in the prior 7 days,stockout_flag,rolling_sum(7) of stockout_flag shifted by 1,float64,stockout_history,True,low,both,none
+stockout_rate_7d,Stockout rate (proportion of days) in the prior 7 days,stockout_flag,stockout_count_7d / 7,float64,stockout_history,True,low,both,none
+stockout_count_28d,Number of stockout days in the prior 28 days,stockout_flag,rolling_sum(28) of stockout_flag shifted by 1,float64,stockout_history,True,low,both,none
+stockout_rate_28d,Stockout rate (proportion of days) in the prior 28 days,stockout_flag,stockout_count_28d / 28,float64,stockout_history,True,low,both,none
+stockout_count_56d,Number of stockout days in the prior 56 days,stockout_flag,rolling_sum(56) of stockout_flag shifted by 1,float64,stockout_history,True,low,both,none
+stockout_rate_56d,Stockout rate (proportion of days) in the prior 56 days,stockout_flag,stockout_count_56d / 56,float64,stockout_history,True,low,both,none
+days_since_last_stockout,Days elapsed since the previous recorded stockout event prior to T,stockout_flag,t - last_stockout_t shifted by 1 (default 999),float64,stockout_history,True,low,both,none
+days_since_last_replenishment,Days elapsed since the previous inventory delivery receipt prior to T,quantity_received,t - last_receipt_t shifted by 1 (default 999),float64,replenishment_history,True,low,both,none
+quantity_received_7d_sum,Total inventory units received in prior 7 days,quantity_received,rolling_sum(7) of quantity_received shifted by 1,float64,replenishment_history,True,low,both,none
+quantity_received_28d_sum,Total inventory units received in prior 28 days,quantity_received,rolling_sum(28) of quantity_received shifted by 1,float64,replenishment_history,True,low,both,none
+receipt_count_30d,Number of delivery receipts in the prior 30 days,quantity_received,rolling_sum(30) of (quantity_received > 0) shifted by 1,float64,replenishment_history,True,low,both,none
+purchase_price_lag_1,Purchase price 1 day(s) prior to observation date T,purchase_price,shift(1) of purchase_price,float64,purchase_price_history,True,low,both,none
+purchase_price_lag_3,Purchase price 3 day(s) prior to observation date T,purchase_price,shift(3) of purchase_price,float64,purchase_price_history,True,low,both,none
+purchase_price_lag_7,Purchase price 7 day(s) prior to observation date T,purchase_price,shift(7) of purchase_price,float64,purchase_price_history,True,low,both,none
+purchase_price_lag_14,Purchase price 14 day(s) prior to observation date T,purchase_price,shift(14) of purchase_price,float64,purchase_price_history,True,low,both,none
+purchase_price_lag_21,Purchase price 21 day(s) prior to observation date T,purchase_price,shift(21) of purchase_price,float64,purchase_price_history,True,low,both,none
+purchase_price_lag_30,Purchase price 30 day(s) prior to observation date T,purchase_price,shift(30) of purchase_price,float64,purchase_price_history,True,low,both,none
+purchase_price_lag_60,Purchase price 60 day(s) prior to observation date T,purchase_price,shift(60) of purchase_price,float64,purchase_price_history,True,low,both,none
+purchase_price_lag_90,Purchase price 90 day(s) prior to observation date T,purchase_price,shift(90) of purchase_price,float64,purchase_price_history,True,low,both,none
+purchase_price_mean_7d,Rolling 7-day mean of purchase price prior to T,purchase_price,rolling_mean(7) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_std_7d,Rolling 7-day standard deviation of purchase price,purchase_price,rolling_std(7) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_min_7d,Rolling 7-day minimum purchase price,purchase_price,rolling_min(7) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_max_7d,Rolling 7-day maximum purchase price,purchase_price,rolling_max(7) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_mean_14d,Rolling 14-day mean of purchase price prior to T,purchase_price,rolling_mean(14) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_std_14d,Rolling 14-day standard deviation of purchase price,purchase_price,rolling_std(14) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_min_14d,Rolling 14-day minimum purchase price,purchase_price,rolling_min(14) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_max_14d,Rolling 14-day maximum purchase price,purchase_price,rolling_max(14) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_mean_30d,Rolling 30-day mean of purchase price prior to T,purchase_price,rolling_mean(30) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_std_30d,Rolling 30-day standard deviation of purchase price,purchase_price,rolling_std(30) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_min_30d,Rolling 30-day minimum purchase price,purchase_price,rolling_min(30) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_max_30d,Rolling 30-day maximum purchase price,purchase_price,rolling_max(30) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_mean_60d,Rolling 60-day mean of purchase price prior to T,purchase_price,rolling_mean(60) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_std_60d,Rolling 60-day standard deviation of purchase price,purchase_price,rolling_std(60) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_min_60d,Rolling 60-day minimum purchase price,purchase_price,rolling_min(60) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_max_60d,Rolling 60-day maximum purchase price,purchase_price,rolling_max(60) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_mean_90d,Rolling 90-day mean of purchase price prior to T,purchase_price,rolling_mean(90) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_std_90d,Rolling 90-day standard deviation of purchase price,purchase_price,rolling_std(90) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_min_90d,Rolling 90-day minimum purchase price,purchase_price,rolling_min(90) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_max_90d,Rolling 90-day maximum purchase price,purchase_price,rolling_max(90) on purchase_price shifted by 1,float64,purchase_price_rolling,True,low,both,none
+purchase_price_volatility_30d,Rolling 30-day volatility (std/mean) of purchase price,purchase_price,purchase_price_std_30d / (purchase_price_mean_30d + 1e-6),float64,purchase_price_rolling,True,low,both,none
+purchase_price_pct_change_1d,1-day percentage change in purchase price,purchase_price,(purchase_price - lag_1) / (lag_1 + 1e-6),float64,price_momentum,True,low,both,none
+purchase_price_pct_change_7d,7-day percentage change in purchase price,purchase_price,(purchase_price - lag_7) / (lag_7 + 1e-6),float64,price_momentum,True,low,both,none
+purchase_price_pct_change_30d,30-day percentage change in purchase price,purchase_price,(purchase_price - lag_30) / (lag_30 + 1e-6),float64,price_momentum,True,low,both,none
+purchase_price_vs_mean_30d,Current purchase price relative to 30-day historical mean,purchase_price,purchase_price / (purchase_price_mean_30d + 1e-6),float64,price_momentum,True,low,both,none
+purchase_price_vs_mean_90d,Current purchase price relative to 90-day historical mean,purchase_price,purchase_price / (purchase_price_mean_90d + 1e-6),float64,price_momentum,True,low,both,none
+purchase_price_acceleration,Change in 7-day purchase price momentum over prior 7 days,purchase_price,pct_change_7d - shift(7) of pct_change_7d,float64,price_momentum,True,low,both,none
+supplier_lead_time_expected,Contracted/expected supplier lead time in calendar days,expected_lead_time_days,Direct static/contractual lead time attribute,float64,procurement_supplier,True,low,both,none
+supplier_lead_time_actual,Actual lead time in calendar days for latest order,actual_lead_time_days,Recorded actual order lead time,float64,procurement_supplier,True,low,both,none
+supplier_lead_time_gap,Discrepancy between actual and contracted lead time (days),"actual_lead_time_days, expected_lead_time_days",actual_lead_time_days - expected_lead_time_days,float64,procurement_supplier,True,low,both,none
+supplier_moq,Minimum Order Quantity (MOQ) enforced by supplier,minimum_order_quantity,Direct contractual attribute,float64,procurement_supplier,True,low,both,none
+supplier_pack_size_units,Supplier standard case/pack size in base units,supplier_pack_size,Direct contractual attribute,float64,procurement_supplier,True,low,both,none
+supplier_lead_time_mean_30d,30-day rolling mean of historical lead time prior to T,actual_lead_time_days,rolling_mean(30) on actual lead time shifted by 1,float64,procurement_supplier,True,low,price,none
+supplier_lead_time_std_30d,30-day rolling standard deviation of lead time prior to T,actual_lead_time_days,rolling_std(30) on actual lead time shifted by 1,float64,procurement_supplier,True,low,price,none
+supplier_lead_time_mean_90d,90-day rolling mean of historical lead time prior to T,actual_lead_time_days,rolling_mean(90) on actual lead time shifted by 1,float64,procurement_supplier,True,low,price,none
+supplier_on_time_rate_30d,Proportion of orders delivered on-time in the prior 30 days,"actual_lead_time_days, expected_lead_time_days",rolling_mean(30) on (actual <= expected) shifted by 1,float64,procurement_supplier,True,low,price,none
+supplier_on_time_rate_90d,Proportion of orders delivered on-time in the prior 90 days,"actual_lead_time_days, expected_lead_time_days",rolling_mean(90) on (actual <= expected) shifted by 1,float64,procurement_supplier,True,low,price,none
+cal_day_of_week,"Day of week (1=Monday, ..., 7=Sunday)",date,date.weekday(),float64,calendar,True,none,both,none
+cal_day_of_month,Day of calendar month (1 to 31),date,date.day(),float64,calendar,True,none,both,none
+cal_week_of_year,ISO week number of year (1 to 53),date,date.week(),float64,calendar,True,none,both,none
+cal_month,Calendar month (1 to 12),date,date.month(),float64,calendar,True,none,both,none
+cal_quarter,Calendar quarter (1 to 4),date,date.quarter(),float64,calendar,True,none,both,none
+cal_year,Calendar year,date,date.year(),float64,calendar,True,none,both,none
+cal_is_weekend,Binary weekend indicator (1 for Saturday or Sunday),date,cal_day_of_week >= 6,float64,calendar,True,none,both,none
+cal_is_month_start,Binary flag for beginning of month (days 1-3),date,cal_day_of_month <= 3,float64,calendar,True,none,both,none
+cal_is_month_end,Binary flag for conclusion of month (days 28-31),date,cal_day_of_month >= 28,float64,calendar,True,none,both,none
+cal_sin_day_of_week,Sine transformation of day of week (cyclical weekly periodicity),date,sin(2 * pi * cal_day_of_week / 7),float64,calendar,True,none,both,none
+cal_cos_day_of_week,Cosine transformation of day of week (cyclical weekly periodicity),date,cos(2 * pi * cal_day_of_week / 7),float64,calendar,True,none,both,none
+cal_sin_month,Sine transformation of calendar month (cyclical annual seasonality),date,sin(2 * pi * cal_month / 12),float64,calendar,True,none,both,none
+cal_cos_month,Cosine transformation of calendar month (cyclical annual seasonality),date,cos(2 * pi * cal_month / 12),float64,calendar,True,none,both,none
+major_festival_window_active,Deterministic event feature: major_festival_window_active,"date, public_holidays, government_assistance",Calendar astronomical/gazetted date distance lookup,float64,festival_proximity,True,none,both,none
+is_govt_salary_day,Deterministic event feature: is_govt_salary_day,"date, public_holidays, government_assistance",Calendar astronomical/gazetted date distance lookup,float64,salary_cycle,True,none,both,none
+days_until_salary_day,Deterministic event feature: days_until_salary_day,"date, public_holidays, government_assistance",Calendar astronomical/gazetted date distance lookup,float64,salary_cycle,True,none,both,none
+days_since_salary_day,Deterministic event feature: days_since_salary_day,"date, public_holidays, government_assistance",Calendar astronomical/gazetted date distance lookup,float64,salary_cycle,True,none,both,none
+is_post_salary_3d,Deterministic event feature: is_post_salary_3d,"date, public_holidays, government_assistance",Calendar astronomical/gazetted date distance lookup,float64,salary_cycle,True,none,both,none
+is_post_salary_7d,Deterministic event feature: is_post_salary_7d,"date, public_holidays, government_assistance",Calendar astronomical/gazetted date distance lookup,float64,salary_cycle,True,none,both,none
+is_month_end_salary_window,Deterministic event feature: is_month_end_salary_window,"date, public_holidays, government_assistance",Calendar astronomical/gazetted date distance lookup,float64,salary_cycle,True,none,both,none
+weather_temp_max,Daily maximum ambient temperature in Celsius,maximum_temperature,Direct meteorological station measurement,float64,weather,True,low,both,none
+weather_temp_min,Daily minimum ambient temperature in Celsius,minimum_temperature,Direct meteorological station measurement,float64,weather,True,low,both,none
+weather_temp_avg,Daily mean ambient temperature in Celsius,average_temperature,Direct meteorological station measurement,float64,weather,True,low,both,none
+weather_rainfall_mm,Daily total precipitation rainfall in millimetres,rainfall,Direct meteorological station measurement,float64,weather,True,low,both,none
+weather_humidity_pct,Daily relative humidity percentage,humidity,Direct meteorological station measurement,float64,weather,True,low,both,none
+weather_precip_hours,Hours of recorded precipitation duration,precipitation_duration,Direct meteorological station measurement,float64,weather,True,low,both,none
+weather_rainfall_sum_3d,Total cumulative rainfall in the prior 3 days (T-3 to T-1),rainfall,rolling_sum(3) on rainfall shifted by 1,float64,weather_rolling,True,low,both,none
+weather_rainfall_sum_7d,Total cumulative rainfall in the prior 7 days (T-7 to T-1),rainfall,rolling_sum(7) on rainfall shifted by 1,float64,weather_rolling,True,low,both,none
+weather_rainfall_sum_14d,Total cumulative rainfall in the prior 14 days (T-14 to T-1),rainfall,rolling_sum(14) on rainfall shifted by 1,float64,weather_rolling,True,low,both,none
+weather_temp_mean_7d,7-day rolling mean ambient temperature prior to T,average_temperature,rolling_mean(7) on average_temperature shifted by 1,float64,weather_rolling,True,low,both,none
+weather_temp_max_7d,7-day rolling peak maximum temperature prior to T,maximum_temperature,rolling_max(7) on maximum_temperature shifted by 1,float64,weather_rolling,True,low,both,none
+weather_consecutive_rain_days,Number of consecutive rainy days (>1.0mm) ending on day T-1,rainfall,Consecutive days rainfall > 1.0mm shifted by 1,float64,weather_spells,True,low,both,none
+weather_consecutive_hot_days,Number of consecutive hot days (>33.0C) ending on day T-1,maximum_temperature,Consecutive days max temp > 33.0C shifted by 1,float64,weather_spells,True,low,both,none
+market_price_median,Aggregated market median price across premise competitors from PriceCatcher,market_median_price,Market benchmark median,float64,market_price,True,low,both,none
+market_price_mean,Aggregated market mean price across premise competitors from PriceCatcher,market_mean_price,Market benchmark mean,float64,market_price,True,low,both,none
+market_price_min,Minimum competitor price observed in PriceCatcher market survey,market_minimum_price,Market benchmark min,float64,market_price,True,low,both,none
+market_price_max,Maximum competitor price observed in PriceCatcher market survey,market_maximum_price,Market benchmark max,float64,market_price,True,low,both,none
+market_price_observation_count,Total survey observation count in PriceCatcher on observation date,market_observation_count,Survey observation sample size,float64,market_price,True,low,both,none
+market_median_change_7d,7-day percentage change in market median price prior to T,market_median_price,(m_med_t1 - shift(7)) / shift(7),float64,market_price,True,low,both,none
+market_median_change_30d,30-day percentage change in market median price prior to T,market_median_price,(m_med_t1 - shift(30)) / shift(30),float64,market_price,True,low,both,none
+market_median_volatility_30d,30-day rolling volatility (std/mean) of market median price prior to T,market_median_price,rolling_std(30) / (rolling_mean(30) + 1e-6),float64,market_price,True,low,both,none
+fuel_petrol_subsidised,Official gazetted subsidised petrol price (RON95) in MYR/litre,subsidised_petrol_price,Official weekly gazetted price,float64,macro_fuel,True,low,both,none
+fuel_petrol_unsubsidised,Market unsubsidised petrol price (RON97) in MYR/litre,unsubsidised_petrol_price,Official weekly gazetted price,float64,macro_fuel,True,low,both,none
+fuel_diesel_subsidised,Official subsidised diesel price in MYR/litre (0.0 after rationalisation float),subsidised_diesel_price,Official weekly gazetted price,float64,macro_fuel,True,low,both,none
+fuel_diesel_unsubsidised,Market retail diesel price (Euro 5 B10/B7) in MYR/litre,unsubsidised_diesel_price,Official weekly gazetted price,float64,macro_fuel,True,low,both,none
+fuel_diesel_effective,Effective retail diesel price paid at pump in MYR/litre,"subsidised_diesel_price, unsubsidised_diesel_price",subsidised if > 0 else unsubsidised,float64,macro_fuel,True,low,price,none
+fuel_petrol_effective,Effective retail petrol price paid at pump in MYR/litre,"subsidised_petrol_price, unsubsidised_petrol_price",subsidised if > 0 else unsubsidised,float64,macro_fuel,True,low,price,none
+fuel_petrol_pct_change_7d,7-day percentage change in effective petrol price,subsidised_petrol_price,(petrol - lag_7) / lag_7 * 100,float64,macro_fuel,True,low,both,none
+fuel_petrol_pct_change_28d,28-day percentage change in effective petrol price,subsidised_petrol_price,(petrol - lag_28) / lag_28 * 100,float64,macro_fuel,True,low,both,none
+fuel_diesel_pct_change_7d,7-day percentage change in effective diesel price,unsubsidised_diesel_price,(diesel - lag_7) / lag_7 * 100,float64,macro_fuel,True,low,price,none
+fuel_diesel_pct_change_28d,28-day percentage change in effective diesel price,unsubsidised_diesel_price,(diesel - lag_28) / lag_28 * 100,float64,macro_fuel,True,low,price,none
+fx_rate,Relevant bilateral foreign exchange rate per MYR,relevant_exchange_rate,BNM official reference exchange rate,float64,macro_currency,True,low,price,none
+fx_change_1d,1-day change in relevant exchange rate,relevant_exchange_rate,fx_rate - lag_1,float64,macro_currency,True,low,price,none
+fx_pct_change_7d,7-day percentage change in relevant exchange rate,relevant_exchange_rate,(fx_rate - lag_7) / lag_7 * 100,float64,macro_currency,True,low,price,none
+fx_pct_change_30d,30-day percentage change in relevant exchange rate,relevant_exchange_rate,(fx_rate - lag_30) / lag_30 * 100,float64,macro_currency,True,low,price,none
+fx_mean_30d,30-day rolling mean exchange rate prior to T,relevant_exchange_rate,rolling_mean(30) on fx_rate shifted by 1,float64,macro_currency,True,low,price,none
+fx_volatility_30d,30-day rolling volatility (std/mean) of exchange rate prior to T,relevant_exchange_rate,rolling_std(30) / (rolling_mean(30) + 1e-6),float64,macro_currency,True,low,price,none
+fx_vs_mean_30d,Current exchange rate relative to 30-day historical mean,relevant_exchange_rate,fx_rate / (fx_mean_30d + 1e-6),float64,macro_currency,True,low,price,none
+commodity_price,Relevant global commodity market price mapped to product category,relevant_commodity_price,Mapped benchmark commodity spot price,float64,macro_commodity,True,low,price,none
+commodity_mean_7d,7-day rolling mean of mapped commodity price prior to T,relevant_commodity_price,rolling_mean(7) on commodity_price shifted by 1,float64,macro_commodity,True,low,price,none
+commodity_mean_30d,30-day rolling mean of mapped commodity price prior to T,relevant_commodity_price,rolling_mean(30) on commodity_price shifted by 1,float64,macro_commodity,True,low,price,none
+commodity_pct_change_7d,7-day percentage change in mapped commodity price,relevant_commodity_price,(commodity - lag_7) / lag_7 * 100,float64,macro_commodity,True,low,price,none
+commodity_pct_change_30d,30-day percentage change in mapped commodity price,relevant_commodity_price,(commodity - lag_30) / lag_30 * 100,float64,macro_commodity,True,low,price,none
+commodity_volatility_30d,30-day rolling volatility (std/mean) of mapped commodity price prior to T,relevant_commodity_price,rolling_std(30) / (rolling_mean(30) + 1e-6),float64,macro_commodity,True,low,price,none
+commodity_vs_mean_30d,Current mapped commodity price relative to 30-day historical mean,relevant_commodity_price,commodity_price / (commodity_mean_30d + 1e-6),float64,macro_commodity,True,low,price,none
+cpi_headline,Headline Malaysia Consumer Price Index (base 2010=100),Consumer_Price_Index,Official DOSM published monthly CPI (lagged to publication release),float64,macro_inflation,True,low,both,none
+ppi_headline,Overall Malaysia Producer Price Index for Local Production (base 2010=100),Producer_Price_Index,Official DOSM published monthly PPI,float64,macro_inflation,True,low,price,none
+ppi_industry,Industry-specific Producer Price Index (Agriculture/Manufacturing),relevant_industry_Producer_Price_Index,Official DOSM published monthly industry PPI,float64,macro_inflation,True,low,price,none
+cpi_pct_change_30d,30-day percentage change in headline Consumer Price Index,Consumer_Price_Index,(cpi - shift(30)) / shift(30) * 100,float64,macro_inflation,True,low,both,none
+cpi_pct_change_365d,Annual (year-over-year) percentage inflation in headline CPI,Consumer_Price_Index,(cpi - shift(365)) / shift(365) * 100,float64,macro_inflation,True,low,both,none
+ppi_pct_change_30d,30-day percentage change in headline Producer Price Index,Producer_Price_Index,(ppi - shift(30)) / shift(30) * 100,float64,macro_inflation,True,low,price,none
+ppi_pct_change_365d,Annual (year-over-year) percentage change in headline PPI,Producer_Price_Index,(ppi - shift(365)) / shift(365) * 100,float64,macro_inflation,True,low,price,none
+subsidy_announced_flag_indicator,Binary flag if a government subsidy policy was publicly announced on date T,subsidy_announced_flag,Direct gazette announcement event,float64,policy_subsidy,True,low,both,none
+subsidy_active_flag_indicator,Binary flag if a government subsidy regime is actively in force on date T,subsidy_active_flag,Active operational regime indicator,float64,policy_subsidy,True,low,both,none
+policy_announced_flag_indicator,Binary flag if a national budget or fiscal policy was announced on date T,policy_announced_flag,Direct national policy announcement event,float64,policy_subsidy,True,low,both,none
+policy_active_flag_indicator,Binary flag if a national budget policy regime is currently active on date T,policy_active_flag,Active national policy regime indicator,float64,policy_subsidy,True,low,both,none
+is_chicken_subsidy_active,Binary indicator if chicken and egg price ceiling / breeder subsidy is active,"subsidy_type, subsidy_active_flag",subsidy_type contains 'Chicken' and active==1,float64,policy_subsidy,True,low,both,none
+is_diesel_rationalisation_active,Binary indicator if targeted diesel subsidy rationalisation (retail float) is active,"subsidy_type, subsidy_active_flag",subsidy_type contains 'Diesel' and active==1,float64,policy_subsidy,True,low,price,none
+is_electricity_discount_active,Binary indicator if TNB commercial electricity discount package is in effect,"policy_type, policy_active_flag",policy_type contains 'Electricity' and active==1,float64,policy_subsidy,True,low,both,none
+is_minimum_wage_rm1500_active,"Binary indicator for national minimum wage regime RM1,500/month (effective 1 May 2022)","date, policy_type",date >= '2022-05-01',float64,policy_subsidy,True,low,both,none
+is_service_tax_8pct_active,Binary indicator for Service Tax rate increase from 6% to 8% (effective 1 March 2024),"date, policy_type",date >= '2024-03-01',float64,policy_subsidy,True,low,both,none
+days_since_subsidy_announced,Days elapsed since the latest government subsidy announcement,subsidy_announced_flag,t - last_announcement_t (default 999),float64,policy_subsidy,True,low,both,none
+days_since_policy_announced,Days elapsed since the latest national fiscal policy announcement,policy_announced_flag,t - last_announcement_t (default 999),float64,policy_subsidy,True,low,both,none
+product_shelf_life_days,Nominal product shelf life duration in calendar days,shelf_life_days,Product master attribute,float64,static_product,True,none,both,none
+product_imported_flag,Binary flag if product is imported (1) versus locally produced (0),imported_flag,Product master attribute,float64,static_product,True,none,both,none
+product_is_perishable,Binary flag if product has limited shelf life <= 14 days,shelf_life_days,shelf_life_days <= 14,float64,static_product,True,none,both,none
+product_is_highly_perishable,Binary flag if product is highly perishable <= 5 days (poultry/leafy vegetables),shelf_life_days,shelf_life_days <= 5,float64,static_product,True,none,both,none
+product_is_controlled_goods,Binary indicator if item is gazetted as price-controlled essential food in Malaysia,product_id,"product_id in ['PRD_CHK_01', 'PRD_EGG_02', 'PRD_OIL_05']",float64,static_product,True,none,both,none
+store_storage_capacity_units,Total designated physical warehouse/storage capacity of store premise,storage_capacity,Store master static attribute,float64,static_store,True,none,both,none
+store_geo_latitude,Geographical latitude coordinate of store premise,latitude,Store master geographical coordinate,float64,static_store,True,none,both,none
+store_geo_longitude,Geographical longitude coordinate of store premise,longitude,Store master geographical coordinate,float64,static_store,True,none,both,none
+store_relative_capacity_ratio,Ratio of store capacity relative to enterprise average store capacity,storage_capacity,storage_capacity / mean(storage_capacity),float64,static_store,True,none,both,none
+interaction_rainfall_x_vegetables,Recent 7-day cumulative rainfall interaction with perishable fresh vegetables,"weather_rainfall_sum_7d, category",rainfall_sum_7d * is_vegetable_category,float64,interactions,True,low,both,none
+interaction_temp_x_poultry,7-day mean ambient temperature interaction with fresh poultry category,"weather_temp_mean_7d, category",temp_mean_7d * is_poultry_category,float64,interactions,True,low,both,none
+interaction_diesel_change_x_lead_time,Diesel fuel price percentage shock scaled by supplier logistical lead time,"fuel_diesel_pct_change_7d, supplier_lead_time_expected",diesel_pct_change_7d * supplier_lead_time_expected,float64,interactions,True,low,price,none
+interaction_fx_change_x_imported,Bilateral exchange rate percentage change impacting imported SKUs,"fx_pct_change_7d, product_imported_flag",fx_pct_change_7d * product_imported_flag,float64,interactions,True,low,price,none
+interaction_commodity_change_x_product,Global benchmark commodity percentage change for mapped ingredient products,"commodity_pct_change_7d, commodity_price",commodity_pct_change_7d * (commodity_price > 0),float64,interactions,True,low,price,none
+missing_market_price,Binary indicator if PriceCatcher market survey data is unavailable for this date,market_observation_count,market_observation_count == 0,float64,missingness_indicator,True,none,both,none
+missing_weather,Binary indicator if local weather station report was missing,weather_available,weather_available == 0,float64,missingness_indicator,True,none,both,none
+missing_commodity_price,Binary indicator if ingredient commodity price was unmapped or missing,commodity_price_available,commodity_price_available == 0,float64,missingness_indicator,True,none,price,none
+missing_exchange_rate,Binary indicator if bilateral foreign exchange rate was missing,exchange_rate_available,exchange_rate_available == 0,float64,missingness_indicator,True,none,price,none

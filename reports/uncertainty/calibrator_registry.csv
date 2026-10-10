@@ -1,0 +1,13 @@
+task,horizon,calibration_method,calibration_window,sample_count,raw_coverage,calibrated_coverage,mean_interval_width,interval_score,selected_status,artefact_path
+demand,1,conformal_quantile_regression,expanding_historical,792,0.75,0.7904,38.7237,80.2684,WELL_CALIBRATED,models/calibration/demand/calibrator_h1.joblib
+demand,3,conformal_quantile_regression,expanding_historical,792,0.6692,0.7828,87.0009,151.7299,WELL_CALIBRATED,models/calibration/demand/calibrator_h3.joblib
+demand,7,conformal_quantile_regression,expanding_historical,792,0.7146,0.7765,148.7838,225.5893,WELL_CALIBRATED,models/calibration/demand/calibrator_h7.joblib
+demand,14,conformal_quantile_regression,expanding_historical,792,0.7298,0.8005,209.2145,301.5386,WELL_CALIBRATED,models/calibration/demand/calibrator_h14.joblib
+demand,21,conformal_quantile_regression,expanding_historical,792,0.7247,0.827,279.2897,370.0497,WELL_CALIBRATED,models/calibration/demand/calibrator_h21.joblib
+demand,30,conformal_quantile_regression,expanding_historical,792,0.697,0.822,331.3458,455.8054,WELL_CALIBRATED,models/calibration/demand/calibrator_h30.joblib
+price,1,asymmetric_residual_conformal,expanding_historical,792,0.9899,0.8018,0.7016,1.2006,WELL_CALIBRATED,models/calibration/price/calibrator_h1.joblib
+price,3,asymmetric_residual_conformal,expanding_historical,792,0.9836,0.779,0.6326,1.2282,WELL_CALIBRATED,models/calibration/price/calibrator_h3.joblib
+price,7,asymmetric_residual_conformal,expanding_historical,792,0.9811,0.8056,0.6888,1.2497,WELL_CALIBRATED,models/calibration/price/calibrator_h7.joblib
+price,14,asymmetric_residual_conformal,expanding_historical,792,0.9836,0.7904,0.6793,1.2032,WELL_CALIBRATED,models/calibration/price/calibrator_h14.joblib
+price,21,asymmetric_residual_conformal,expanding_historical,792,0.9886,0.8157,0.7296,1.2159,WELL_CALIBRATED,models/calibration/price/calibrator_h21.joblib
+price,30,asymmetric_residual_conformal,expanding_historical,792,0.9861,0.8144,0.723,1.2103,WELL_CALIBRATED,models/calibration/price/calibrator_h30.joblib

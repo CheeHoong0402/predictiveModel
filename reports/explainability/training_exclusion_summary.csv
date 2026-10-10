@@ -1,0 +1,5 @@
+exclusion_category,description,affected_horizons,max_rows_excluded,leakage_prevention_rationale
+Target Horizon Boundary Window,Rows at the end of development data where t + h > 2024-09-30 (would look into holdout),"3d (48 rows), 7d (144 rows), 14d (312 rows), 21d (480 rows), 30d (696 rows)",696,Prevents targets from peeking into unseen future holdout dates
+Final Holdout Reservation,"Entire Q4 2024 test period (2024-10-01 to 2024-12-31, 92 days x 24 series)","All horizons (1d, 3d, 7d, 14d, 21d, 30d)",2208,Strictly reserved for final blind competition evaluation; zero rows used in training
+Warm-up Feature Lookback (365d),Initial 365-day period in 2021 where annual rolling features backfill from zero/expanding state,All horizons,0,Handled with expanding window aggregations and missingness indicator flags without row drop
+Lead-target Invalidation,Rows flagged with target_valid == False in forecast targets dataset,Target boundary edge rows,696,"Ensures models are only trained on complete, verified future actuals"

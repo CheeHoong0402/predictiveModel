@@ -1,0 +1,7 @@
+model,name,feature_identity,target_identity,resolution
+demand,purchase_price_pct_change_1d,model_features.purchase_price_pct_change_1d,forecast_targets.purchase_price_pct_change_1d,Keep separate tables; use x__ / y__ aliases in safe assembly
+demand,purchase_price_pct_change_30d,model_features.purchase_price_pct_change_30d,forecast_targets.purchase_price_pct_change_30d,Keep separate tables; use x__ / y__ aliases in safe assembly
+demand,purchase_price_pct_change_7d,model_features.purchase_price_pct_change_7d,forecast_targets.purchase_price_pct_change_7d,Keep separate tables; use x__ / y__ aliases in safe assembly
+price,purchase_price_pct_change_1d,model_features.purchase_price_pct_change_1d,forecast_targets.purchase_price_pct_change_1d,Keep separate tables; use x__ / y__ aliases in safe assembly
+price,purchase_price_pct_change_30d,model_features.purchase_price_pct_change_30d,forecast_targets.purchase_price_pct_change_30d,Keep separate tables; use x__ / y__ aliases in safe assembly
+price,purchase_price_pct_change_7d,model_features.purchase_price_pct_change_7d,forecast_targets.purchase_price_pct_change_7d,Keep separate tables; use x__ / y__ aliases in safe assembly

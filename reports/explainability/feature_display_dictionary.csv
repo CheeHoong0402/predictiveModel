@@ -1,0 +1,311 @@
+raw_feature_name,display_name,description,feature_family,unit,source,task_applicability
+demand_lag_7,Demand 7 days ago,Demand 7 days ago,Historical Demand,units,Point-of-Sale History,DEMAND_AND_PRICE
+rolling_mean_demand_28,Average demand over the previous 28 days,Average demand over the previous 28 days,Historical Demand,units,Demand History,DEMAND_AND_PRICE
+myr_usd_change_30d,30-day Malaysian ringgit / United States dollar movement,30-day Malaysian ringgit / United States dollar movement,Currency Exchange Rates,%,Central Bank (BNM),DEMAND_AND_PRICE
+demand_lag_1,Demand 1 days ago,Estimated true demand 1 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_2,Demand 2 days ago,Estimated true demand 2 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_3,Demand 3 days ago,Estimated true demand 3 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_14,Demand 14 days ago,Estimated true demand 14 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_21,Demand 21 days ago,Estimated true demand 21 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_28,Demand 28 days ago,Estimated true demand 28 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_35,Demand 35 days ago,Estimated true demand 35 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_56,Demand 56 days ago,Estimated true demand 56 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_84,Demand 84 days ago,Estimated true demand 84 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_168,Demand 168 days ago,Estimated true demand 168 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_lag_364,Demand 364 days ago,Estimated true demand 364 day(s) prior to observation date T,Historical Demand,units,Point-of-Sale History,DEMAND
+demand_mean_3d,Demand Mean 3D,Rolling 3-day mean of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_median_3d,Demand Median 3D,Rolling 3-day median of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_std_3d,Demand Std 3D,Rolling 3-day standard deviation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_min_3d,Demand Min 3D,Rolling 3-day minimum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_max_3d,Demand Max 3D,Rolling 3-day maximum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_sum_3d,Demand Sum 3D,Rolling 3-day sum of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_cv_3d,Demand Cv 3D,Rolling 3-day coefficient of variation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_mean_7d,Demand Mean 7D,Rolling 7-day mean of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_median_7d,Demand Median 7D,Rolling 7-day median of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_std_7d,Demand Std 7D,Rolling 7-day standard deviation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_min_7d,Demand Min 7D,Rolling 7-day minimum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_max_7d,Demand Max 7D,Rolling 7-day maximum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_sum_7d,Demand Sum 7D,Rolling 7-day sum of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_cv_7d,Demand Cv 7D,Rolling 7-day coefficient of variation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_mean_14d,Demand Mean 14D,Rolling 14-day mean of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_median_14d,Demand Median 14D,Rolling 14-day median of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_std_14d,Demand Std 14D,Rolling 14-day standard deviation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_min_14d,Demand Min 14D,Rolling 14-day minimum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_max_14d,Demand Max 14D,Rolling 14-day maximum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_sum_14d,Demand Sum 14D,Rolling 14-day sum of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_cv_14d,Demand Cv 14D,Rolling 14-day coefficient of variation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_mean_28d,Demand Mean 28D,Rolling 28-day mean of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_median_28d,Demand Median 28D,Rolling 28-day median of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_std_28d,Demand Std 28D,Rolling 28-day standard deviation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_min_28d,Demand Min 28D,Rolling 28-day minimum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_max_28d,Demand Max 28D,Rolling 28-day maximum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_sum_28d,Demand Sum 28D,Rolling 28-day sum of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_cv_28d,Demand Cv 28D,Rolling 28-day coefficient of variation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_mean_56d,Demand Mean 56D,Rolling 56-day mean of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_median_56d,Demand Median 56D,Rolling 56-day median of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_std_56d,Demand Std 56D,Rolling 56-day standard deviation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_min_56d,Demand Min 56D,Rolling 56-day minimum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_max_56d,Demand Max 56D,Rolling 56-day maximum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_sum_56d,Demand Sum 56D,Rolling 56-day sum of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_cv_56d,Demand Cv 56D,Rolling 56-day coefficient of variation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_mean_84d,Demand Mean 84D,Rolling 84-day mean of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_median_84d,Demand Median 84D,Rolling 84-day median of historical demand (prior to T),Historical Demand,scalar,Feature Engineering,DEMAND
+demand_std_84d,Demand Std 84D,Rolling 84-day standard deviation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_min_84d,Demand Min 84D,Rolling 84-day minimum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_max_84d,Demand Max 84D,Rolling 84-day maximum historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_sum_84d,Demand Sum 84D,Rolling 84-day sum of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_cv_84d,Demand Cv 84D,Rolling 84-day coefficient of variation of historical demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_ratio_7d_28d,Demand Ratio 7D 28D,Ratio of short-term 7-day demand to medium-term 28-day demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_ratio_14d_56d,Demand Ratio 14D 56D,Ratio of 14-day demand to 56-day demand,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_growth_7d,Demand Growth 7D,7-day demand growth relative to lag 7,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_growth_28d,Demand Growth 28D,28-day demand growth relative to lag 28,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_trend_28d,Demand Trend 28D,Normalized trend indicator comparing 7d mean with 28d mean,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_vs_median_28d,Demand Vs Median 28D,Most recent observed demand relative to 28-day historical median,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_dow_median_4w,Demand Dow Median 4W,Median demand for the same weekday over the prior 4 weeks,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_dow_median_8w,Demand Dow Median 8W,Median demand for the same weekday over the prior 8 weeks,Historical Demand,scalar,Feature Engineering,DEMAND
+demand_lag_365,Demand 365 days ago,Estimated true demand exactly 365 days prior (calendar year lag),Historical Demand,units,Point-of-Sale History,DEMAND
+demand_prior_year_week_mean,Demand Prior Year Week Mean,7-day mean demand centered around 52 weeks prior,Historical Demand,scalar,Feature Engineering,DEMAND
+sales_lag_1,Sales 1 days ago,Observed sales units 1 day(s) prior to date T,Observed Sales,units,Point-of-Sale History,DEMAND
+sales_lag_2,Sales 2 days ago,Observed sales units 2 day(s) prior to date T,Observed Sales,units,Point-of-Sale History,DEMAND
+sales_lag_3,Sales 3 days ago,Observed sales units 3 day(s) prior to date T,Observed Sales,units,Point-of-Sale History,DEMAND
+sales_lag_7,Sales 7 days ago,Observed sales units 7 day(s) prior to date T,Observed Sales,units,Point-of-Sale History,DEMAND
+sales_lag_14,Sales 14 days ago,Observed sales units 14 day(s) prior to date T,Observed Sales,units,Point-of-Sale History,DEMAND
+sales_lag_28,Sales 28 days ago,Observed sales units 28 day(s) prior to date T,Observed Sales,units,Point-of-Sale History,DEMAND
+sales_lag_364,Sales 364 days ago,Observed sales units 364 day(s) prior to date T,Observed Sales,units,Point-of-Sale History,DEMAND
+sales_mean_7d,Sales Mean 7D,Rolling 7-day mean of observed sales units prior to T,Observed Sales,scalar,Feature Engineering,DEMAND
+sales_std_7d,Sales Std 7D,Rolling 7-day std of observed sales units prior to T,Observed Sales,scalar,Feature Engineering,DEMAND
+sales_sum_7d,Sales Sum 7D,Rolling 7-day sum of observed sales units prior to T,Observed Sales,scalar,Feature Engineering,DEMAND
+sales_mean_28d,Sales Mean 28D,Rolling 28-day mean of observed sales units prior to T,Observed Sales,scalar,Feature Engineering,DEMAND
+sales_std_28d,Sales Std 28D,Rolling 28-day std of observed sales units prior to T,Observed Sales,scalar,Feature Engineering,DEMAND
+sales_sum_28d,Sales Sum 28D,Rolling 28-day sum of observed sales units prior to T,Observed Sales,scalar,Feature Engineering,DEMAND
+inventory_opening,Opening inventory level,Opening inventory quantity on observation date T,Inventory & Stockouts,units,Inventory Management,DEMAND_AND_PRICE
+inventory_current,Current inventory level on hand,Current inventory stock quantity known on date T,Inventory & Stockouts,units,Inventory Management,DEMAND_AND_PRICE
+inventory_prior_closing,Inventory Prior Closing,Closing inventory quantity of previous day T-1,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+inventory_incoming,Inventory Incoming,Known incoming inventory quantity in transit,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+inventory_backorder,Inventory Backorder,Outstanding backorder quantity on date T,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+stockout_flag_prior_day,Stockout Flag Prior Day,Binary stockout flag on previous day T-1,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+stockout_count_7d,Stockout Count 7D,Number of stockout days in the prior 7 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+stockout_rate_7d,Stockout Rate 7D,Stockout rate (proportion of days) in the prior 7 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+stockout_count_28d,Stockout Count 28D,Number of stockout days in the prior 28 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+stockout_rate_28d,Stockout Rate 28D,Stockout rate (proportion of days) in the prior 28 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+stockout_count_56d,Stockout Count 56D,Number of stockout days in the prior 56 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+stockout_rate_56d,Stockout Rate 56D,Stockout rate (proportion of days) in the prior 56 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+days_since_last_stockout,Days Since Last Stockout,Days elapsed since the previous recorded stockout event prior to T,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+days_since_last_replenishment,Days Since Last Replenishment,Days elapsed since the previous inventory delivery receipt prior to T,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+quantity_received_7d_sum,Quantity Received 7D Sum,Total inventory units received in prior 7 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+quantity_received_28d_sum,Quantity Received 28D Sum,Total inventory units received in prior 28 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+receipt_count_30d,Receipt Count 30D,Number of delivery receipts in the prior 30 days,Inventory & Stockouts,scalar,Feature Engineering,DEMAND_AND_PRICE
+inventory_coverage_days_7d,Inventory Coverage Days 7D,Estimated days of stock based on current inventory and 7-day mean demand (capped at 999),Inventory & Stockouts,scalar,Feature Engineering,DEMAND
+inventory_coverage_days_28d,Inventory Coverage Days 28D,Estimated days of stock based on current inventory and 28-day mean demand (capped at 999),Inventory & Stockouts,scalar,Feature Engineering,DEMAND
+purchase_price_lag_1,Supplier purchase price 1 days ago,Purchase price 1 day(s) prior to observation date T,Historical Purchase Price,MYR,Procurement Records,DEMAND_AND_PRICE
+purchase_price_lag_3,Supplier purchase price 3 days ago,Purchase price 3 day(s) prior to observation date T,Historical Purchase Price,MYR,Procurement Records,DEMAND_AND_PRICE
+purchase_price_lag_7,Supplier purchase price 7 days ago,Purchase price 7 day(s) prior to observation date T,Historical Purchase Price,MYR,Procurement Records,DEMAND_AND_PRICE
+purchase_price_lag_14,Supplier purchase price 14 days ago,Purchase price 14 day(s) prior to observation date T,Historical Purchase Price,MYR,Procurement Records,DEMAND_AND_PRICE
+purchase_price_lag_21,Supplier purchase price 21 days ago,Purchase price 21 day(s) prior to observation date T,Historical Purchase Price,MYR,Procurement Records,DEMAND_AND_PRICE
+purchase_price_lag_30,Supplier purchase price 30 days ago,Purchase price 30 day(s) prior to observation date T,Historical Purchase Price,MYR,Procurement Records,DEMAND_AND_PRICE
+purchase_price_lag_60,Supplier purchase price 60 days ago,Purchase price 60 day(s) prior to observation date T,Historical Purchase Price,MYR,Procurement Records,DEMAND_AND_PRICE
+purchase_price_lag_90,Supplier purchase price 90 days ago,Purchase price 90 day(s) prior to observation date T,Historical Purchase Price,MYR,Procurement Records,DEMAND_AND_PRICE
+purchase_price_mean_7d,Purchase Price Mean 7D,Rolling 7-day mean of purchase price prior to T,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_std_7d,Purchase Price Std 7D,Rolling 7-day standard deviation of purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_min_7d,Purchase Price Min 7D,Rolling 7-day minimum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_max_7d,Purchase Price Max 7D,Rolling 7-day maximum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_mean_14d,Purchase Price Mean 14D,Rolling 14-day mean of purchase price prior to T,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_std_14d,Purchase Price Std 14D,Rolling 14-day standard deviation of purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_min_14d,Purchase Price Min 14D,Rolling 14-day minimum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_max_14d,Purchase Price Max 14D,Rolling 14-day maximum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_mean_30d,Purchase Price Mean 30D,Rolling 30-day mean of purchase price prior to T,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_std_30d,Purchase Price Std 30D,Rolling 30-day standard deviation of purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_min_30d,Purchase Price Min 30D,Rolling 30-day minimum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_max_30d,Purchase Price Max 30D,Rolling 30-day maximum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_mean_60d,Purchase Price Mean 60D,Rolling 60-day mean of purchase price prior to T,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_std_60d,Purchase Price Std 60D,Rolling 60-day standard deviation of purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_min_60d,Purchase Price Min 60D,Rolling 60-day minimum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_max_60d,Purchase Price Max 60D,Rolling 60-day maximum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_mean_90d,Purchase Price Mean 90D,Rolling 90-day mean of purchase price prior to T,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_std_90d,Purchase Price Std 90D,Rolling 90-day standard deviation of purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_min_90d,Purchase Price Min 90D,Rolling 90-day minimum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_max_90d,Purchase Price Max 90D,Rolling 90-day maximum purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_volatility_30d,Purchase Price Volatility 30D,Rolling 30-day volatility (std/mean) of purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_pct_change_1d,Purchase Price Pct Change 1D,1-day percentage change in purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_pct_change_7d,Purchase Price Pct Change 7D,7-day percentage change in purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_pct_change_30d,Purchase Price Pct Change 30D,30-day percentage change in purchase price,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_vs_mean_30d,Purchase Price Vs Mean 30D,Current purchase price relative to 30-day historical mean,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_vs_mean_90d,Purchase Price Vs Mean 90D,Current purchase price relative to 90-day historical mean,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+purchase_price_acceleration,Purchase Price Acceleration,Change in 7-day purchase price momentum over prior 7 days,Historical Purchase Price,scalar,Feature Engineering,DEMAND_AND_PRICE
+discount_amount,Discount Amount,Absolute currency difference between normal and actual selling price,Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+discount_percentage_calculated,Discount Percentage Calculated,Percentage discount calculated from normal selling price,Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+selling_price_vs_normal_ratio,Selling Price Vs Normal Ratio,Ratio of current selling price to regular normal price,Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+selling_price_mean_7d,Selling Price Mean 7D,7-day rolling mean of historical selling prices prior to T,Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+selling_price_mean_28d,Selling Price Mean 28D,28-day rolling mean of historical selling prices prior to T,Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+selling_price_vs_mean_7d,Selling Price Vs Mean 7D,Current selling price relative to prior 7-day average selling price,Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+selling_price_pct_change_7d,Selling Price Pct Change 7D,7-day percentage change in selling price,Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+selling_price_vs_product_median,Selling Price Vs Product Median,Selling price relative to long-term median price for this product,Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+price_elasticity_proxy_7d,Price Elasticity Proxy 7D,"Descriptive 7-day arc elasticity proxy clipped to [-10, 10]",Selling Price & Elasticity,scalar,Feature Engineering,DEMAND
+supplier_lead_time_expected,Supplier Lead Time Expected,Contracted/expected supplier lead time in calendar days,Procurement & Supplier,scalar,Feature Engineering,DEMAND_AND_PRICE
+supplier_lead_time_actual,Supplier Lead Time Actual,Actual lead time in calendar days for latest order,Procurement & Supplier,scalar,Feature Engineering,DEMAND_AND_PRICE
+supplier_lead_time_gap,Supplier Lead Time Gap,Discrepancy between actual and contracted lead time (days),Procurement & Supplier,scalar,Feature Engineering,DEMAND_AND_PRICE
+supplier_moq,Supplier Moq,Minimum Order Quantity (MOQ) enforced by supplier,Procurement & Supplier,scalar,Feature Engineering,DEMAND_AND_PRICE
+supplier_pack_size_units,Supplier Pack Size Units,Supplier standard case/pack size in base units,Procurement & Supplier,scalar,Feature Engineering,DEMAND_AND_PRICE
+supplier_lead_time_mean_30d,Supplier Lead Time Mean 30D,30-day rolling mean of historical lead time prior to T,Procurement & Supplier,scalar,Feature Engineering,PRICE
+supplier_lead_time_std_30d,Supplier Lead Time Std 30D,30-day rolling standard deviation of lead time prior to T,Procurement & Supplier,scalar,Feature Engineering,PRICE
+supplier_lead_time_mean_90d,Supplier Lead Time Mean 90D,90-day rolling mean of historical lead time prior to T,Procurement & Supplier,scalar,Feature Engineering,PRICE
+supplier_on_time_rate_30d,Supplier On Time Rate 30D,Proportion of orders delivered on-time in the prior 30 days,Procurement & Supplier,scalar,Feature Engineering,PRICE
+supplier_on_time_rate_90d,Supplier On Time Rate 90D,Proportion of orders delivered on-time in the prior 90 days,Procurement & Supplier,scalar,Feature Engineering,PRICE
+promo_active_flag,Active promotion scheduled,Binary indicator if an active promotional campaign is in effect on date T,Promotions,binary,Promotion Schedule,DEMAND
+promo_discount_percentage,Promotion discount percentage,Campaign discount percentage in effect on date T,Promotions,%,Promotion Schedule,DEMAND
+promo_days_active_so_far,Days promotion active so far,Elapsed consecutive calendar days current promotion has been active (1 on start day),Promotions,days,Promotion Schedule,DEMAND
+promo_days_until_end,Promo Days Until End,Days remaining until the scheduled end of current active promotion,Promotions,scalar,Feature Engineering,DEMAND
+promo_frequency_30d,Promo Frequency 30D,Total number of promotion days in prior 30 days,Promotions,scalar,Feature Engineering,DEMAND
+promo_frequency_90d,Promo Frequency 90D,Total number of promotion days in prior 90 days,Promotions,scalar,Feature Engineering,DEMAND
+days_since_previous_promo,Days Since Previous Promo,Days elapsed since the previous active promotion concluded,Promotions,scalar,Feature Engineering,DEMAND
+planned_promo_within_7d,Promotion scheduled within next 7 days,Binary flag if a known promotion is scheduled within the next 7 days,Promotions,binary,Promotion Schedule,DEMAND
+planned_promo_within_14d,Promotion scheduled within next 14 days,Binary flag if a known promotion is scheduled within the next 14 days,Promotions,binary,Promotion Schedule,DEMAND
+planned_promo_within_30d,Promotion scheduled within next 30 days,Binary flag if a known promotion is scheduled within the next 30 days,Promotions,binary,Promotion Schedule,DEMAND
+cal_day_of_week,Cal Day Of Week,"Day of week (1=Monday, ..., 7=Sunday)",Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_day_of_month,Cal Day Of Month,Day of calendar month (1 to 31),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_week_of_year,Cal Week Of Year,ISO week number of year (1 to 53),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_month,Cal Month,Calendar month (1 to 12),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_quarter,Cal Quarter,Calendar quarter (1 to 4),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_year,Cal Year,Calendar year,Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_is_weekend,Cal Is Weekend,Binary weekend indicator (1 for Saturday or Sunday),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_is_month_start,Cal Is Month Start,Binary flag for beginning of month (days 1-3),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_is_month_end,Cal Is Month End,Binary flag for conclusion of month (days 28-31),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_sin_day_of_week,Cal Sin Day Of Week,Sine transformation of day of week (cyclical weekly periodicity),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_cos_day_of_week,Cal Cos Day Of Week,Cosine transformation of day of week (cyclical weekly periodicity),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_sin_month,Cal Sin Month,Sine transformation of calendar month (cyclical annual seasonality),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+cal_cos_month,Cal Cos Month,Cosine transformation of calendar month (cyclical annual seasonality),Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+holiday_lead_1d,Holiday Lead 1D,Deterministic event feature: holiday_lead_1d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+holiday_lead_2d,Holiday Lead 2D,Deterministic event feature: holiday_lead_2d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+holiday_lead_3d,Holiday Lead 3D,Deterministic event feature: holiday_lead_3d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+holiday_lead_7d,Holiday Lead 7D,Deterministic event feature: holiday_lead_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+holiday_lag_1d,Holiday Lag 1D,Deterministic event feature: holiday_lag_1d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+holiday_lag_2d,Holiday Lag 2D,Deterministic event feature: holiday_lag_2d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+holiday_lag_3d,Holiday Lag 3D,Deterministic event feature: holiday_lag_3d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+holiday_lag_7d,Holiday Lag 7D,Deterministic event feature: holiday_lag_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+days_until_cny,Days Until Cny,Deterministic event feature: days_until_cny,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+days_since_cny,Days Since Cny,Deterministic event feature: days_since_cny,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_cny_window_prior_7d,Is Cny Window Prior 7D,Deterministic event feature: is_cny_window_prior_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_cny_window_prior_14d,Is Cny Window Prior 14D,Deterministic event feature: is_cny_window_prior_14d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_cny_window_prior_30d,Is Cny Window Prior 30D,Deterministic event feature: is_cny_window_prior_30d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_cny_window_post_7d,Is Cny Window Post 7D,Deterministic event feature: is_cny_window_post_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+days_until_raya,Days Until Raya,Deterministic event feature: days_until_raya,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+days_since_raya,Days Since Raya,Deterministic event feature: days_since_raya,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_raya_window_prior_7d,Is Raya Window Prior 7D,Deterministic event feature: is_raya_window_prior_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_raya_window_prior_14d,Is Raya Window Prior 14D,Deterministic event feature: is_raya_window_prior_14d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_raya_window_prior_30d,Is Raya Window Prior 30D,Deterministic event feature: is_raya_window_prior_30d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_raya_window_post_7d,Is Raya Window Post 7D,Deterministic event feature: is_raya_window_post_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+days_until_deepavali,Days Until Deepavali,Deterministic event feature: days_until_deepavali,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+days_since_deepavali,Days Since Deepavali,Deterministic event feature: days_since_deepavali,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_deepavali_window_prior_7d,Is Deepavali Window Prior 7D,Deterministic event feature: is_deepavali_window_prior_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_deepavali_window_prior_14d,Is Deepavali Window Prior 14D,Deterministic event feature: is_deepavali_window_prior_14d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_deepavali_window_prior_30d,Is Deepavali Window Prior 30D,Deterministic event feature: is_deepavali_window_prior_30d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_deepavali_window_post_7d,Is Deepavali Window Post 7D,Deterministic event feature: is_deepavali_window_post_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+days_until_christmas,Days Until Christmas,Deterministic event feature: days_until_christmas,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+days_since_christmas,Days Since Christmas,Deterministic event feature: days_since_christmas,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_christmas_window_prior_7d,Is Christmas Window Prior 7D,Deterministic event feature: is_christmas_window_prior_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_christmas_window_prior_14d,Is Christmas Window Prior 14D,Deterministic event feature: is_christmas_window_prior_14d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_christmas_window_prior_30d,Is Christmas Window Prior 30D,Deterministic event feature: is_christmas_window_prior_30d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_christmas_window_post_7d,Is Christmas Window Post 7D,Deterministic event feature: is_christmas_window_post_7d,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+major_festival_window_active,Major Festival Window Active,Deterministic event feature: major_festival_window_active,Calendar & Seasonality,scalar,Feature Engineering,DEMAND_AND_PRICE
+is_govt_salary_day,Is Govt Salary Day,Deterministic event feature: is_govt_salary_day,Pay & Salary Cycles,scalar,Feature Engineering,DEMAND_AND_PRICE
+days_until_salary_day,Days Until Salary Day,Deterministic event feature: days_until_salary_day,Pay & Salary Cycles,scalar,Feature Engineering,DEMAND_AND_PRICE
+days_since_salary_day,Days Since Salary Day,Deterministic event feature: days_since_salary_day,Pay & Salary Cycles,scalar,Feature Engineering,DEMAND_AND_PRICE
+is_post_salary_3d,Is Post Salary 3D,Deterministic event feature: is_post_salary_3d,Pay & Salary Cycles,scalar,Feature Engineering,DEMAND_AND_PRICE
+is_post_salary_7d,Is Post Salary 7D,Deterministic event feature: is_post_salary_7d,Pay & Salary Cycles,scalar,Feature Engineering,DEMAND_AND_PRICE
+is_month_end_salary_window,Is Month End Salary Window,Deterministic event feature: is_month_end_salary_window,Pay & Salary Cycles,scalar,Feature Engineering,DEMAND_AND_PRICE
+days_since_last_gov_assist,Days Since Last Gov Assist,Deterministic event feature: days_since_last_gov_assist,Government Assistance,scalar,Feature Engineering,DEMAND
+is_post_gov_assist_3d,Is Post Gov Assist 3D,Deterministic event feature: is_post_gov_assist_3d,Government Assistance,scalar,Feature Engineering,DEMAND
+is_post_gov_assist_7d,Is Post Gov Assist 7D,Deterministic event feature: is_post_gov_assist_7d,Government Assistance,scalar,Feature Engineering,DEMAND
+school_holiday_days_since_start,School Holiday Days Since Start,School holiday dynamics metric: school_holiday_days_since_start,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+school_holiday_days_until_end,School Holiday Days Until End,School holiday dynamics metric: school_holiday_days_until_end,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+school_holiday_duration,School Holiday Duration,School holiday dynamics metric: school_holiday_duration,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_school_holiday_first_week,Is School Holiday First Week,School holiday dynamics metric: is_school_holiday_first_week,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+is_school_holiday_final_week,Is School Holiday Final Week,School holiday dynamics metric: is_school_holiday_final_week,Calendar & Seasonality,scalar,Feature Engineering,DEMAND
+weather_temp_max,Weather Temp Max,Daily maximum ambient temperature in Celsius,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_temp_min,Weather Temp Min,Daily minimum ambient temperature in Celsius,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_temp_avg,Weather Temp Avg,Daily mean ambient temperature in Celsius,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_rainfall_mm,Weather Rainfall Mm,Daily total precipitation rainfall in millimetres,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_humidity_pct,Weather Humidity Pct,Daily relative humidity percentage,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_precip_hours,Weather Precip Hours,Hours of recorded precipitation duration,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_rainfall_sum_3d,Weather Rainfall Sum 3D,Total cumulative rainfall in the prior 3 days (T-3 to T-1),Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_rainfall_sum_7d,Weather Rainfall Sum 7D,Total cumulative rainfall in the prior 7 days (T-7 to T-1),Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_rainfall_sum_14d,Weather Rainfall Sum 14D,Total cumulative rainfall in the prior 14 days (T-14 to T-1),Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_temp_mean_7d,Weather Temp Mean 7D,7-day rolling mean ambient temperature prior to T,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_temp_max_7d,Weather Temp Max 7D,7-day rolling peak maximum temperature prior to T,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_consecutive_rain_days,Weather Consecutive Rain Days,Number of consecutive rainy days (>1.0mm) ending on day T-1,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+weather_consecutive_hot_days,Weather Consecutive Hot Days,Number of consecutive hot days (>33.0C) ending on day T-1,Weather & Climate,scalar,Feature Engineering,DEMAND_AND_PRICE
+market_price_median,Market Price Median,Aggregated market median price across premise competitors from PriceCatcher,Market & Competitor Prices,scalar,Feature Engineering,DEMAND_AND_PRICE
+market_price_mean,Market Price Mean,Aggregated market mean price across premise competitors from PriceCatcher,Market & Competitor Prices,scalar,Feature Engineering,DEMAND_AND_PRICE
+market_price_min,Market Price Min,Minimum competitor price observed in PriceCatcher market survey,Market & Competitor Prices,scalar,Feature Engineering,DEMAND_AND_PRICE
+market_price_max,Market Price Max,Maximum competitor price observed in PriceCatcher market survey,Market & Competitor Prices,scalar,Feature Engineering,DEMAND_AND_PRICE
+market_price_observation_count,Market Price Observation Count,Total survey observation count in PriceCatcher on observation date,Market & Competitor Prices,scalar,Feature Engineering,DEMAND_AND_PRICE
+price_vs_market_diff,Price Vs Market Diff,Retailer selling price minus market median price (premium or discount),Market & Competitor Prices,scalar,Feature Engineering,DEMAND
+price_vs_market_ratio,Price Vs Market Ratio,Ratio of retailer selling price to market median price,Market & Competitor Prices,scalar,Feature Engineering,DEMAND
+market_median_change_7d,Market Median Change 7D,7-day percentage change in market median price prior to T,Market & Competitor Prices,scalar,Feature Engineering,DEMAND_AND_PRICE
+market_median_change_30d,Market Median Change 30D,30-day percentage change in market median price prior to T,Market & Competitor Prices,scalar,Feature Engineering,DEMAND_AND_PRICE
+market_median_volatility_30d,Market Median Volatility 30D,30-day rolling volatility (std/mean) of market median price prior to T,Market & Competitor Prices,scalar,Feature Engineering,DEMAND_AND_PRICE
+fuel_petrol_subsidised,Fuel price index: Petrol Subsidised,Official gazetted subsidised petrol price (RON95) in MYR/litre,Fuel & Energy,MYR/litre,Ministry of Finance,DEMAND_AND_PRICE
+fuel_petrol_unsubsidised,Fuel price index: Petrol Unsubsidised,Market unsubsidised petrol price (RON97) in MYR/litre,Fuel & Energy,MYR/litre,Ministry of Finance,DEMAND_AND_PRICE
+fuel_diesel_subsidised,Fuel price index: Diesel Subsidised,Official subsidised diesel price in MYR/litre (0.0 after rationalisation float),Fuel & Energy,MYR/litre,Ministry of Finance,DEMAND_AND_PRICE
+fuel_diesel_unsubsidised,Fuel price index: Diesel Unsubsidised,Market retail diesel price (Euro 5 B10/B7) in MYR/litre,Fuel & Energy,MYR/litre,Ministry of Finance,DEMAND_AND_PRICE
+fuel_diesel_effective,Fuel price index: Diesel Effective,Effective retail diesel price paid at pump in MYR/litre,Fuel & Energy,MYR/litre,Ministry of Finance,PRICE
+fuel_petrol_effective,Fuel price index: Petrol Effective,Effective retail petrol price paid at pump in MYR/litre,Fuel & Energy,MYR/litre,Ministry of Finance,PRICE
+fuel_petrol_pct_change_7d,Fuel price index: Petrol Pct Change 7D,7-day percentage change in effective petrol price,Fuel & Energy,MYR/litre,Ministry of Finance,DEMAND_AND_PRICE
+fuel_petrol_pct_change_28d,Fuel price index: Petrol Pct Change 28D,28-day percentage change in effective petrol price,Fuel & Energy,MYR/litre,Ministry of Finance,DEMAND_AND_PRICE
+fuel_diesel_pct_change_7d,Fuel price index: Diesel Pct Change 7D,7-day percentage change in effective diesel price,Fuel & Energy,MYR/litre,Ministry of Finance,PRICE
+fuel_diesel_pct_change_28d,Fuel price index: Diesel Pct Change 28D,28-day percentage change in effective diesel price,Fuel & Energy,MYR/litre,Ministry of Finance,PRICE
+fx_rate,Malaysian ringgit / US dollar exchange rate,Relevant bilateral foreign exchange rate per MYR,Currency Exchange Rates,MYR/USD,Central Bank (BNM),PRICE
+fx_change_1d,1-day MYR/USD exchange rate change,1-day change in relevant exchange rate,Currency Exchange Rates,MYR/USD,Central Bank (BNM),PRICE
+fx_pct_change_7d,7d MYR/USD exchange rate movement,7-day percentage change in relevant exchange rate,Currency Exchange Rates,%,Central Bank (BNM),PRICE
+fx_pct_change_30d,30-day Malaysian ringgit / United States dollar movement,30-day percentage change in relevant exchange rate,Currency Exchange Rates,%,Central Bank (BNM),PRICE
+fx_mean_30d,Fx Mean 30D,30-day rolling mean exchange rate prior to T,Currency Exchange Rates,scalar,Feature Engineering,PRICE
+fx_volatility_30d,Fx Volatility 30D,30-day rolling volatility (std/mean) of exchange rate prior to T,Currency Exchange Rates,scalar,Feature Engineering,PRICE
+fx_vs_mean_30d,Fx Vs Mean 30D,Current exchange rate relative to 30-day historical mean,Currency Exchange Rates,scalar,Feature Engineering,PRICE
+commodity_price,Commodity index: Price,Relevant global commodity market price mapped to product category,Commodity & Global Markets,index/MYR,Commodity Exchange,PRICE
+commodity_mean_7d,Commodity index: Mean 7D,7-day rolling mean of mapped commodity price prior to T,Commodity & Global Markets,index/MYR,Commodity Exchange,PRICE
+commodity_mean_30d,Commodity index: Mean 30D,30-day rolling mean of mapped commodity price prior to T,Commodity & Global Markets,index/MYR,Commodity Exchange,PRICE
+commodity_pct_change_7d,Commodity index: Pct Change 7D,7-day percentage change in mapped commodity price,Commodity & Global Markets,index/MYR,Commodity Exchange,PRICE
+commodity_pct_change_30d,Commodity index: Pct Change 30D,30-day percentage change in mapped commodity price,Commodity & Global Markets,index/MYR,Commodity Exchange,PRICE
+commodity_volatility_30d,Commodity index: Volatility 30D,30-day rolling volatility (std/mean) of mapped commodity price prior to T,Commodity & Global Markets,index/MYR,Commodity Exchange,PRICE
+commodity_vs_mean_30d,Commodity index: Vs Mean 30D,Current mapped commodity price relative to 30-day historical mean,Commodity & Global Markets,index/MYR,Commodity Exchange,PRICE
+cpi_headline,Inflation index: Headline,Headline Malaysia Consumer Price Index (base 2010=100),Macroeconomic & Inflation,index/%,DOSM,DEMAND_AND_PRICE
+cpi_category,Inflation index: Category,Category-specific Consumer Price Index (Food & Non-Alcoholic Beverages),Macroeconomic & Inflation,index/%,DOSM,DEMAND
+ppi_headline,Ppi Headline,Overall Malaysia Producer Price Index for Local Production (base 2010=100),Macroeconomic & Inflation,scalar,Feature Engineering,PRICE
+ppi_industry,Ppi Industry,Industry-specific Producer Price Index (Agriculture/Manufacturing),Macroeconomic & Inflation,scalar,Feature Engineering,PRICE
+cpi_pct_change_30d,Inflation index: Pct Change 30D,30-day percentage change in headline Consumer Price Index,Macroeconomic & Inflation,index/%,DOSM,DEMAND_AND_PRICE
+cpi_pct_change_365d,Inflation index: Pct Change 365D,Annual (year-over-year) percentage inflation in headline CPI,Macroeconomic & Inflation,index/%,DOSM,DEMAND_AND_PRICE
+ppi_pct_change_30d,Ppi Pct Change 30D,30-day percentage change in headline Producer Price Index,Macroeconomic & Inflation,scalar,Feature Engineering,PRICE
+ppi_pct_change_365d,Ppi Pct Change 365D,Annual (year-over-year) percentage change in headline PPI,Macroeconomic & Inflation,scalar,Feature Engineering,PRICE
+subsidy_announced_flag_indicator,Subsidy Announced Flag Indicator,Binary flag if a government subsidy policy was publicly announced on date T,Government Policy & Subsidies,scalar,Feature Engineering,DEMAND_AND_PRICE
+subsidy_active_flag_indicator,Subsidy Active Flag Indicator,Binary flag if a government subsidy regime is actively in force on date T,Government Policy & Subsidies,scalar,Feature Engineering,DEMAND_AND_PRICE
+policy_announced_flag_indicator,Policy Announced Flag Indicator,Binary flag if a national budget or fiscal policy was announced on date T,Government Policy & Subsidies,scalar,Feature Engineering,DEMAND_AND_PRICE
+policy_active_flag_indicator,Policy Active Flag Indicator,Binary flag if a national budget policy regime is currently active on date T,Government Policy & Subsidies,scalar,Feature Engineering,DEMAND_AND_PRICE
+is_chicken_subsidy_active,Chicken price ceiling/subsidy policy active,Binary indicator if chicken and egg price ceiling / breeder subsidy is active,Government Policy & Subsidies,binary,Ministry of Agriculture,DEMAND_AND_PRICE
+is_diesel_rationalisation_active,Diesel subsidy rationalisation policy active,Binary indicator if targeted diesel subsidy rationalisation (retail float) is active,Government Policy & Subsidies,binary,Ministry of Finance,PRICE
+is_electricity_discount_active,Is Electricity Discount Active,Binary indicator if TNB commercial electricity discount package is in effect,Government Policy & Subsidies,scalar,Feature Engineering,DEMAND_AND_PRICE
+is_minimum_wage_rm1500_active,Minimum wage RM1500 policy active,"Binary indicator for national minimum wage regime RM1,500/month (effective 1 May 2022)",Government Policy & Subsidies,binary,Ministry of Human Resources,DEMAND_AND_PRICE
+is_service_tax_8pct_active,Is Service Tax 8Pct Active,Binary indicator for Service Tax rate increase from 6% to 8% (effective 1 March 2024),Government Policy & Subsidies,scalar,Feature Engineering,DEMAND_AND_PRICE
+days_since_subsidy_announced,Days Since Subsidy Announced,Days elapsed since the latest government subsidy announcement,Government Policy & Subsidies,scalar,Feature Engineering,DEMAND_AND_PRICE
+days_since_policy_announced,Days Since Policy Announced,Days elapsed since the latest national fiscal policy announcement,Government Policy & Subsidies,scalar,Feature Engineering,DEMAND_AND_PRICE
+product_shelf_life_days,Product Shelf Life Days,Nominal product shelf life duration in calendar days,Product Attributes,scalar,Feature Engineering,DEMAND_AND_PRICE
+product_imported_flag,Product Imported Flag,Binary flag if product is imported (1) versus locally produced (0),Product Attributes,scalar,Feature Engineering,DEMAND_AND_PRICE
+product_is_perishable,Product Is Perishable,Binary flag if product has limited shelf life <= 14 days,Product Attributes,scalar,Feature Engineering,DEMAND_AND_PRICE
+product_is_highly_perishable,Product Is Highly Perishable,Binary flag if product is highly perishable <= 5 days (poultry/leafy vegetables),Product Attributes,scalar,Feature Engineering,DEMAND_AND_PRICE
+product_is_controlled_goods,Product Is Controlled Goods,Binary indicator if item is gazetted as price-controlled essential food in Malaysia,Product Attributes,scalar,Feature Engineering,DEMAND_AND_PRICE
+store_storage_capacity_units,Store Storage Capacity Units,Total designated physical warehouse/storage capacity of store premise,Store Geography,scalar,Feature Engineering,DEMAND_AND_PRICE
+store_geo_latitude,Store Geo Latitude,Geographical latitude coordinate of store premise,Store Geography,scalar,Feature Engineering,DEMAND_AND_PRICE
+store_geo_longitude,Store Geo Longitude,Geographical longitude coordinate of store premise,Store Geography,scalar,Feature Engineering,DEMAND_AND_PRICE
+store_relative_capacity_ratio,Store Relative Capacity Ratio,Ratio of store capacity relative to enterprise average store capacity,Store Geography,scalar,Feature Engineering,DEMAND_AND_PRICE
+interaction_promo_x_festival,Interaction Promo X Festival,Interaction between active promotion and festive season proximity window,Cross-Feature Interactions,scalar,Feature Engineering,DEMAND
+interaction_promo_x_discount,Interaction Promo X Discount,Magnitude of promotion discount intensity,Cross-Feature Interactions,scalar,Feature Engineering,DEMAND
+interaction_rainfall_x_vegetables,Interaction Rainfall X Vegetables,Recent 7-day cumulative rainfall interaction with perishable fresh vegetables,Cross-Feature Interactions,scalar,Feature Engineering,DEMAND_AND_PRICE
+interaction_temp_x_poultry,Interaction Temp X Poultry,7-day mean ambient temperature interaction with fresh poultry category,Cross-Feature Interactions,scalar,Feature Engineering,DEMAND_AND_PRICE
+interaction_diesel_change_x_lead_time,Interaction Diesel Change X Lead Time,Diesel fuel price percentage shock scaled by supplier logistical lead time,Cross-Feature Interactions,scalar,Feature Engineering,PRICE
+interaction_fx_change_x_imported,Interaction Fx Change X Imported,Bilateral exchange rate percentage change impacting imported SKUs,Cross-Feature Interactions,scalar,Feature Engineering,PRICE
+interaction_commodity_change_x_product,Interaction Commodity Change X Product,Global benchmark commodity percentage change for mapped ingredient products,Cross-Feature Interactions,scalar,Feature Engineering,PRICE
+interaction_gov_assist_x_essential,Interaction Gov Assist X Essential,Government cash aid disbursement window interacting with price-controlled essential food,Cross-Feature Interactions,scalar,Feature Engineering,DEMAND
+interaction_price_gap_x_promo,Interaction Price Gap X Promo,Retailer price gap relative to market benchmark during promotional campaigns,Cross-Feature Interactions,scalar,Feature Engineering,DEMAND
+missing_market_price,Missing Market Price,Binary indicator if PriceCatcher market survey data is unavailable for this date,Data Quality Indicators,scalar,Feature Engineering,DEMAND_AND_PRICE
+missing_weather,Missing Weather,Binary indicator if local weather station report was missing,Data Quality Indicators,scalar,Feature Engineering,DEMAND_AND_PRICE
+missing_commodity_price,Missing Commodity Price,Binary indicator if ingredient commodity price was unmapped or missing,Data Quality Indicators,scalar,Feature Engineering,PRICE
+missing_exchange_rate,Missing Exchange Rate,Binary indicator if bilateral foreign exchange rate was missing,Data Quality Indicators,scalar,Feature Engineering,PRICE

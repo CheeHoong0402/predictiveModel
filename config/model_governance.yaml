@@ -1,0 +1,26 @@
+# Model Governance Configuration
+# Defines validation gates, production suitability, and fail-safe defaults.
+
+price_model:
+  validation_required: true
+  current_status: NOT_VALIDATED
+  safe_for_decision: false
+  safe_for_quantity_adjustment: false
+  safe_for_coverage_adjustment: false
+  safe_for_buy_wait_signal: false
+  safe_for_display: false
+  quarantine_active: true
+  reasons:
+    - "Critical target leakage found in Phase 13/14 optimised price cache and LightGBM models (1d, 7d, 30d)."
+    - "Clean Phase 12/15 price models do not materially outperform strong mean / moving-average baselines."
+    - "Purchase-price target provenance is synthetic / unverified with stationary Gaussian noise characteristics."
+
+demand_model:
+  validation_required: true
+  current_status: VALIDATED
+  safe_for_decision: true
+  safe_for_quantity_adjustment: true
+  safe_for_coverage_adjustment: true
+  safe_for_display: true
+  quarantine_active: false
+  reasons: []

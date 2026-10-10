@@ -1,0 +1,10 @@
+parameter_name,value,unit,provenance,status,description
+inventory_holding_cost_per_unit_per_day,0.25,MYR/unit/day,retailer_provided,VERIFIED,Daily per-unit physical warehousing and handling cost from POS inventory telemetry
+storage_cost_per_unit_per_day,0.15,MYR/unit/day,retailer_provided,VERIFIED,Cold-chain and store shelf space cost from store operational data
+stockout_cost_per_unit,3.5,MYR/unit,retailer_provided,VERIFIED,Direct retailer-recorded penalty per unit of unfulfilled demand
+unit_lost_gross_margin,DYNAMIC,MYR/unit,derived,DYNAMIC,Calculated as selling_price minus current_purchase_price at decision time
+wastage_cost_per_unit,7.2,MYR/unit,retailer_provided,VERIFIED,Write-off cost per expired perishable item from procurement loss records
+ordering_cost_per_po,50.0,MYR/order,default_assumption,ASSUMED_COST,Fixed administrative and PO processing transaction fee per replenishment order
+annual_capital_holding_rate,0.15,decimal,default_assumption,ASSUMED_COST,Annual cost of capital tied up in inventory inventory (15% p.a.)
+goodwill_penalty_multiplier,1.0,multiplier,default_assumption,ASSUMED_COST,Multiplier applied to lost margin representing customer brand erosion
+emergency_replenishment_surcharge,0.0,MYR/unit,unavailable,UNAVAILABLE,Expedited delivery premium not provided in baseline operational dataset

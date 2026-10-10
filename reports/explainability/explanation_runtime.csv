@@ -1,0 +1,13 @@
+task,horizon,avg_latency_ms,p95_latency_ms,target_threshold_ms,meets_threshold
+demand,1d,48.54,57.72,200.0,True
+demand,3d,18.5,21.63,200.0,True
+demand,7d,23.21,28.51,200.0,True
+demand,14d,29.47,32.48,200.0,True
+demand,21d,27.45,35.31,200.0,True
+demand,30d,29.59,38.47,200.0,True
+price,1d,27.96,30.89,200.0,True
+price,3d,26.25,29.16,200.0,True
+price,7d,30.92,36.17,200.0,True
+price,14d,42.71,47.8,200.0,True
+price,21d,27.69,30.12,200.0,True
+price,30d,24.51,29.48,200.0,True

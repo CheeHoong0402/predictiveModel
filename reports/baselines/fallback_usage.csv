@@ -1,0 +1,7 @@
+task,horizon,baseline,baseline_fallback_level,exclusion_reason,rows,missing_predictions,missing_targets
+demand,1,croston,not_applicable,not_intermittent_from_training_history,792,792,0
+demand,3,croston,not_applicable,not_intermittent_from_training_history,792,792,0
+demand,7,croston,not_applicable,not_intermittent_from_training_history,792,792,0
+demand,14,croston,not_applicable,not_intermittent_from_training_history,792,792,0
+demand,21,croston,not_applicable,not_intermittent_from_training_history,792,792,0
+demand,30,croston,not_applicable,not_intermittent_from_training_history,792,792,0

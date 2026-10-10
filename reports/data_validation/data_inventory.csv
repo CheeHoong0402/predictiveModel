@@ -1,0 +1,33 @@
+filename,file_path,format,classification,file_size_kb,rows,columns
+commodities_10y.csv,PROJECT_ROOT\data\raw\commodities_10y.csv,csv,Commodity prices,425.21,2766,11
+cpi_core.csv,PROJECT_ROOT\data\raw\cpi_core.csv,csv,Consumer Price Index,29.68,1456,3
+cpi_headline.csv,PROJECT_ROOT\data\raw\cpi_headline.csv,csv,Consumer Price Index,52.48,2500,3
+cpi_state.csv,PROJECT_ROOT\data\raw\cpi_state.csv,csv,Consumer Price Index,84.03,2500,4
+exchange_rates_10y.csv,PROJECT_ROOT\data\raw\exchange_rates_10y.csv,csv,Currency exchange rates,242.83,2865,5
+fuel_prices.csv,PROJECT_ROOT\data\raw\fuel_prices.csv,csv,Fuel prices,54.53,963,10
+iowrt_distributive_trade.csv,PROJECT_ROOT\data\raw\iowrt_distributive_trade.csv,csv,Wholesale and retail statistics,12.21,296,5
+malaysia_government_assistance_10y.csv,PROJECT_ROOT\data\raw\malaysia_government_assistance_10y.csv,csv,Government assistance,1.39,37,5
+malaysia_government_salary_dates_10y.csv,PROJECT_ROOT\data\raw\malaysia_government_salary_dates_10y.csv,csv,Government assistance,11.55,132,5
+malaysia_national_budget_policies.csv,PROJECT_ROOT\data\raw\malaysia_national_budget_policies.csv,csv,National budget policies,0.71,11,7
+malaysia_public_holidays_10y.csv,PROJECT_ROOT\data\raw\malaysia_public_holidays_10y.csv,csv,Public holidays,27.08,598,5
+malaysia_school_holidays_10y.csv,PROJECT_ROOT\data\raw\malaysia_school_holidays_10y.csv,csv,School holidays,1.77,44,4
+malaysia_subsidies_and_policies.csv,PROJECT_ROOT\data\raw\malaysia_subsidies_and_policies.csv,csv,Government subsidies,1.44,15,7
+malaysia_weather_10y.csv,PROJECT_ROOT\data\raw\malaysia_weather_10y.csv,csv,Weather,1472.03,14612,17
+ppi.csv,PROJECT_ROOT\data\raw\ppi.csv,csv,Producer Price Index,17.14,587,4
+pricecatcher_2024-01.parquet,PROJECT_ROOT\data\raw\pricecatcher_2024-01.parquet,parquet,Malaysian market prices,3503.21,2664434,4
+pricecatcher_lookup_item.csv,PROJECT_ROOT\data\raw\pricecatcher_lookup_item.csv,csv,Malaysian market prices,54.73,797,5
+pricecatcher_lookup_item.parquet,PROJECT_ROOT\data\raw\pricecatcher_lookup_item.parquet,parquet,Malaysian market prices,16.58,797,5
+pricecatcher_lookup_premise.csv,PROJECT_ROOT\data\raw\pricecatcher_lookup_premise.csv,csv,Malaysian market prices,473.65,3921,6
+pricecatcher_lookup_premise.parquet,PROJECT_ROOT\data\raw\pricecatcher_lookup_premise.parquet,parquet,Malaysian market prices,138.68,3916,6
+retail_inventory.parquet,PROJECT_ROOT\data\raw\retail_inventory.parquet,parquet,Inventory,302.88,35064,22
+retail_pos_sales.parquet,PROJECT_ROOT\data\raw\retail_pos_sales.parquet,parquet,Point-of-Sale sales,200.3,35064,14
+retail_products.csv,PROJECT_ROOT\data\raw\retail_products.csv,csv,Product master,1.23,6,18
+retail_promotions.csv,PROJECT_ROOT\data\raw\retail_promotions.csv,csv,Promotion history,3.06,20,7
+retail_purchase_prices.parquet,PROJECT_ROOT\data\raw\retail_purchase_prices.parquet,parquet,Purchase-price history,374.74,35064,14
+retail_stores.csv,PROJECT_ROOT\data\raw\retail_stores.csv,csv,Store master,1.06,4,20
+retail_suppliers.csv,PROJECT_ROOT\data\raw\retail_suppliers.csv,csv,Supplier master,0.98,6,15
+retailer_operational_data.csv,PROJECT_ROOT\data\raw\retailer_operational_data.csv,csv,Inventory,20437.73,35064,94
+retailer_operational_data.parquet,PROJECT_ROOT\data\raw\retailer_operational_data.parquet,parquet,Inventory,1163.94,35064,94
+trade_enduse_bec.csv,PROJECT_ROOT\data\raw\trade_enduse_bec.csv,csv,Import statistics,105.57,2500,5
+trade_headline.csv,PROJECT_ROOT\data\raw\trade_headline.csv,csv,Export statistics,56.53,755,9
+trade_sitc_1d.csv,PROJECT_ROOT\data\raw\trade_sitc_1d.csv,csv,Export statistics,99.41,2500,4

@@ -1,0 +1,284 @@
+# config/master_table_joins.yaml
+# ===============================
+# Machine-readable specification for Phase 5 Master Daily Modelling Table Construction.
+# Primary grain: one row = one product x one store x one calendar date (date + store_id + product_id).
+
+core_skeleton:
+  description: "Cartesian product of active stores, active products, and calendar days"
+  primary_keys: ["date", "store_id", "product_id"]
+  date_range: ["2021-01-01", "2024-12-31"]
+  frequency: "daily"
+  expected_rows: 35064
+
+datasets:
+  pos_sales:
+    dataset_name: "Point-of-Sale Sales"
+    cleaned_file_path: "data/interim/pos_sales_clean.parquet"
+    dataset_frequency: "daily"
+    primary_join_key: ["date", "store_id", "product_id"]
+    secondary_join_key: null
+    time_alignment_rule: "exact_calendar_date"
+    geographic_alignment_rule: "exact_store_id"
+    product_alignment_rule: "exact_product_id"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "1 day"
+    publication_delay_considered: false
+    required: true
+
+  inventory:
+    dataset_name: "Inventory History"
+    cleaned_file_path: "data/interim/inventory_clean.parquet"
+    dataset_frequency: "daily"
+    primary_join_key: ["date", "store_id", "product_id"]
+    secondary_join_key: null
+    time_alignment_rule: "exact_calendar_date"
+    geographic_alignment_rule: "exact_store_id"
+    product_alignment_rule: "exact_product_id"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "1 day"
+    publication_delay_considered: false
+    required: true
+
+  purchase_prices:
+    dataset_name: "Purchase-price History"
+    cleaned_file_path: "data/interim/purchase_prices_clean.parquet"
+    dataset_frequency: "daily"
+    primary_join_key: ["date", "store_id", "product_id"]
+    secondary_join_key: "supplier_id"
+    time_alignment_rule: "exact_calendar_date"
+    geographic_alignment_rule: "exact_store_id"
+    product_alignment_rule: "exact_product_id"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "1 day"
+    publication_delay_considered: false
+    required: true
+
+  product_master:
+    dataset_name: "Product Master"
+    cleaned_file_path: "data/interim/product_master_clean.parquet"
+    dataset_frequency: "static"
+    primary_join_key: ["product_id"]
+    secondary_join_key: null
+    time_alignment_rule: "invariant_over_time"
+    geographic_alignment_rule: "universal"
+    product_alignment_rule: "exact_product_id"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "infinite"
+    publication_delay_considered: false
+    required: true
+
+  store_master:
+    dataset_name: "Store Master"
+    cleaned_file_path: "data/interim/store_master_clean.parquet"
+    dataset_frequency: "static"
+    primary_join_key: ["store_id"]
+    secondary_join_key: null
+    time_alignment_rule: "invariant_over_time"
+    geographic_alignment_rule: "exact_store_id"
+    product_alignment_rule: "universal"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "infinite"
+    publication_delay_considered: false
+    required: true
+
+  supplier_master:
+    dataset_name: "Supplier Master"
+    cleaned_file_path: "data/interim/supplier_master_clean.parquet"
+    dataset_frequency: "static"
+    primary_join_key: ["supplier_id"]
+    secondary_join_key: null
+    time_alignment_rule: "invariant_over_time"
+    geographic_alignment_rule: "universal"
+    product_alignment_rule: "universal"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "infinite"
+    publication_delay_considered: false
+    required: true
+
+  promotions:
+    dataset_name: "Promotion History"
+    cleaned_file_path: "data/interim/promotions_clean.parquet"
+    dataset_frequency: "event_interval"
+    primary_join_key: ["product_category"]
+    secondary_join_key: ["date_interval"]
+    time_alignment_rule: "interval_containment (start_date <= date <= end_date)"
+    geographic_alignment_rule: "national_chain_wide"
+    product_alignment_rule: "target_category_membership"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "event_duration"
+    publication_delay_considered: false
+    required: false
+
+  pricecatcher:
+    dataset_name: "Malaysian Market Prices (PriceCatcher)"
+    cleaned_file_path: "data/interim/pricecatcher_clean.parquet"
+    dataset_frequency: "daily"
+    primary_join_key: ["product_id", "district", "date"]
+    secondary_join_key: ["product_id", "state", "date"]
+    time_alignment_rule: "exact_calendar_date"
+    geographic_alignment_rule: "hierarchical (district -> state -> national)"
+    product_alignment_rule: "canonical_item_code_mapping"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "1 day"
+    publication_delay_considered: false
+    required: false
+
+  consumer_price_index:
+    dataset_name: "Consumer Price Index"
+    cleaned_file_path: "data/interim/consumer_price_index_clean.parquet"
+    dataset_frequency: "monthly"
+    primary_join_key: ["date"]
+    secondary_join_key: null
+    time_alignment_rule: "latest_published_month (reference_month + 1 month + 24 days lag)"
+    geographic_alignment_rule: "national"
+    product_alignment_rule: "cpi_overall and cpi_food_beverage"
+    allowable_forward_fill_policy: true
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "45 days"
+    publication_delay_considered: true
+    publication_lag_days: 55
+    required: false
+
+  producer_price_index:
+    dataset_name: "Producer Price Index"
+    cleaned_file_path: "data/interim/producer_price_index_clean.parquet"
+    dataset_frequency: "monthly"
+    primary_join_key: ["date"]
+    secondary_join_key: null
+    time_alignment_rule: "latest_published_month (reference_month + 1 month + 28 days lag)"
+    geographic_alignment_rule: "national"
+    product_alignment_rule: "ppi_overall and industry_component"
+    allowable_forward_fill_policy: true
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "45 days"
+    publication_delay_considered: true
+    publication_lag_days: 59
+    required: false
+
+  fuel_prices:
+    dataset_name: "Fuel Prices"
+    cleaned_file_path: "data/interim/fuel_prices_clean.parquet"
+    dataset_frequency: "weekly"
+    primary_join_key: ["date"]
+    secondary_join_key: null
+    time_alignment_rule: "effective_announcement_date (stepwise weekly level)"
+    geographic_alignment_rule: "peninsular_national"
+    product_alignment_rule: "universal"
+    allowable_forward_fill_policy: true
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "7 days"
+    publication_delay_considered: false
+    required: false
+
+  exchange_rates:
+    dataset_name: "Currency Exchange Rates"
+    cleaned_file_path: "data/interim/exchange_rates_clean.parquet"
+    dataset_frequency: "daily_business_days"
+    primary_join_key: ["date"]
+    secondary_join_key: null
+    time_alignment_rule: "exact_date_with_weekend_forward_fill"
+    geographic_alignment_rule: "national"
+    product_alignment_rule: "product_origin_currency_pair"
+    allowable_forward_fill_policy: true
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "4 days"
+    publication_delay_considered: false
+    required: false
+
+  commodity_prices:
+    dataset_name: "Commodity Prices"
+    cleaned_file_path: "data/interim/commodity_prices_clean.parquet"
+    dataset_frequency: "daily_business_days"
+    primary_join_key: ["date"]
+    secondary_join_key: null
+    time_alignment_rule: "exact_date_with_weekend_forward_fill"
+    geographic_alignment_rule: "global_benchmark"
+    product_alignment_rule: "category_to_commodity_mapping"
+    allowable_forward_fill_policy: true
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "4 days"
+    publication_delay_considered: false
+    required: false
+
+  weather:
+    dataset_name: "Weather Observations"
+    cleaned_file_path: "data/interim/weather_clean.parquet"
+    dataset_frequency: "daily"
+    primary_join_key: ["date", "store_id"]
+    secondary_join_key: ["date", "state", "district"]
+    time_alignment_rule: "exact_calendar_date"
+    geographic_alignment_rule: "store_district_and_state"
+    product_alignment_rule: "universal"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "1 day"
+    publication_delay_considered: false
+    required: false
+
+  public_holidays:
+    dataset_name: "Public Holidays"
+    cleaned_file_path: "data/interim/public_holidays_clean.parquet"
+    dataset_frequency: "event_date"
+    primary_join_key: ["date", "state"]
+    secondary_join_key: ["date"]
+    time_alignment_rule: "exact_calendar_date"
+    geographic_alignment_rule: "store_state_or_national"
+    product_alignment_rule: "universal"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "1 day"
+    publication_delay_considered: false
+    required: false
+
+  school_holidays:
+    dataset_name: "School Holidays"
+    cleaned_file_path: "data/interim/school_holidays_clean.parquet"
+    dataset_frequency: "event_interval"
+    primary_join_key: ["date_interval"]
+    secondary_join_key: null
+    time_alignment_rule: "interval_containment (start_date <= date <= end_date)"
+    geographic_alignment_rule: "national_group_b"
+    product_alignment_rule: "universal"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "term_break_duration"
+    publication_delay_considered: false
+    required: false
+
+  government_assistance:
+    dataset_name: "Government Assistance"
+    cleaned_file_path: "data/interim/government_assistance_clean.parquet"
+    dataset_frequency: "event_date"
+    primary_join_key: ["date"]
+    secondary_join_key: null
+    time_alignment_rule: "exact_calendar_disbursement_date"
+    geographic_alignment_rule: "national"
+    product_alignment_rule: "universal"
+    allowable_forward_fill_policy: false
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "1 day"
+    publication_delay_considered: false
+    required: false
+
+  subsidies_and_policies:
+    dataset_name: "Government Subsidies and Policy Events"
+    cleaned_file_path: "data/interim/subsidies_and_policies_clean.parquet"
+    dataset_frequency: "event_regime"
+    primary_join_key: ["date"]
+    secondary_join_key: null
+    time_alignment_rule: "announcement_date_for_anticipation / effective_date_for_regime"
+    geographic_alignment_rule: "national"
+    product_alignment_rule: "universal_and_targeted_goods"
+    allowable_forward_fill_policy: true
+    allowable_backward_fill_policy: false
+    maximum_validity_period: "regime_duration"
+    publication_delay_considered: false
+    required: false

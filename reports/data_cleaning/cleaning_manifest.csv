@@ -1,0 +1,22 @@
+dataset_name,source_file,clean_file,cleaning_timestamp,cleaning_version,rows_before,rows_after,cols_before,cols_after,records_removed,records_corrected,records_imputed,notes
+Point-of-Sale Sales,retail_pos_sales.parquet,pos_sales_clean.parquet,2026-10-11 07:37:10,v1.0,35064,35064,14,17,0,0,0,"Standardized date, computed net_units_sold, verified non-negative quantities"
+Inventory,retail_inventory.parquet,inventory_clean.parquet,2026-10-11 07:37:11,v1.0,35064,35064,22,26,0,0,0,Executed conservation-of-inventory equation audit and flagged balance differences
+Purchase-price History,retail_purchase_prices.parquet,purchase_prices_clean.parquet,2026-10-11 07:37:12,v1.0,35064,35064,14,16,0,0,0,"Standardized PO dates, derived actual lead times and delivery delay metrics"
+Product Master,retail_products.csv,product_master_clean.parquet,2026-10-11 07:37:12,v1.0,6,6,18,18,0,0,0,"Validated product shelf life, UOM, and brand metadata"
+Supplier Master,retail_suppliers.csv,supplier_master_clean.parquet,2026-10-11 07:37:12,v1.0,6,6,15,15,0,0,0,Standardized supplier lead times and reliability benchmarks
+Store Master,retail_stores.csv,store_master_clean.parquet,2026-10-11 07:37:12,v1.0,4,4,20,20,0,0,0,"Standardized store geolocations, capacities, and demographics"
+Promotion History,retail_promotions.csv,promotions_clean.parquet,2026-10-11 07:37:12,v1.0,20,20,7,8,0,0,0,Verified campaign start/end dates and discount percentages
+Malaysian Market Prices (PriceCatcher),pricecatcher_2024-01.parquet,pricecatcher_clean.parquet,2026-10-11 07:37:12,v1.0,2664434,2664434,4,13,0,0,0,Polars lazy join with premise and item lookups; dropped zero price artifacts
+Consumer Price Index,cpi_headline.csv,consumer_price_index_clean.parquet,2026-10-11 07:37:12,v1.0,2500,560,3,3,0,560,0,Pivoted multi-series division into cpi_overall and cpi_food_beverage (Division 01)
+Producer Price Index,ppi.csv,producer_price_index_clean.parquet,2026-10-11 07:37:12,v1.0,587,200,4,4,0,0,0,"Pivoted multi-series PPI into ppi_overall, ppi_agriculture, ppi_manufacturing"
+Fuel Prices,fuel_prices.csv,fuel_prices_clean.parquet,2026-10-11 07:37:12,v1.0,963,963,10,14,0,0,3364,Standardized weekly effective dates and generated BUDI/SKDS pre-policy indicators
+Currency Exchange Rates,exchange_rates_10y.csv,exchange_rates_clean.parquet,2026-10-11 07:37:12,v1.0,2865,2865,5,5,0,0,0,"Documented quotation convention: MYR per foreign currency unit (USD, SGD, CNY, EUR, JPY)"
+Commodity Prices,commodities_10y.csv,commodity_prices_clean.parquet,2026-10-11 07:37:12,v1.0,2766,2766,11,11,0,0,0,"Preserved units: Brent (USD/bbl), Palm Oil CPO (MYR/tonne), Wheat/Corn/Sugar (USD/contracts)"
+Weather,malaysia_weather_10y.csv,weather_clean.parquet,2026-10-11 07:37:12,v1.0,14612,14612,17,17,0,0,0,"Verified temperature bounds (15°C to 42°C), rainfall non-negativity, and state names"
+Public Holidays,malaysia_public_holidays_10y.csv,public_holidays_clean.parquet,2026-10-11 07:37:12,v1.0,598,598,5,5,0,0,0,Standardized date and national/state scope flags for gazetted Malaysian holidays
+School Holidays,malaysia_school_holidays_10y.csv,school_holidays_clean.parquet,2026-10-11 07:37:12,v1.0,44,44,4,4,0,0,0,Validated Ministry of Education term break start and end dates
+Wholesale & Retail Activity,iowrt_distributive_trade.csv,trade_activity_clean.parquet,2026-10-11 07:37:12,v1.0,296,103,5,7,0,0,0,Pivoted wholesale & retail trade indices into discrete monthly metrics
+External Trade Statistics,trade_headline.csv,external_trade_clean.parquet,2026-10-11 07:37:12,v1.0,755,320,9,8,0,0,0,"Filtered headline merchandise trade to absolute value series (exports, imports, balance)"
+Government Assistance,malaysia_government_assistance_10y.csv,government_assistance_clean.parquet,2026-10-11 07:37:12,v1.0,37,37,5,5,0,0,0,"Standardized Federal cash assistance payout milestones (STR, SARA, BKM, BSH, BR1M)"
+Government Subsidies & Policies,malaysia_subsidies_and_policies.csv,subsidies_and_policies_clean.parquet,2026-10-11 07:37:12,v1.0,15,15,7,7,0,0,0,"Standardized announcement and effective dates for subsidies, SST changes, and wage milestones"
+National Budget Policies,malaysia_national_budget_policies.csv,budget_policies_clean.parquet,2026-10-11 07:37:12,v1.0,11,11,7,7,0,0,0,Standardized annual Malaysian National Budget policies and tax changes

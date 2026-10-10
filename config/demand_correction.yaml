@@ -1,0 +1,46 @@
+# config/demand_correction.yaml
+# ==============================
+# Configuration parameters for Phase 6 Stockout and True-Demand Correction.
+# Guarantees conservative, reproducible, and training-safe true-demand estimation.
+
+stockout_definition:
+  trading_hours_per_day: 12.0
+  full_stockout_hours_threshold: 12.0
+  partial_stockout_min_hours: 1.0
+  evidence_hierarchy:
+    strong: ["explicit_stockout_flag", "zero_closing_inventory_with_depletion"]
+    moderate: ["zero_closing_inventory_and_sales_near_capacity"]
+    weak: ["unusually_depleted_stock_without_zero_close"]
+
+reference_selection:
+  preferred_historical_window_days: 84   # 12 weeks
+  maximum_historical_window_days: 182     # 26 weeks
+  minimum_reference_observations: 4
+  high_confidence_min_observations: 8
+  price_tolerance_pct: 0.10              # +/- 10% price tolerance band
+  require_same_weekday: true
+  require_same_promotion_status: true
+
+estimation_rules:
+  central_statistic: "median"
+  lower_bound_percentile: 0.25
+  upper_bound_percentile: 0.75
+  extreme_cap_percentile: 0.95
+  max_correction_ratio_over_observed: 3.5  # Guard against unrealistic explosion
+  partial_stockout_extrapolation: true
+  min_available_fraction_for_extrapolation: 0.20
+
+training_safety:
+  past_only_for_training: true
+  enable_retrospective_offline_comparison: true
+
+confidence_thresholds:
+  high:
+    min_observations: 8
+    confirmed_stockout_only: true
+  medium:
+    min_observations: 4
+  low:
+    min_observations: 1
+  uncorrected:
+    min_observations: 0

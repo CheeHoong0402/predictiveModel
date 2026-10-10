@@ -1,0 +1,7 @@
+scenario,is_valid,validation_status,notes
+All mandatory files present (Valid 90 days),True,VALID,Good
+Missing pos_sales.csv,False,INVALID_MISSING_REQUIRED_FILES,Missing required file
+Missing inventory_history.csv,False,INVALID_MISSING_REQUIRED_FILES,Missing required file
+Insufficient history (30 days < 60 days required),False,INSUFFICIENT_HISTORY,Short history
+Missing optional promotion_history.csv,True,ACCEPTABLE_WITH_WARNINGS,Default to inactive promo
+Missing optional purchase_orders.csv,True,ACCEPTABLE_WITH_WARNINGS,Default to zero pipeline

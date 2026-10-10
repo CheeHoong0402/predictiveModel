@@ -1,0 +1,12 @@
+{
+  "description": "Synthetic historical retail demonstration artifacts. No customer records or real operational uploads. Research caches and model binaries excluded.",
+  "files": [
+    "data/recommendations/final_recommendations.parquet",
+    "data/recommendations/action_priority_queue.parquet",
+    "data/optimisation/inventory_recommendations.parquet",
+    "data/simulation/risk_adjusted_recommendations.parquet",
+    "data/predictions/final_calibrated_demand_predictions.parquet",
+    "data/backtesting/decision_backtest.parquet",
+    "data/recommendations/recommendation_audit_log.parquet"
+  ]
+}

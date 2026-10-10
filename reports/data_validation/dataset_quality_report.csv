@@ -1,0 +1,33 @@
+filename,classification,rows,columns,total_missing_cells,missing_pct,duplicate_rows,empty_columns_count,status
+commodities_10y.csv,Commodity prices,2766,11,0,0.0,0,0,READY
+cpi_core.csv,Consumer Price Index,1456,3,104,2.38,0,0,WARNING
+cpi_headline.csv,Consumer Price Index,2500,3,0,0.0,0,0,WARNING
+cpi_state.csv,Consumer Price Index,2500,4,0,0.0,0,0,WARNING
+exchange_rates_10y.csv,Currency exchange rates,2865,5,0,0.0,0,0,READY
+fuel_prices.csv,Fuel prices,963,10,3364,34.93,0,0,WARNING
+iowrt_distributive_trade.csv,Wholesale and retail statistics,296,5,0,0.0,0,0,WARNING
+malaysia_government_assistance_10y.csv,Government assistance,37,5,0,0.0,0,0,READY
+malaysia_government_salary_dates_10y.csv,Government assistance,132,5,0,0.0,0,0,READY
+malaysia_national_budget_policies.csv,National budget policies,11,7,0,0.0,0,0,READY
+malaysia_public_holidays_10y.csv,Public holidays,598,5,0,0.0,0,0,WARNING
+malaysia_school_holidays_10y.csv,School holidays,44,4,0,0.0,0,0,READY
+malaysia_subsidies_and_policies.csv,Government subsidies,15,7,0,0.0,0,0,READY
+malaysia_weather_10y.csv,Weather,14612,17,0,0.0,0,0,READY
+ppi.csv,Producer Price Index,587,4,356,15.16,0,0,WARNING
+pricecatcher_2024-01.parquet,Malaysian market prices,2664434,4,0,0.0,0,0,READY
+pricecatcher_lookup_item.csv,Malaysian market prices,797,5,4,0.1,0,0,READY
+pricecatcher_lookup_item.parquet,Malaysian market prices,797,5,4,0.1,0,0,READY
+pricecatcher_lookup_premise.csv,Malaysian market prices,3921,6,3,0.01,0,0,READY
+pricecatcher_lookup_premise.parquet,Malaysian market prices,3916,6,3,0.01,0,0,READY
+retail_inventory.parquet,Inventory,35064,22,0,0.0,0,0,READY
+retail_pos_sales.parquet,Point-of-Sale sales,35064,14,0,0.0,0,0,READY
+retail_products.csv,Product master,6,18,0,0.0,0,0,READY
+retail_promotions.csv,Promotion history,20,7,0,0.0,0,0,READY
+retail_purchase_prices.parquet,Purchase-price history,35064,14,0,0.0,0,0,READY
+retail_stores.csv,Store master,4,20,0,0.0,0,0,READY
+retail_suppliers.csv,Supplier master,6,15,0,0.0,0,0,READY
+retailer_operational_data.csv,Inventory,35064,94,57416,1.74,0,0,READY
+retailer_operational_data.parquet,Inventory,35064,94,0,0.0,0,0,READY
+trade_enduse_bec.csv,Import statistics,2500,5,0,0.0,0,0,WARNING
+trade_headline.csv,Export statistics,755,9,288,4.24,0,0,WARNING
+trade_sitc_1d.csv,Export statistics,2500,4,0,0.0,0,0,WARNING

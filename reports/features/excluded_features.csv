@@ -1,0 +1,6 @@
+feature_name,feature_family,reason_for_exclusion,risk_type
+estimated_true_demand_retrospective,quarantined_demand,Uses two-sided future information for retrospective analysis; prohibited in training feature table,future_target_leakage
+target_demand_t_plus_1,forecast_target,Forecast targets must not be created during Phase 7 Feature Engineering,premature_target_creation
+target_purchase_price_t_plus_7,forecast_target,Forecast targets must not be created during Phase 7 Feature Engineering,premature_target_creation
+future_observed_weather,future_weather,Actual future weather is unknown at prediction date T; prohibited from feature table,future_information_leakage
+future_competitor_prices,future_market,Future competitor prices are unknown at prediction date T; prohibited from feature table,future_information_leakage

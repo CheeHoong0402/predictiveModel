@@ -1,0 +1,53 @@
+# config/feature_engineering.yaml
+# =================================
+# Global configuration for Phase 7 Feature Engineering.
+# Governs timing conventions, lag windows, rolling windows, and leakage safety rules.
+
+timing_convention:
+  forecast_generation_point: "end_of_day_T"
+  description: "Forecasts are generated at close of trading on day T for subsequent forecast horizon. Observations up to day T are known."
+  lag_shift_before_rolling: 1
+  time_zone: "Asia/Kuala_Lumpur"
+
+demand_features:
+  target_source_column: "estimated_true_demand_training_safe"
+  fallback_source_column: "observed_units_sold"
+  lag_days: [1, 2, 3, 7, 14, 21, 28, 35, 56, 84, 168, 364]
+  rolling_windows: [3, 7, 14, 28, 56, 84]
+  rolling_metrics: ["mean", "median", "std", "min", "max", "sum"]
+  seasonality_dow_weeks: [1, 2, 4, 8]
+  annual_lag_days: [364, 365]
+
+sales_features:
+  source_column: "observed_units_sold"
+  lag_days: [1, 2, 3, 7, 14, 28, 364]
+  rolling_windows: [7, 28]
+
+price_features:
+  purchase_price_lags: [1, 3, 7, 14, 21, 30, 60, 90]
+  purchase_price_rolling_windows: [7, 14, 30, 60, 90]
+  selling_price_rolling_windows: [7, 28]
+  price_tolerance_pct: 0.10
+
+inventory_features:
+  rolling_windows: [7, 28, 56]
+  coverage_demand_windows: [7, 28]
+
+calendar_features:
+  cyclical_encodings: ["day_of_week", "month"]
+  public_holiday_lead_lag_days: [1, 2, 3, 7]
+  festival_proximity_days: [7, 14, 30]
+  salary_day_of_month: 23
+
+macro_features:
+  fuel_change_windows: [7, 28]
+  fx_change_windows: [7, 30]
+  commodity_change_windows: [7, 30]
+  weather_rolling_windows: [3, 7, 14]
+
+leakage_prevention:
+  strict_past_only: true
+  allow_future_announcements: false
+  allow_future_weather: false
+  allow_future_market_prices: false
+  allow_retrospective_target: false

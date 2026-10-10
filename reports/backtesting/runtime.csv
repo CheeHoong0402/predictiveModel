@@ -1,0 +1,3 @@
+task,runtime_seconds
+Single SKU Replay,0.41
+"Full Batch Pipeline (24 SKUs, 33 Origins, 7 Strategies)",26.5

@@ -1,0 +1,89 @@
+column_name,description,source_dataset,data_type,frequency,units,nullable,transformation_applied,join_rule,potential_leakage_concern
+date,Calendar date of observation in YYYY-MM-DD,Retailer Calendar,string,daily,date,No,Standardized ISO 8601,Primary Key,None
+store_id,Unique store identifier (STR_XXX_000),Store Master,string,static,code,No,Zero-padded string,Primary Key,None
+product_id,Unique product identifier (PRD_XXX_00),Product Master,string,static,code,No,Zero-padded string,Primary Key,None
+product_name,Descriptive standard product name,Product Master,string,static,text,No,Cleaned string,Join on product_id,None
+category,Broad product department category,Product Master,string,static,text,No,Standard category,Join on product_id,None
+subcategory,Granular subcategory classification,Product Master,string,static,text,No,Standard subcategory,Join on product_id,None
+brand,Manufacturer brand name or Fresh/Generic,Product Master,string,static,text,No,Standard brand,Join on product_id,None
+unit_size,Commercial packaging unit size,Product Master,string,static,unit,No,Normalized unit size,Join on product_id,None
+shelf_life_days,Average physical perishable shelf life in days,Product Master,integer,static,days,No,Numeric cast,Join on product_id,None
+country_of_origin,Sovereign country of origin,Product Master,string,static,country,No,Canonical name,Join on product_id,None
+imported_flag,"Binary indicator (1=Imported, 0=Local)",Product Master,integer,static,flag,No,Binary boolean,Join on product_id,None
+store_name,Retail store outlet trade name,Store Master,string,static,text,No,Cleaned string,Join on store_id,None
+store_type,Outlet operational format,Store Master,string,static,type,No,Cleaned string,Join on store_id,None
+district,Administrative district,Store Master,string,static,district,No,Canonical spelling,Join on store_id,None
+state,Malaysian state or federal territory,Store Master,string,static,state,No,Canonical DOSM name,Join on store_id,None
+latitude,Geographic decimal latitude coordinate,Store Master,float,static,degrees,No,WGS84 float,Join on store_id,None
+longitude,Geographic decimal longitude coordinate,Store Master,float,static,degrees,No,WGS84 float,Join on store_id,None
+storage_capacity,Store storage warehouse capacity in units,Store Master,integer,static,units,No,Integer cast,Join on store_id,None
+observed_units_sold,Actual units sold through POS terminals,POS Sales,float,daily,units,No,Non-negative float,"Join on date, store, product",Target variable (uncorrected)
+transaction_count,Number of distinct sales checkout receipts,POS Sales,integer,daily,count,No,Non-negative integer,"Join on date, store, product",Confounding demand proxy
+gross_units_sold,Gross units sold before subtracting returns,POS Sales,float,daily,units,No,Quantity + Returns,"Join on date, store, product",None
+returned_units,Customer return quantity,POS Sales,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+selling_price,Actual retail transaction price per unit,POS Sales,float,daily,MYR,No,Currency parsed float,"Join on date, store, product",None
+normal_selling_price,Standard baseline undiscounted retail price,POS Sales,float,daily,MYR,No,Currency parsed float,"Join on date, store, product",None
+opening_inventory,Stock count at store opening (08:00),Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+closing_inventory,Stock count at store closing (22:00),Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+current_inventory,Active inventory balance recorded,Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+quantity_received,Inbound goods delivery received into store,Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+transfers_in,Stock transferred in from other outlets,Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+transfers_out,Stock transferred out to other outlets,Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+damaged_quantity,Damaged physical inventory written off,Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+expired_quantity,Expired perishable spoilage written off,Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",Wastage signal
+stockout_flag,Binary indicator (1=Zero stock / stockout),Inventory,integer,daily,flag,No,Binary boolean,"Join on date, store, product",Crucial for Phase 6 censorship
+backorder_quantity,Customer backorders queued during stockout,Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+incoming_inventory,Purchased stock en route in transit,Inventory,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+supplier_id,Primary active procurement supplier identifier,Purchase Prices,string,daily,code,No,String code,"Join on date, store, product",None
+supplier_name,Corporate supplier legal entity name,Supplier Master,string,static,text,No,Cleaned string,Join on supplier_id,None
+purchase_price,Unit cost paid to supplier per inventory unit,Purchase Prices,float,daily,MYR,No,Currency parsed float,"Join on date, store, product",Cost foundation
+purchase_quantity,Total units ordered on replenishment PO,Purchase Prices,float,daily,units,No,Non-negative float,"Join on date, store, product",None
+expected_lead_time_days,Contractual expected supplier lead time,Purchase Prices,integer,daily,days,No,Integer days,"Join on date, store, product",None
+actual_lead_time_days,Actual observed PO to delivery lead time,Purchase Prices,integer,daily,days,No,Integer days,"Join on date, store, product",None
+minimum_order_quantity,Supplier contract minimum order threshold,Supplier Master,float,static,units,No,Numeric float,Join on supplier_id,None
+supplier_pack_size,Wholesale master case/pack packaging size,Supplier Master,string,static,pack,No,Cleaned string,Join on supplier_id,None
+promotion_active,Binary indicator of promotional campaign,Promotions,integer,daily,flag,No,Interval match,Join on date interval & category,None
+promotion_type,Theme or classification of promotional event,Promotions,string,daily,text,Yes,Text label,Join on date interval & category,None
+discount_percentage,Commercial price discount applied in promo,Promotions,float,daily,percentage,No,Float percent,Join on date interval & category,None
+market_mean_price,Average competitor price across district/state,PriceCatcher,float,daily,MYR,Yes,Aggregated mean,"Join on product, district, date",External market signal
+market_median_price,Robust median market price across district/state,PriceCatcher,float,daily,MYR,Yes,Aggregated median,"Join on product, district, date",External market signal
+market_minimum_price,Lowest market price across district/state,PriceCatcher,float,daily,MYR,Yes,Aggregated min,"Join on product, district, date",External market signal
+market_maximum_price,Highest market price across district/state,PriceCatcher,float,daily,MYR,Yes,Aggregated max,"Join on product, district, date",External market signal
+market_observation_count,Count of premise price quotes aggregated,PriceCatcher,integer,daily,count,No,Aggregated count,"Join on product, district, date",Observation density
+Consumer_Price_Index,National overall Consumer Price Index (2010=100),CPI,float,monthly,index,No,Published monthly index,Publication lag join on date,Strict lag: ref_month + 1M + 24D
+relevant_category_Consumer_Price_Index,Food & Non-Alcoholic Beverage CPI,CPI,float,monthly,index,No,Published monthly index,Publication lag join on date,Strict lag: ref_month + 1M + 24D
+Producer_Price_Index,National overall Producer Price Index (2010=100),PPI,float,monthly,index,No,Published monthly index,Publication lag join on date,Strict lag: ref_month + 1M + 28D
+relevant_industry_Producer_Price_Index,Industry-specific Producer Price Index,PPI,float,monthly,index,No,Published monthly index,Publication lag join on date,Strict lag: ref_month + 1M + 28D
+subsidised_petrol_price,RON95 legal pump price per litre,Fuel Prices,float,weekly,MYR/litre,No,Weekly price level,Stepwise forward fill on date,None
+unsubsidised_petrol_price,RON97 unsubsidised market price per litre,Fuel Prices,float,weekly,MYR/litre,No,Weekly price level,Stepwise forward fill on date,None
+subsidised_diesel_price,Targeted / subsidised diesel pump price,Fuel Prices,float,weekly,MYR/litre,No,Weekly price level,Stepwise forward fill on date,None
+unsubsidised_diesel_price,Market float diesel price per litre,Fuel Prices,float,weekly,MYR/litre,No,Weekly price level,Stepwise forward fill on date,None
+relevant_exchange_rate,Malaysian Ringgit exchange rate (MYR/USD),BNM / FX,float,daily,MYR,No,Weekend forward-fill,Join on date,Zero backfill from future
+relevant_commodity_name,Primary underlying commodity benchmark name,Commodity Prices,string,daily,name,No,Product-commodity map,Mapped by product,None
+relevant_commodity_price,Benchmark spot/futures price of commodity,Commodity Prices,float,daily,USD or MYR,No,Weekend forward-fill,Mapped by product & date,Zero backfill from future
+maximum_temperature,Daily maximum outdoor temperature in Celsius,Weather,float,daily,deg C,No,Daily observation,"Join on date, district, state",Historical actuals only
+minimum_temperature,Daily minimum outdoor temperature in Celsius,Weather,float,daily,deg C,No,Daily observation,"Join on date, district, state",Historical actuals only
+average_temperature,Daily mean temperature in Celsius,Weather,float,daily,deg C,No,Daily observation,"Join on date, district, state",Historical actuals only
+rainfall,Total daily precipitation rainfall in mm,Weather,float,daily,mm,No,Daily observation,"Join on date, district, state",Historical actuals only
+humidity,Average relative outdoor humidity percentage,Weather,integer,daily,percent,No,Daily observation,"Join on date, district, state",Historical actuals only
+precipitation_duration,Hours of rainfall duration recorded in day,Weather,float,daily,hours,No,Daily observation,"Join on date, district, state",Historical actuals only
+public_holiday_flag,Binary indicator (1=Public holiday in store state),Public Holidays,integer,calendar,flag,No,Calendar map,Join on date & state,None
+public_holiday_name,Official Gazette name of the public holiday,Public Holidays,string,calendar,text,Yes,Cleaned string,Join on date & state,None
+school_holiday_flag,Binary indicator (1=National school term break),School Holidays,integer,calendar,flag,No,Interval containment,Join on date interval,None
+festival_flag,Binary indicator (1=Major national festival day),Festivals,integer,calendar,flag,No,Event classification,Derived from holiday name,None
+festival_name,"Standardized name of festival (CNY, Raya, etc.)",Festivals,string,calendar,text,Yes,Standardized label,Derived from holiday name,None
+government_assistance_event,Binary indicator of household cash aid rollout,Gov Assistance,integer,event,flag,No,Event date match,Join on date,Historically disbursed only
+government_assistance_programme,"Program name (BR1M, BPN, BKM, STR)",Gov Assistance,string,event,text,Yes,Cleaned string,Join on date,None
+government_assistance_amount,Disbursement cash amount per B40 household,Gov Assistance,float,event,MYR,No,Numeric float,Join on date,None
+subsidy_announced_flag,Binary indicator of policy announcement date,Subsidies & Policies,integer,event,flag,No,Announcement date match,Join on date,Announcement anticipation
+subsidy_active_flag,Binary indicator of active subsidy regime,Subsidies & Policies,integer,regime,flag,No,Regime date containment,Join on date,Active policy regime
+subsidy_type,Name/type of prevailing subsidy/ceiling regime,Subsidies & Policies,string,regime,text,Yes,Cleaned string,Join on date,None
+policy_announced_flag,Binary indicator of fiscal policy announcement,Subsidies & Policies,integer,event,flag,No,Announcement date match,Join on date,Announcement anticipation
+policy_active_flag,Binary indicator of active fiscal/wage policy,Subsidies & Policies,integer,regime,flag,No,Regime date containment,Join on date,Active policy regime
+policy_type,Name/type of active economic/tax policy,Subsidies & Policies,string,regime,text,Yes,Cleaned string,Join on date,None
+market_price_available,Availability metadata flag for PriceCatcher,Metadata,integer,daily,flag,No,Binary presence check,Metadata flag,Quality assessment indicator
+weather_available,Availability metadata flag for weather,Metadata,integer,daily,flag,No,Binary presence check,Metadata flag,Quality assessment indicator
+exchange_rate_available,Availability metadata flag for exchange rates,Metadata,integer,daily,flag,No,Binary presence check,Metadata flag,Quality assessment indicator
+commodity_price_available,Availability metadata flag for commodities,Metadata,integer,daily,flag,No,Binary presence check,Metadata flag,Quality assessment indicator
+Consumer_Price_Index_available,Availability metadata flag for CPI,Metadata,integer,daily,flag,No,Binary presence check,Metadata flag,Quality assessment indicator
+Producer_Price_Index_available,Availability metadata flag for PPI,Metadata,integer,daily,flag,No,Binary presence check,Metadata flag,Quality assessment indicator

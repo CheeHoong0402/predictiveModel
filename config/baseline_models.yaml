@@ -1,0 +1,55 @@
+# Fixed, interpretable parameters; no tuning on validation or final holdout.
+evaluation:
+  start_date: '2022-01-01'
+  holdout_start: '2024-10-01'
+  holdout_end: '2024-12-31'
+  validation_window_days: 30
+  history_mode: expanding
+  rolling_history_days: 730
+  minimum_history_days: 364
+  minimum_champion_folds: 5
+  minimum_prediction_coverage: 1.0
+  champion_rule: mean_fold_error_then_worst_fold_then_pooled_error
+demand:
+  minimum_series_observations: 7
+  seasonal_lag: 7
+  same_weekday_weeks: 4
+  moving_average_windows: [7, 28]
+  median_window: 28
+  weekday_profile_days: 84
+  weekday_profile_min_observations: 4
+  annual_lag: 364
+  trend_window_days: 28
+  trend_min_observations: 14
+  trend_cap_multiple: 3.0
+  maximum_last_value_age_days: 7
+  low_volume_below: 35
+  high_volume_at_least: 60
+price:
+  moving_average_windows: [7, 30]
+  median_window_days: 30
+  minimum_window_observations: 3
+  trend_window_days: 30
+  trend_min_observations: 14
+  trend_min_multiple: 0.5
+  trend_max_multiple: 1.5
+  # Price observation age and direction tolerance inherited from Phase 9.
+fallback:
+  window_days: 84
+  minimum_observations: 7
+  demand_levels: [product_store, product_state, product_national, category_store, category_national, global]
+  price_levels: [same_supplier_last_value, missing]
+intermittent:
+  minimum_observations: 28
+  adi_threshold: 1.32
+  zero_fraction_threshold: 0.50
+  croston_alpha: 0.1
+probabilistic:
+  lookback_days: 364
+  minimum_samples: 8
+  quantiles: [0.1, 0.5, 0.9]
+scenarios:
+  pre_festival_days: 7
+  high_volatility_daily_change: 0.05
+  price_shock_change: 0.10
+  commodity_shock_change: 0.10

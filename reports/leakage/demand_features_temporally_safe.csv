@@ -1,0 +1,276 @@
+feature_name,feature_family,source_dataset,source_frequency,observation_timing,publication_lag_days,effective_date_logic,known_in_advance_status,historical_only_status,potentially_future_known_status,leakage_risk,target_model_applicability,final_audit_status
+demand_lag_1,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_2,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_3,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_7,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_14,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_21,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_28,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_35,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_56,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_84,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_168,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_364,demand_history,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_mean_3d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_median_3d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_std_3d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_min_3d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_max_3d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_sum_3d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_cv_3d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_mean_7d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_median_7d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_std_7d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_min_7d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_max_7d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_sum_7d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_cv_7d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_mean_14d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_median_14d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_std_14d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_min_14d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_max_14d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_sum_14d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_cv_14d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_mean_28d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_median_28d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_std_28d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_min_28d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_max_28d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_sum_28d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_cv_28d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_mean_56d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_median_56d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_std_56d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_min_56d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_max_56d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_sum_56d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_cv_56d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_mean_84d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_median_84d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_std_84d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_min_84d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_max_84d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_sum_84d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_cv_84d,rolling_demand,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_ratio_7d_28d,demand_momentum,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_ratio_14d_56d,demand_momentum,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_growth_7d,demand_momentum,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_growth_28d,demand_momentum,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_trend_28d,demand_momentum,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_vs_median_28d,demand_momentum,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_dow_median_4w,weekly_seasonality,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_dow_median_8w,weekly_seasonality,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_lag_365,annual_seasonality,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+demand_prior_year_week_mean,annual_seasonality,estimated_true_demand_training_safe,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_lag_1,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_lag_2,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_lag_3,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_lag_7,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_lag_14,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_lag_28,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_lag_364,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_mean_7d,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_std_7d,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_sum_7d,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_mean_28d,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_std_28d,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+sales_sum_28d,observed_sales,observed_units_sold,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,demand,SAFE
+inventory_opening,inventory_state,opening_inventory,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+inventory_current,inventory_state,current_inventory,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+inventory_prior_closing,inventory_state,closing_inventory,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+inventory_incoming,inventory_state,incoming_inventory,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+inventory_backorder,inventory_state,backorder_quantity,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+stockout_flag_prior_day,stockout_history,stockout_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+stockout_count_7d,stockout_history,stockout_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+stockout_rate_7d,stockout_history,stockout_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+stockout_count_28d,stockout_history,stockout_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+stockout_rate_28d,stockout_history,stockout_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+stockout_count_56d,stockout_history,stockout_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+stockout_rate_56d,stockout_history,stockout_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+days_since_last_stockout,stockout_history,stockout_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+days_since_last_replenishment,replenishment_history,quantity_received,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+quantity_received_7d_sum,replenishment_history,quantity_received,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+quantity_received_28d_sum,replenishment_history,quantity_received,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+receipt_count_30d,replenishment_history,quantity_received,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+inventory_coverage_days_7d,inventory_coverage,"current_inventory, demand_mean_7d",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+inventory_coverage_days_28d,inventory_coverage,"current_inventory, demand_mean_28d",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+purchase_price_lag_1,purchase_price_history,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_lag_3,purchase_price_history,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_lag_7,purchase_price_history,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_lag_14,purchase_price_history,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_lag_21,purchase_price_history,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_lag_30,purchase_price_history,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_lag_60,purchase_price_history,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_lag_90,purchase_price_history,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_mean_7d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_std_7d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_min_7d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_max_7d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_mean_14d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_std_14d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_min_14d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_max_14d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_mean_30d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_std_30d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_min_30d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_max_30d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_mean_60d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_std_60d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_min_60d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_max_60d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_mean_90d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_std_90d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_min_90d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_max_90d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_volatility_30d,purchase_price_rolling,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_pct_change_1d,price_momentum,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_pct_change_7d,price_momentum,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_pct_change_30d,price_momentum,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_vs_mean_30d,price_momentum,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_vs_mean_90d,price_momentum,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+purchase_price_acceleration,price_momentum,purchase_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+discount_amount,selling_price,"normal_selling_price, selling_price",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+discount_percentage_calculated,selling_price,"normal_selling_price, selling_price",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+selling_price_vs_normal_ratio,selling_price,"selling_price, normal_selling_price",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+selling_price_mean_7d,selling_price,selling_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+selling_price_mean_28d,selling_price,selling_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+selling_price_vs_mean_7d,selling_price,selling_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+selling_price_pct_change_7d,selling_price,selling_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+selling_price_vs_product_median,price_elasticity_proxy,selling_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+price_elasticity_proxy_7d,price_elasticity_proxy,"demand_growth_7d, selling_price_pct_change_7d",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+supplier_lead_time_expected,procurement_supplier,expected_lead_time_days,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+supplier_lead_time_actual,procurement_supplier,actual_lead_time_days,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+supplier_lead_time_gap,procurement_supplier,"actual_lead_time_days, expected_lead_time_days",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+supplier_moq,procurement_supplier,minimum_order_quantity,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+supplier_pack_size_units,procurement_supplier,supplier_pack_size,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+promo_active_flag,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,False,False,False,none,demand,SAFE
+promo_discount_percentage,promotion,discount_percentage,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+promo_days_active_so_far,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,False,False,False,none,demand,SAFE
+promo_days_until_end,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+promo_frequency_30d,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+promo_frequency_90d,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+days_since_previous_promo,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+planned_promo_within_7d,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+planned_promo_within_14d,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+planned_promo_within_30d,promotion,promotion_active,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+cal_day_of_week,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_day_of_month,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_week_of_year,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_month,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_quarter,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_year,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_is_weekend,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_is_month_start,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_is_month_end,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_sin_day_of_week,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_cos_day_of_week,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_sin_month,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+cal_cos_month,calendar,date,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+holiday_lead_1d,holiday_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+holiday_lead_2d,holiday_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+holiday_lead_3d,holiday_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+holiday_lead_7d,holiday_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+holiday_lag_1d,holiday_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+holiday_lag_2d,holiday_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+holiday_lag_3d,holiday_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+holiday_lag_7d,holiday_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+days_until_cny,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+days_since_cny,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_cny_window_prior_7d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_cny_window_prior_14d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_cny_window_prior_30d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_cny_window_post_7d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+days_until_raya,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+days_since_raya,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_raya_window_prior_7d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_raya_window_prior_14d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_raya_window_prior_30d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_raya_window_post_7d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+days_until_deepavali,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+days_since_deepavali,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_deepavali_window_prior_7d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_deepavali_window_prior_14d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_deepavali_window_prior_30d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_deepavali_window_post_7d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+days_until_christmas,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+days_since_christmas,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_christmas_window_prior_7d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_christmas_window_prior_14d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_christmas_window_prior_30d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_christmas_window_post_7d,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+major_festival_window_active,festival_proximity,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,True,False,False,none,both,SAFE
+is_govt_salary_day,salary_cycle,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+days_until_salary_day,salary_cycle,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+days_since_salary_day,salary_cycle,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+is_post_salary_3d,salary_cycle,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+is_post_salary_7d,salary_cycle,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+is_month_end_salary_window,salary_cycle,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+days_since_last_gov_assist,government_assistance,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+is_post_gov_assist_3d,government_assistance,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+is_post_gov_assist_7d,government_assistance,"date, public_holidays, government_assistance",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+school_holiday_days_since_start,school_holiday,school_holiday_flag,Monthly/Gazetted,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+school_holiday_days_until_end,school_holiday,school_holiday_flag,Monthly/Gazetted,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+school_holiday_duration,school_holiday,school_holiday_flag,Monthly/Gazetted,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_school_holiday_first_week,school_holiday,school_holiday_flag,Monthly/Gazetted,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+is_school_holiday_final_week,school_holiday,school_holiday_flag,Monthly/Gazetted,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,demand,SAFE
+weather_temp_max,weather,maximum_temperature,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+weather_temp_min,weather,minimum_temperature,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+weather_temp_avg,weather,average_temperature,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+weather_rainfall_mm,weather,rainfall,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+weather_humidity_pct,weather,humidity,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+weather_precip_hours,weather,precipitation_duration,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+weather_rainfall_sum_3d,weather_rolling,rainfall,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+weather_rainfall_sum_7d,weather_rolling,rainfall,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+weather_rainfall_sum_14d,weather_rolling,rainfall,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+weather_temp_mean_7d,weather_rolling,average_temperature,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+weather_temp_max_7d,weather_rolling,maximum_temperature,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+weather_consecutive_rain_days,weather_spells,rainfall,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+weather_consecutive_hot_days,weather_spells,maximum_temperature,Daily,End of Day T (23:59:59 MYT),0,N/A,False,True,False,none,both,SAFE
+market_price_median,market_price,market_median_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+market_price_mean,market_price,market_mean_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+market_price_min,market_price,market_minimum_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+market_price_max,market_price,market_maximum_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+market_price_observation_count,market_price,market_observation_count,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+price_vs_market_diff,market_price,"selling_price, market_median_price",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,demand,SAFE_WITH_ASSUMPTION
+price_vs_market_ratio,market_price,"selling_price, market_median_price",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,demand,SAFE_WITH_ASSUMPTION
+market_median_change_7d,market_price,market_median_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+market_median_change_30d,market_price,market_median_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+market_median_volatility_30d,market_price,market_median_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+fuel_petrol_subsidised,macro_fuel,subsidised_petrol_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+fuel_petrol_unsubsidised,macro_fuel,unsubsidised_petrol_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+fuel_diesel_subsidised,macro_fuel,subsidised_diesel_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+fuel_diesel_unsubsidised,macro_fuel,unsubsidised_diesel_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+fuel_petrol_pct_change_7d,macro_fuel,subsidised_petrol_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+fuel_petrol_pct_change_28d,macro_fuel,subsidised_petrol_price,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+cpi_headline,macro_inflation,Consumer_Price_Index,Monthly/Gazetted,End of Day T (23:59:59 MYT),21,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+cpi_category,macro_inflation,relevant_category_Consumer_Price_Index,Monthly/Gazetted,End of Day T (23:59:59 MYT),21,N/A,False,False,False,low,demand,SAFE_WITH_ASSUMPTION
+cpi_pct_change_30d,macro_inflation,Consumer_Price_Index,Monthly/Gazetted,End of Day T (23:59:59 MYT),21,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+cpi_pct_change_365d,macro_inflation,Consumer_Price_Index,Monthly/Gazetted,End of Day T (23:59:59 MYT),21,N/A,False,False,False,low,both,SAFE_WITH_ASSUMPTION
+subsidy_announced_flag_indicator,policy_subsidy,subsidy_announced_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+subsidy_active_flag_indicator,policy_subsidy,subsidy_active_flag,Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,False,False,False,none,both,SAFE
+policy_announced_flag_indicator,policy_subsidy,policy_announced_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+policy_active_flag_indicator,policy_subsidy,policy_active_flag,Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,False,False,False,none,both,SAFE
+is_chicken_subsidy_active,policy_subsidy,"subsidy_type, subsidy_active_flag",Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,False,False,False,none,both,SAFE
+is_electricity_discount_active,policy_subsidy,"policy_type, policy_active_flag",Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,False,False,False,none,both,SAFE
+is_minimum_wage_rm1500_active,policy_subsidy,"date, policy_type",Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,False,False,False,none,both,SAFE
+is_service_tax_8pct_active,policy_subsidy,"date, policy_type",Daily,End of Day T (23:59:59 MYT),0,Synchronous on effective date,False,False,False,none,both,SAFE
+days_since_subsidy_announced,policy_subsidy,subsidy_announced_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+days_since_policy_announced,policy_subsidy,policy_announced_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+product_shelf_life_days,static_product,shelf_life_days,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+product_imported_flag,static_product,imported_flag,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+product_is_perishable,static_product,shelf_life_days,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+product_is_highly_perishable,static_product,shelf_life_days,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+product_is_controlled_goods,static_product,product_id,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+store_storage_capacity_units,static_store,storage_capacity,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+store_geo_latitude,static_store,latitude,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+store_geo_longitude,static_store,longitude,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+store_relative_capacity_ratio,static_store,storage_capacity,Daily,End of Day T (23:59:59 MYT),0,N/A,True,False,False,none,both,SAFE
+interaction_promo_x_festival,interactions,"promo_active_flag, major_festival_window_active",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+interaction_promo_x_discount,interactions,"promo_active_flag, promo_discount_percentage",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+interaction_rainfall_x_vegetables,interactions,"weather_rainfall_sum_7d, category",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+interaction_temp_x_poultry,interactions,"weather_temp_mean_7d, category",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+interaction_gov_assist_x_essential,interactions,"is_post_gov_assist_7d, product_is_controlled_goods",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+interaction_price_gap_x_promo,interactions,"price_vs_market_diff, promo_active_flag",Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,demand,SAFE
+missing_market_price,missingness_indicator,market_observation_count,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE
+missing_weather,missingness_indicator,weather_available,Daily,End of Day T (23:59:59 MYT),0,N/A,False,False,False,none,both,SAFE

@@ -1,0 +1,3 @@
+cutoff_date,tested_series,rows_evaluated,feature_differences,truncation_invariance_passed
+2022-12-31,STR_KUL_001 / PRD_CHK_01,730,"{'demand_lag_1': 0.0, 'demand_lag_7': 0.0, 'demand_mean_7d': 0.0, 'purchase_price_lag_7': 0.0}",True
+2023-12-31,STR_KUL_001 / PRD_CHK_01,1095,"{'demand_lag_1': 0.0, 'demand_lag_7': 0.0, 'demand_mean_7d': 0.0, 'purchase_price_lag_7': 0.0}",True

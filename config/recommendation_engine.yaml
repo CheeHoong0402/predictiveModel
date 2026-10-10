@@ -1,0 +1,108 @@
+# Recommendation Engine & Decision Orchestration Configuration (Phase 21)
+version: "1.0.0"
+
+taxonomy:
+  actions:
+    - name: "URGENT_REORDER"
+      description: "Critical stockout or lead-time shortage detected; immediate replenishment required."
+      requires_positive_quantity: true
+    - name: "BUY_NOW"
+      description: "Optimal replenishment order recommended to cover forecasted demand and capture favorable prices."
+      requires_positive_quantity: true
+    - name: "BUY_SMALLER_QUANTITY"
+      description: "Constrained order recommended to balance demand coverage against perishable shelf life or overstock risk."
+      requires_positive_quantity: true
+    - name: "WAIT_FOR_LOWER_PRICE"
+      description: "Current inventory safe and future supplier purchase price expected to decline; delay purchasing."
+      requires_positive_quantity: false
+    - name: "HOLD_CURRENT_STOCK"
+      description: "Inventory levels adequate for forward horizon; hold existing stock without placing orders."
+      requires_positive_quantity: false
+    - name: "DO_NOT_REORDER"
+      description: "Sufficient or surplus stock present; zero reorder recommended."
+      requires_positive_quantity: false
+    - name: "OVERSTOCK_WARNING"
+      description: "Excess inventory or high spoilage risk identified; halt reordering and review inventory drawdown."
+      requires_positive_quantity: false
+    - name: "MONITOR_CLOSELY"
+      description: "Marginal or uncertain condition; maintain observation without taking immediate procurement action."
+      requires_positive_quantity: false
+
+  urgency_levels:
+    - name: "CRITICAL"
+      rank: 5
+      description: "Immediate action required (imminent stockout before delivery or zero stock)."
+    - name: "HIGH"
+      rank: 4
+      description: "Action recommended very soon (low coverage, high stockout probability, or imminent price hike)."
+    - name: "MEDIUM"
+      rank: 3
+      description: "Action beneficial but not urgent (normal periodic replenishment)."
+    - name: "LOW"
+      rank: 2
+      description: "Monitor or optional action (adequate coverage, minor adjustments)."
+    - name: "NONE"
+      rank: 1
+      description: "No action required (healthy stock, hold or do not reorder)."
+
+conflict_resolution:
+  hierarchy:
+    1: "CRITICAL_STOCKOUT_RISK"
+    2: "LEAD_TIME_SHORTAGE"
+    3: "SHELF_LIFE_OVERSTOCK_PROTECTION"
+    4: "PROCUREMENT_PRICE_OPPORTUNITY"
+    5: "NORMAL_COST_OPTIMISATION"
+    6: "MONITORING"
+  rules:
+    stockout_overrides_price_wait: true
+    shelf_life_caps_order_quantity: true
+    overstock_blocks_bulk_order: true
+
+thresholds:
+  critical_stockout_probability: 0.30
+  high_stockout_probability: 0.15
+  low_coverage_days_multiplier: 1.0  # stock coverage < lead time
+  overstock_probability_threshold: 0.35
+  wastage_probability_threshold: 0.10
+  price_increase_pct_threshold: 2.0
+  price_decrease_pct_threshold: -2.0
+  minimum_price_change_pct: 2.0
+  strong_price_change_pct: 5.0
+  minimum_direction_probability: 0.60
+  strong_direction_probability: 0.75
+  minimum_net_price_timing_benefit_rm: 5.0
+  maximum_extra_coverage_days_due_to_price: 7
+  maximum_price_driven_quantity_increase_pct: 50.0
+  price_uncertainty_penalty_threshold: 0.35
+  low_decision_margin_pct: 1.0       # <= 1.0% diff between best and 2nd best strategy
+  min_history_days_required: 60      # lookback required for valid lag features
+
+robustness_classification:
+  robust:
+    max_cvar_cost_ratio: 1.5
+    min_decision_margin_pct: 5.0
+  moderately_robust:
+    max_cvar_cost_ratio: 2.5
+    min_decision_margin_pct: 2.0
+  uncertainty_sensitive:
+    max_cvar_cost_ratio: 4.0
+    min_decision_margin_pct: 1.0
+  highly_uncertain:
+    min_cvar_cost_ratio: 4.0
+
+data_quality_statuses:
+  - "GOOD"
+  - "ACCEPTABLE_WITH_WARNINGS"
+  - "LIMITED_HISTORY"
+  - "MISSING_OPTIONAL_DATA"
+  - "INSUFFICIENT_DATA"
+  - "REJECTED"
+
+reproducibility:
+  model_versions:
+    demand_model_version: "v1.0.0-phase15-champion"
+    price_model_version: "v1.0.0-phase15-champion"
+    calibration_version: "v1.0.0-phase16-conformal"
+    optimisation_version: "v1.0.0-phase18-cost-minimizer"
+    simulation_version: "v1.0.0-phase19-monte-carlo"
+    recommendation_engine_version: "v1.0.0-phase21-orchestrator"

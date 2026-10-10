@@ -1,0 +1,3 @@
+segment,days_evaluated,ai_stockout_rate,reference_stockout_rate,stockout_reduction_pp,ai_fill_rate,reference_fill_rate,savings_percentage
+FESTIVAL_ACTIVE,264,0.803,0.7083,-9.47,0.1687,0.2344,26.82
+NORMAL_PERIOD,23496,0.8163,0.6111,-20.52,0.2008,0.3782,14.53

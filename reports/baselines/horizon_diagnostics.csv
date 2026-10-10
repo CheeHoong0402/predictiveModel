@@ -1,0 +1,12 @@
+baseline,mae_1d,mae_30d,wape_1d,wape_30d,interpretation
+annual_naive_364,21.253699494949494,134.27036616161618,0.40376857030119057,0.09088184958652663,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+croston,,,,,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+empirical_quantiles,14.371300505050504,100.64382575757577,0.2730197375601319,0.06812148723347534,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+last_value,22.979709595959598,500.6246717171717,0.43655856203772886,0.3388513594990902,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+median_28,16.89580808080808,221.77424242424243,0.3209792382023792,0.15010946881537343,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+moving_average_28,16.963008658008658,137.48147186147187,0.3222558856390356,0.09305530925274559,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+moving_average_7,18.870670995671,238.74282828282824,0.35849682782787123,0.16159477649554949,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+recent_trend,19.519239017155684,480.9987399273249,0.3708180419694456,0.3255674083793517,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+same_weekday_median_4w,16.304147727272728,164.40518939393942,0.309739131269107,0.11127881840852337,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+seasonal_naive_7,20.370972222222225,236.7608712121212,0.38699890020400796,0.16025327479613397,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction
+weekday_profile,15.966305765993267,111.34691603535353,0.3033209561308929,0.07536594979467215,Cumulative units and daily units differ; inspect increasing MAE alongside aggregation-driven WAPE reduction

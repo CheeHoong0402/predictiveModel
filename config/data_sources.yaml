@@ -1,0 +1,89 @@
+data_sources:
+  pricecatcher:
+    base_storage_url: "https://storage.data.gov.my/pricecatcher"
+    lookup_item: "https://storage.data.gov.my/pricecatcher/lookup_item.parquet"
+    lookup_premise: "https://storage.data.gov.my/pricecatcher/lookup_premise.parquet"
+    monthly_template: "https://storage.data.gov.my/pricecatcher/pricecatcher_{year}-{month:02d}.parquet"
+    target_recent_months: 6
+
+  fuel_prices:
+    api_url: "https://api.data.gov.my/data-catalogue?id=fuelprice&limit=2500"
+    description: "Weekly retail fuel prices in Malaysia (RON95, RON97, Diesel, BUDI95, SKDS)"
+
+  cpi:
+    cpi_headline: "https://api.data.gov.my/data-catalogue?id=cpi_headline&limit=2500"
+    cpi_division: "https://api.data.gov.my/data-catalogue?id=cpi_division&limit=2500"
+    cpi_state: "https://api.data.gov.my/data-catalogue?id=cpi_state&limit=2500"
+
+  ppi:
+    api_url: "https://api.data.gov.my/data-catalogue?id=ppi&limit=2500"
+    description: "Malaysian Producer Price Index (industrial & overall)"
+
+  distributive_trade:
+    api_url: "https://api.data.gov.my/data-catalogue?id=distributive_trade&limit=2500"
+    description: "Wholesale and retail trade sales values and volume indices"
+
+  exchange_rates:
+    pairs:
+      - "USDMYR=X"
+      - "SGDMYR=X"
+      - "CNYMYR=X"
+      - "EURMYR=X"
+      - "JPYMYR=X"
+    backup_api: "https://api.frankfurter.dev/v1"
+
+  weather:
+    historical_api: "https://archive-api.open-meteo.com/v1/archive"
+    locations:
+      Kuala_Lumpur:
+        latitude: 3.1390
+        longitude: 101.6869
+        state: "W.P. Kuala Lumpur"
+        district: "Kuala Lumpur"
+      Selangor:
+        latitude: 3.0738
+        longitude: 101.5183
+        state: "Selangor"
+        district: "Petaling"
+      Johor:
+        latitude: 1.4927
+        longitude: 103.7414
+        state: "Johor"
+        district: "Johor Bahru"
+      Penang:
+        latitude: 5.4164
+        longitude: 100.3327
+        state: "Pulau Pinang"
+        district: "Timur Laut"
+      Perak:
+        latitude: 4.5921
+        longitude: 101.0901
+        state: "Perak"
+        district: "Kinta"
+      Pahang:
+        latitude: 3.8126
+        longitude: 103.3256
+        state: "Pahang"
+        district: "Kuantan"
+      Sabah:
+        latitude: 5.9804
+        longitude: 116.0735
+        state: "Sabah"
+        district: "Kota Kinabalu"
+      Sarawak:
+        latitude: 1.5533
+        longitude: 110.3592
+        state: "Sarawak"
+        district: "Kuching"
+
+  commodities:
+    tickers:
+      brent_crude: "BZ=F"
+      palm_oil_proxy: "PCO=F"
+      wheat: "ZW=F"
+      rice: "ZR=F"
+      sugar: "SB=F"
+      cocoa: "CC=F"
+      coffee: "KC=F"
+      aluminum: "ALI=F"
+      steel_proxy: "SLX"

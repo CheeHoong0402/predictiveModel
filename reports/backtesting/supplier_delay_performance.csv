@@ -1,0 +1,3 @@
+supplier_status,ai_stockout_rate,reference_stockout_rate,ai_fill_rate,reference_fill_rate
+DELAYED_LEAD_TIME,0.0,0.0,0.0,0.0
+NORMAL_LEAD_TIME,0.8162,0.6122,0.2004,0.3764

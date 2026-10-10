@@ -1,0 +1,164 @@
+feature_name,feature_family,keep_status,reason,value_classification,supported_horizons,temporal_status,source
+inventory_opening,inventory_state,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,opening_inventory
+inventory_current,inventory_state,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,current_inventory
+inventory_prior_closing,inventory_state,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,closing_inventory
+inventory_incoming,inventory_state,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,incoming_inventory
+inventory_backorder,inventory_state,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,backorder_quantity
+stockout_flag_prior_day,stockout_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,stockout_flag
+stockout_count_7d,stockout_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,stockout_flag
+stockout_rate_7d,stockout_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,stockout_flag
+stockout_count_28d,stockout_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,stockout_flag
+stockout_rate_28d,stockout_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,stockout_flag
+stockout_count_56d,stockout_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,stockout_flag
+stockout_rate_56d,stockout_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,stockout_flag
+days_since_last_stockout,stockout_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,stockout_flag
+days_since_last_replenishment,replenishment_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,quantity_received
+quantity_received_7d_sum,replenishment_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,quantity_received
+quantity_received_28d_sum,replenishment_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,quantity_received
+receipt_count_30d,replenishment_history,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,quantity_received
+purchase_price_lag_1,purchase_price_history,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_lag_3,purchase_price_history,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_lag_7,purchase_price_history,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_lag_14,purchase_price_history,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_lag_21,purchase_price_history,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_lag_30,purchase_price_history,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_lag_60,purchase_price_history,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_lag_90,purchase_price_history,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_mean_7d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_std_7d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_min_7d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_max_7d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_mean_14d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_std_14d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_min_14d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_max_14d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_mean_30d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_std_30d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_min_30d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_max_30d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_mean_60d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_std_60d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_min_60d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_max_60d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_mean_90d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_std_90d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_min_90d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_max_90d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_volatility_30d,purchase_price_rolling,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_pct_change_1d,price_momentum,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_pct_change_7d,price_momentum,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_pct_change_30d,price_momentum,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_vs_mean_30d,price_momentum,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_vs_mean_90d,price_momentum,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+purchase_price_acceleration,price_momentum,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,purchase_price
+supplier_lead_time_expected,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,expected_lead_time_days
+supplier_lead_time_actual,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,actual_lead_time_days
+supplier_lead_time_gap,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"actual_lead_time_days, expected_lead_time_days"
+supplier_moq,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,minimum_order_quantity
+supplier_pack_size_units,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,supplier_pack_size
+supplier_lead_time_mean_30d,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,actual_lead_time_days
+supplier_lead_time_std_30d,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,actual_lead_time_days
+supplier_lead_time_mean_90d,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,actual_lead_time_days
+supplier_on_time_rate_30d,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"actual_lead_time_days, expected_lead_time_days"
+supplier_on_time_rate_90d,procurement_supplier,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"actual_lead_time_days, expected_lead_time_days"
+cal_day_of_week,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_day_of_month,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_week_of_year,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_month,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_quarter,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_year,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_is_weekend,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_is_month_start,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_is_month_end,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_sin_day_of_week,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_cos_day_of_week,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_sin_month,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+cal_cos_month,calendar,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,date
+major_festival_window_active,festival_proximity,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, public_holidays, government_assistance"
+is_govt_salary_day,salary_cycle,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, public_holidays, government_assistance"
+days_until_salary_day,salary_cycle,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, public_holidays, government_assistance"
+days_since_salary_day,salary_cycle,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, public_holidays, government_assistance"
+is_post_salary_3d,salary_cycle,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, public_holidays, government_assistance"
+is_post_salary_7d,salary_cycle,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, public_holidays, government_assistance"
+is_month_end_salary_window,salary_cycle,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, public_holidays, government_assistance"
+weather_temp_max,weather,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,maximum_temperature
+weather_temp_min,weather,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,minimum_temperature
+weather_temp_avg,weather,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,average_temperature
+weather_rainfall_mm,weather,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,rainfall
+weather_humidity_pct,weather,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,humidity
+weather_precip_hours,weather,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,precipitation_duration
+weather_rainfall_sum_3d,weather_rolling,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,rainfall
+weather_rainfall_sum_7d,weather_rolling,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,rainfall
+weather_rainfall_sum_14d,weather_rolling,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,rainfall
+weather_temp_mean_7d,weather_rolling,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,average_temperature
+weather_temp_max_7d,weather_rolling,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,maximum_temperature
+weather_consecutive_rain_days,weather_spells,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,rainfall
+weather_consecutive_hot_days,weather_spells,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HARMFUL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,maximum_temperature
+fuel_petrol_subsidised,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,subsidised_petrol_price
+fuel_petrol_unsubsidised,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,unsubsidised_petrol_price
+fuel_diesel_subsidised,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,subsidised_diesel_price
+fuel_diesel_unsubsidised,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,unsubsidised_diesel_price
+fuel_diesel_effective,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"subsidised_diesel_price, unsubsidised_diesel_price"
+fuel_petrol_effective,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"subsidised_petrol_price, unsubsidised_petrol_price"
+fuel_petrol_pct_change_7d,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,subsidised_petrol_price
+fuel_petrol_pct_change_28d,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,subsidised_petrol_price
+fuel_diesel_pct_change_7d,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,unsubsidised_diesel_price
+fuel_diesel_pct_change_28d,macro_fuel,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,unsubsidised_diesel_price
+fx_rate,macro_currency,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_exchange_rate
+fx_change_1d,macro_currency,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_exchange_rate
+fx_pct_change_7d,macro_currency,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_exchange_rate
+fx_pct_change_30d,macro_currency,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_exchange_rate
+fx_mean_30d,macro_currency,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_exchange_rate
+fx_volatility_30d,macro_currency,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_exchange_rate
+fx_vs_mean_30d,macro_currency,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_exchange_rate
+commodity_price,macro_commodity,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_commodity_price
+commodity_mean_7d,macro_commodity,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_commodity_price
+commodity_mean_30d,macro_commodity,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_commodity_price
+commodity_pct_change_7d,macro_commodity,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_commodity_price
+commodity_pct_change_30d,macro_commodity,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_commodity_price
+commodity_volatility_30d,macro_commodity,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_commodity_price
+commodity_vs_mean_30d,macro_commodity,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_commodity_price
+subsidy_announced_flag_indicator,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,subsidy_announced_flag
+subsidy_active_flag_indicator,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,subsidy_active_flag
+policy_announced_flag_indicator,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,policy_announced_flag
+policy_active_flag_indicator,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,policy_active_flag
+is_chicken_subsidy_active,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"subsidy_type, subsidy_active_flag"
+is_diesel_rationalisation_active,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"subsidy_type, subsidy_active_flag"
+is_electricity_discount_active,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"policy_type, policy_active_flag"
+is_minimum_wage_rm1500_active,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, policy_type"
+is_service_tax_8pct_active,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"date, policy_type"
+days_since_subsidy_announced,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,subsidy_announced_flag
+days_since_policy_announced,policy_subsidy,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,policy_announced_flag
+product_shelf_life_days,static_product,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,shelf_life_days
+product_imported_flag,static_product,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,imported_flag
+product_is_perishable,static_product,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,shelf_life_days
+product_is_highly_perishable,static_product,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,shelf_life_days
+product_is_controlled_goods,static_product,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,product_id
+store_storage_capacity_units,static_store,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,storage_capacity
+store_geo_latitude,static_store,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,latitude
+store_geo_longitude,static_store,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,longitude
+store_relative_capacity_ratio,static_store,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,storage_capacity
+interaction_rainfall_x_vegetables,interactions,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"weather_rainfall_sum_7d, category"
+interaction_temp_x_poultry,interactions,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"weather_temp_mean_7d, category"
+interaction_diesel_change_x_lead_time,interactions,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"fuel_diesel_pct_change_7d, supplier_lead_time_expected"
+interaction_fx_change_x_imported,interactions,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"fx_pct_change_7d, product_imported_flag"
+interaction_commodity_change_x_product,interactions,EXCLUDE,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,"commodity_pct_change_7d, commodity_price"
+missing_market_price,missingness_indicator,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_observation_count
+missing_weather,missingness_indicator,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,weather_available
+missing_commodity_price,missingness_indicator,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,commodity_price_available
+missing_exchange_rate,missingness_indicator,KEEP,Validated predictive contribution during Phase 13 ablation testing,CRITICAL,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,exchange_rate_available
+market_price_median,market_price,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_median_price
+market_price_mean,market_price,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_mean_price
+market_price_min,market_price,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_minimum_price
+market_price_max,market_price,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_maximum_price
+market_price_observation_count,market_price,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_observation_count
+market_median_change_7d,market_price,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_median_price
+market_median_change_30d,market_price,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_median_price
+market_median_volatility_30d,market_price,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,market_median_price
+cpi_headline,macro_inflation,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,Consumer_Price_Index
+ppi_headline,macro_inflation,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,Producer_Price_Index
+ppi_industry,macro_inflation,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,relevant_industry_Producer_Price_Index
+cpi_pct_change_30d,macro_inflation,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,Consumer_Price_Index
+cpi_pct_change_365d,macro_inflation,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,Consumer_Price_Index
+ppi_pct_change_30d,macro_inflation,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,Producer_Price_Index
+ppi_pct_change_365d,macro_inflation,KEEP,Validated predictive contribution during Phase 13 ablation testing,HIGH VALUE,"1d, 3d, 7d, 14d, 21d, 30d",SAFE,Producer_Price_Index

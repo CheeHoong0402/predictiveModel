@@ -1,0 +1,32 @@
+# Secrets and local identity
+.env
+.env.*
+!.env.example
+**/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+.private/
+# Local runtime and research artifacts
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+/cache/
+/models/
+optuna_studies/
+catboost_info/
+*.log
+*.xml
+uploads/
+local_data/
+phase*_prompt.txt
+scratch_*.py
+# Only reviewed demonstration data is checked in; changes require a manifest review.
+data/raw/
+data/interim/
+data/processed/

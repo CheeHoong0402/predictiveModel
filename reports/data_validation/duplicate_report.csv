@@ -1,0 +1,11 @@
+filename,duplicate_rows,duplicate_business_keys,business_key_cols
+cpi_core.csv,0,1456,['date']
+cpi_headline.csv,0,2500,['date']
+cpi_state.csv,0,2500,['date']
+fuel_prices.csv,0,962,['date']
+iowrt_distributive_trade.csv,0,295,['date']
+malaysia_public_holidays_10y.csv,0,248,['date']
+ppi.csv,0,586,['date']
+trade_enduse_bec.csv,0,2500,['date']
+trade_headline.csv,0,658,['date']
+trade_sitc_1d.csv,0,2500,['date']

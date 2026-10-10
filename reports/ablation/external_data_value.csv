@@ -1,0 +1,10 @@
+external_source,demand_impact,price_impact,best_horizon,key_segment,final_status
+Weather (Rainfall / Temp),+1.4% WAPE,+0.2% MAE,"1d, 7d",Fresh produce & perishable poultry during monsoon spells,HIGH VALUE
+Promotions & Discounts,+8.7% WAPE,Not applicable,"1d, 7d",Active promotional discount campaigns,CRITICAL
+Fuel & Energy (RON95 / Diesel),+0.3% WAPE,+4.2% MAE,"14d, 30d",Logistics transport costs following diesel subsidy floating,CRITICAL
+"Exchange Rates (MYR/USD, MYR/CNY)",+0.1% WAPE,+6.8% MAE (Imported),30d,Imported staple foods (PRD_ONN_06 red onions),HIGH VALUE
+Commodity Prices (Palm Oil / Wheat),+0.2% WAPE,+3.8% MAE,"7d, 30d",Cooking oil (PRD_OIL_04) & wheat flour products,HIGH VALUE
+Consumer Price Index (CPI),+0.4% WAPE,+1.1% MAE,30d,Long-term macroeconomic price drift,MODERATE VALUE
+Producer Price Index (PPI),+0.2% WAPE,+1.5% MAE,"21d, 30d",Manufacturing and wholesale food production inputs,MODERATE VALUE
+Policy Events & Subsidies,+1.2% WAPE,+2.9% MAE,"7d, 14d",Price control ceilings (SHMMP) & subsidy announcements,HIGH VALUE
+Market Prices (PriceCatcher),+0.9% WAPE,+2.1% MAE,"1d, 7d",District-level competitive benchmark prices,HIGH VALUE

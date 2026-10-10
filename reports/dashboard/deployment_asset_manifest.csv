@@ -1,0 +1,12 @@
+file,size_kb,required_for_demo,required_for_user_mode,loaded_at_startup,lazy_loaded
+data/recommendations/final_recommendations.parquet,30.0,True,False,True,False
+data/recommendations/action_priority_queue.parquet,31.9,True,False,True,False
+data/recommendations/recommendation_audit_log.parquet,11.3,True,False,False,True
+reports/recommendations/executive_summary.json,0.9,True,False,True,False
+reports/backtesting/ai_vs_reference.csv,1.1,True,False,True,False
+reports/backtesting/monthly_performance.csv,1.5,True,False,True,False
+data/backtesting/decision_backtest.parquet,182.4,True,False,False,True
+config/recommendation_engine.yaml,3.8,True,True,True,False
+config/alerts.yaml,1.7,True,True,True,False
+models/calibration/demand/calibrator_h7.joblib,6.8,True,True,False,True
+models/calibration/price/calibrator_h7.joblib,6.7,True,True,False,True

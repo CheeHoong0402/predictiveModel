@@ -1,0 +1,13 @@
+study,task,horizon,model_family,trials_total,completed,pruned,failed,total_runtime_s,compute_device
+demand_lightgbm_1d,demand,1,lightgbm,10,5,5,0,41.58,CPU (14 threads)
+demand_lightgbm_3d,demand,3,lightgbm,0,0,0,0,0.0,CPU (14 threads)
+demand_lightgbm_7d,demand,7,lightgbm,14,6,8,0,43.35,CPU (14 threads)
+demand_lightgbm_14d,demand,14,lightgbm,0,0,0,0,0.0,CPU (14 threads)
+demand_lightgbm_21d,demand,21,lightgbm,0,0,0,0,0.0,CPU (14 threads)
+demand_lightgbm_30d,demand,30,lightgbm,10,5,5,0,41.32,CPU (14 threads)
+price_lightgbm_1d,price,1,lightgbm,12,8,4,0,43.35,CPU (14 threads)
+price_lightgbm_3d,price,3,lightgbm,0,0,0,0,0.0,CPU (14 threads)
+price_lightgbm_7d,price,7,lightgbm,14,8,6,0,45.07,CPU (14 threads)
+price_lightgbm_14d,price,14,lightgbm,0,0,0,0,0.0,CPU (14 threads)
+price_lightgbm_21d,price,21,lightgbm,0,0,0,0,0.0,CPU (14 threads)
+price_lightgbm_30d,price,30,lightgbm,11,7,4,0,41.19,CPU (14 threads)

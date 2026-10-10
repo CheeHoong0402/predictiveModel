@@ -1,0 +1,3 @@
+strategy,total_realised_cost,stockout_rate,unit_fill_rate,lost_units,wasted_units,average_inventory
+PHASE18_OPTIMISER,4642972.19,0.9641,0.0503,1110733.6,0.0,0.9
+PHASE20_AI_STRATEGY,7206379.15,0.8162,0.2004,935258.2,33806.6,82.4

@@ -1,0 +1,35 @@
+{
+  "evaluation_timestamp": "2026-10-11 07:55:56.772104",
+  "monitored_products": 24,
+  "monitored_stores": 4,
+  "urgent_actions_count": 22,
+  "high_risk_products_count": 22,
+  "total_recommended_spend_rm": 353138.18,
+  "total_expected_savings_rm": 292297.07,
+  "average_stockout_before": 0.8398,
+  "average_stockout_after": 0.6909,
+  "historical_backtest_savings_pct": 44.49,
+  "priority_actions_top_3": [
+    {
+      "store_id": "STR_JHR_003",
+      "product_id": "PRD_EGG_02",
+      "action": "URGENT_REORDER",
+      "urgency": "HIGH",
+      "order_quantity": 1180.0
+    },
+    {
+      "store_id": "STR_JHR_003",
+      "product_id": "PRD_OIL_05",
+      "action": "URGENT_REORDER",
+      "urgency": "HIGH",
+      "order_quantity": 1020.0
+    },
+    {
+      "store_id": "STR_JHR_003",
+      "product_id": "PRD_ONN_06",
+      "action": "URGENT_REORDER",
+      "urgency": "HIGH",
+      "order_quantity": 690.0
+    }
+  ]
+}

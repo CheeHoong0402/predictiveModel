@@ -1,0 +1,7 @@
+task,horizon,metric_name,internal_only_metric,internal_plus_external_metric,delta_metric,relative_improvement_pct,external_data_verdict
+demand,1,WAPE,0.30789,0.25568,-0.05221,16.96,MEASURABLE VALUE
+demand,7,WAPE,0.13795,0.1385,0.00055,-0.4,NO VALUE
+demand,30,WAPE,0.06688,0.06574,-0.00114,1.7,MEASURABLE VALUE
+price,1,MAE,0.01091,0.01096,5e-05,-0.48,NO VALUE
+price,7,MAE,0.01426,0.01317,-0.00109,7.63,MEASURABLE VALUE
+price,30,MAE,0.01229,0.01274,0.00044,-3.62,NO VALUE
