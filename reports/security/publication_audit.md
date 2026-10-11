@@ -37,7 +37,8 @@ Reviewed on 11 October 2026, before the initial GitHub publication.
 - Preserved price-model quarantine. Messages use current known historical prices.
 - Added private `/start` challenge verification, session-bound Telegram recipients,
   expiring in-memory connection state, explicit send controls and recipient cooldown.
-  Transport exceptions are redacted; tokens and chat IDs are not returned to the UI.
+  Transport exceptions are redacted; the verified chat ID is shown only in its own
+  browser session for private scheduled-job configuration. The token is never shown.
 
 ## Validation
 
@@ -56,6 +57,9 @@ or identifier. Future files and data require review before publication. The publ
 dashboard is a historical synthetic demonstration, not a live commercial deployment.
 The price model remains unvalidated. Restock dates are explicit coverage/lead-time
 estimates, not confirmed supplier appointments. Private upload inference is unavailable.
-The bot runs one update consumer and sends on demand; it has no unattended daily worker.
-Restarting the app clears Telegram connections. Hosting retains its own service logs;
-the application does not persist Telegram identities or user-uploaded retailer data.
+The dashboard runs one update consumer and can send on demand. A separate GitHub
+Actions job can send the saved historical demo summary at approximately 8:00 AM
+Malaysia time to one private chat after rotated-token and verified-chat-ID secrets
+are configured on the hosting fork. It does not consume Telegram updates. Restarting
+the app clears dashboard connections. Hosting retains its own service logs; the
+application does not persist Telegram identities or user-uploaded retailer data.
