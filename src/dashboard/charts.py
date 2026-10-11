@@ -60,13 +60,14 @@ def plot_demand_forecast_chart(demand_dict: Dict[str, Dict[str, float]], product
     ))
 
     fig.update_layout(
-        title=f"Cumulative Demand Forecast & Calibrated Uncertainty — {product_name}",
+        title="Cumulative demand and uncertainty",
+        height=440,
         xaxis_title="Forecast Horizon",
         yaxis_title="Cumulative Demand (Units)",
         template="plotly_white",
         hovermode="x unified",
-        margin=dict(l=40, r=40, t=50, b=40),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+        margin=dict(l=40, r=25, t=65, b=110),
+        legend=dict(orientation="h", yanchor="top", y=-0.2, xanchor="left", x=0)
     )
     return fig
 
@@ -78,6 +79,17 @@ def plot_price_forecast_chart(price_dict: Dict[str, Any], current_price: float, 
     """
     horizons = ["Current", "1d", "3d", "7d", "14d", "21d", "30d"]
     
+    if price_dict.get("predicted_future_price") is None:
+        fig = go.Figure(go.Bar(x=["Current known price"], y=[current_price],
+                              name="Historical invoice price", marker_color="#64748B"))
+        fig.update_layout(title="Purchase price — NOT VALIDATED", height=340,
+                          yaxis_title="Current purchase price (RM)", template="plotly_white",
+                          showlegend=False, margin=dict(l=40, r=25, t=65, b=50))
+        fig.add_annotation(text="Future forecast QUARANTINED.<br>No future prices or intervals shown.",
+                           xref="paper", yref="paper", x=0.98, y=0.95, showarrow=False,
+                           bgcolor="white", font=dict(color="#991B1B", size=12))
+        return fig
+
     # Handle None safely when price model is quarantined/unvalidated
     raw_pred = price_dict.get("predicted_future_price")
     pred_val = float(raw_pred) if raw_pred is not None else float(current_price)
@@ -130,8 +142,8 @@ def plot_price_forecast_chart(price_dict: Dict[str, Any], current_price: float, 
         xaxis_title="Horizon",
         yaxis_title="Purchase Price (RM)",
         template="plotly_white",
-        margin=dict(l=40, r=40, t=50, b=40),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+        margin=dict(l=40, r=25, t=65, b=110),
+        legend=dict(orientation="h", yanchor="top", y=-0.2, xanchor="left", x=0)
     )
 
     if is_quarantined:
@@ -171,7 +183,7 @@ def plot_inventory_trajectory_chart(inv_dict: Dict[str, Any], order_qty: float) 
         title="Projected Inventory Depletion & Replenishment Trajectory",
         yaxis_title="Inventory on Hand (Units)",
         template="plotly_white",
-        margin=dict(l=40, r=40, t=50, b=40)
+        margin=dict(l=40, r=25, t=65, b=110)
     )
     return fig
 
@@ -200,7 +212,7 @@ def plot_risk_comparison_chart(rsk_dict: Dict[str, Any]) -> go.Figure:
         yaxis_title="Probability (%)",
         yaxis=dict(range=[0, max(100, max(vals) + 15)]),
         template="plotly_white",
-        margin=dict(l=40, r=40, t=50, b=40)
+        margin=dict(l=40, r=25, t=65, b=110)
     )
     return fig
 
@@ -228,7 +240,7 @@ def plot_cost_breakdown_chart(cost_dict: Dict[str, Any]) -> go.Figure:
         title="Expected Cost Components Under Recommended Policy (MYR)",
         yaxis_title="Expected Cost (RM)",
         template="plotly_white",
-        margin=dict(l=40, r=40, t=50, b=40)
+        margin=dict(l=40, r=25, t=65, b=110)
     )
     return fig
 
@@ -259,6 +271,6 @@ def plot_historical_backtest_cumulative_savings(monthly_df: pd.DataFrame) -> go.
         xaxis_title="Replay Month",
         yaxis_title="Cumulative Net Savings (RM)",
         template="plotly_white",
-        margin=dict(l=40, r=40, t=50, b=40)
+        margin=dict(l=40, r=25, t=65, b=110)
     )
     return fig

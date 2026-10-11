@@ -216,7 +216,7 @@ with tabs[1]:
 # =============================================================
 with tabs[2]:
     st.subheader(f"Predictive Forecasts — {prod_name}")
-    col_d_chart, col_p_chart = st.columns(2)
+    col_d_chart, col_p_chart = st.container(), st.container()
     with col_d_chart:
         dem_data = product_payload.get("demand", {})
         st.plotly_chart(plot_demand_forecast_chart(dem_data, prod_name), use_container_width=True)
