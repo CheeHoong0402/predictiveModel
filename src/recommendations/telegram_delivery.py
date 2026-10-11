@@ -108,7 +108,9 @@ class TelegramConnections:
 
     Keeps only random capabilities, chat IDs and timestamps in memory. Never accepts
     a browser-provided chat ID. Expiry/restart/disconnect removes authorization.
-    No polling daemon or unsolicited daily messages. Run only one consumer per bot.
+    This class has no polling daemon. The separate daily job only sends to a
+    privately configured chat ID and never consumes updates. Run one update
+    consumer per bot.
     """
     def __init__(self, client, clock=time.time):
         self.client, self.clock = client, clock
@@ -190,6 +192,16 @@ class TelegramConnections:
             if not isinstance(result, dict) or not result.get('message_id'):
                 raise TelegramError('Telegram did not confirm delivery.')
             return True
+
+    def private_chat_id(self, capability):
+        """Reveal only the verified session owner's private chat ID for scheduled delivery."""
+        with self._lock:
+            self._prune()
+            self._poll()
+            session = self._sessions.get(capability)
+            if not session:
+                raise TelegramError('Connect your own Telegram account first.')
+            return session['chat']
 
     def disconnect(self, capability):
         with self._lock:

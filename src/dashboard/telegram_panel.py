@@ -23,11 +23,11 @@ def _connections():
 
 def render_telegram_panel(recommendations, names, units):
     st.subheader('Send your restocking summary')
-    st.caption('Historical synthetic demonstration. Sends only when you click Send; no automatic broadcasts.')
+    st.caption('Historical synthetic demonstration. Manual send is available below; a daily 8:00 AM Malaysia-time digest can be enabled for one private chat through repository secrets.')
     message = decision_message(recommendations, names, units)
     st.code(message, language=None)
     if not _token():
-        st.info('Message preview is available. Telegram delivery awaits a rotated bot token in the host’s secret settings.')
+        st.info('Message preview is available. Telegram delivery awaits a rotated bot token in the host’s secret settings. Daily delivery also needs private repository secrets.')
         return
     try:
         broker = _connections()
@@ -42,13 +42,15 @@ def render_telegram_panel(recommendations, names, units):
         capability = st.session_state.get('telegram_capability')
         if capability:
             st.link_button('Open FoodResilienceBot and press Start', st.session_state['telegram_link'])
-            st.caption('Connect within 10 minutes. Your chat ID stays on the server for at most one hour. Disconnect to remove it sooner.')
+            st.caption('Connect within 10 minutes. The dashboard keeps your chat ID in memory for at most one hour; daily delivery separately requires you to save it as a repository secret.')
             if st.button('I pressed Start — verify connection'):
                 st.session_state['telegram_verified'] = broker.verify(capability)
                 if not st.session_state['telegram_verified']:
                     st.info('No matching Start message yet. Press Start in Telegram, then verify again.')
             if st.session_state.get('telegram_verified'):
                 st.success('Connected to your Telegram account.')
+                st.caption('For daily delivery to this private chat, save this verified chat ID as the TELEGRAM_CHAT_ID repository secret:')
+                st.code(str(broker.private_chat_id(capability)), language=None)
                 if st.button('Send this summary to my Telegram', type='primary'):
                     broker.send(capability, message)
                     st.success('Telegram confirmed delivery.')
@@ -59,4 +61,4 @@ def render_telegram_panel(recommendations, names, units):
                 st.rerun()
     except TelegramError as error:
         st.error(str(error))
-    st.caption('Use this bot with one dashboard instance only. Delivery is on demand while this app is running.')
+    st.caption('Manual delivery uses this session. The separate daily schedule uses the private repository secrets.')

@@ -1,0 +1,30 @@
+name: Daily Telegram restocking demo
+on:
+  schedule:
+    # Malaysia is UTC+8 year-round. GitHub schedules may run a few minutes late.
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: daily-telegram-summary
+  cancel-in-progress: false
+jobs:
+  send:
+    # The canonical collaborator repository has no delivery secrets.
+    if: github.repository == 'Codinggeniusnks/predictiveModel'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Validate saved recommendations
+        run: python scripts/send_daily_telegram_summary.py --dry-run
+      - name: Send to configured private chat
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/send_daily_telegram_summary.py

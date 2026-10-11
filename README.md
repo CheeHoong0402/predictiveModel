@@ -45,22 +45,39 @@ pipeline/integration tests require their local research datasets.
    Never commit it, paste it into an issue, or put it in the browser application.
 3. Open **Telegram Alerts & Policy**. Choose one item or the selected store's six items.
 4. Click **Connect my Telegram**, open the bot link and press **Start**. Return and verify.
-5. Review the exact message and click **Send this summary to my Telegram**.
+5. Review the exact message and click **Send this summary to my Telegram** for an immediate test.
+
+For automatic delivery to **one private chat** every day at approximately **8:00 AM
+Malaysia time**, use the verified chat ID shown in that dashboard tab. On the
+**hosting fork** (`Codinggeniusnks/predictiveModel`), enable GitHub Actions and add
+repository Actions secrets `TELEGRAM_BOT_TOKEN` (the rotated token) and
+`TELEGRAM_CHAT_ID` (that verified private chat ID). The job is
+`.github/workflows/daily-telegram-summary.yml`; it sends one summary per store,
+covering restock quantities, order and arrival dates, estimated next replenishment
+dates, and known historical purchase prices. The saved demonstration origin is
+**17 August 2024**; each daily message prominently says that it is a historical
+synthetic illustration. The job does not infer new live inventory or place orders.
+GitHub's scheduled start time can be delayed. `workflow_dispatch` permits a manual
+test after both secrets are set. Before setup, the scheduled job fails visibly
+without sending. Do not put either secret in the repository, a URL, or an issue.
 
 The message includes the historical decision date, item, quantity and measurement unit,
 order date, expected arrival, estimated next replenishment date, current purchase price
 and estimated purchase cost. No future-price claim is made. No purchase order is placed.
 
 Each browser session must prove ownership through a unique private `/start` challenge.
-The app does not accept arbitrary recipient chat IDs. Chat IDs are held only in server
-memory for up to one hour and removed on disconnect/restart. Connection links expire
-after ten minutes. Delivery is explicit, with a one-minute recipient cooldown. `/stop`
-is processed when the dashboard next checks Telegram updates. Disconnect in the
-dashboard removes its authorization immediately. There are no scheduled broadcasts.
+The app does not accept arbitrary recipient chat IDs. Its verified chat ID is shown
+only in that browser session so its owner can configure the scheduled job privately.
+Dashboard chat IDs are held in server memory for up to one hour and removed on
+disconnect/restart. Connection links expire after ten minutes. Manual delivery has
+a one-minute recipient cooldown. `/stop` is processed when the dashboard next checks
+Telegram updates. Disconnect removes dashboard authorization; to stop the independent
+daily job, remove its `TELEGRAM_CHAT_ID` secret or disable the workflow.
 
 Run this bot with **one dashboard process / one Telegram update consumer**, without a
-separate webhook or polling service. Scaling or unattended daily delivery requires a
-durable subscription store and dedicated worker, which this release does not provide.
+separate webhook or polling service. The daily GitHub job sends only; it does not
+poll Telegram or manage subscriptions. Multi-user broadcasts would require a durable
+subscription store and dedicated worker, which this release does not provide.
 
 ## Public hosting
 

@@ -61,7 +61,9 @@ def test_private_nonce_binding_isolates_users_and_deduplicates():
     nonce=link.split('=')[-1]
     client.updates=[update(nonce,1000)]
     assert broker.verify(first)
+    assert broker.private_chat_id(first) == 123
     assert not broker.verify(second)
+    with pytest.raises(TelegramError): broker.private_chat_id(second)
     with pytest.raises(TelegramError): broker.send(second,'Blocked')
     broker.send(first,'Allowed')
     assert client.sent[0]['chat_id']==123
@@ -69,6 +71,40 @@ def test_private_nonce_binding_isolates_users_and_deduplicates():
     with pytest.raises(TelegramError): broker.send(first,'Duplicate')
     broker.disconnect(first)
     with pytest.raises(TelegramError): broker.send(first,'Disconnected')
+    with pytest.raises(TelegramError): broker.private_chat_id(first)
+
+
+def test_daily_summary_is_historical_and_telegram_sized():
+    from datetime import date
+    from scripts.send_daily_telegram_summary import build_daily_messages
+    messages = build_daily_messages(today=date(2026, 10, 11))
+    assert len(messages) == 4
+    assert all('Daily demo digest — 2026-10-11' in msg for msg in messages)
+    assert all('HISTORICAL SYNTHETIC DEMO' in msg for msg in messages)
+    assert all('Decision date (end of day): 2024-08-17' in msg for msg in messages)
+    assert all('Next replenishment (estimate)' in msg for msg in messages)
+    assert all(len(msg) <= 4000 for msg in messages)
+
+
+def test_daily_sender_requires_private_configuration_and_bot_identity():
+    from scripts.send_daily_telegram_summary import send_daily_messages
+    with pytest.raises(TelegramError, match='TELEGRAM_BOT_TOKEN'):
+        send_daily_messages(['demo'], '', '123')
+    with pytest.raises(TelegramError, match='TELEGRAM_CHAT_ID'):
+        send_daily_messages(['demo'], 'test-only', 'unknown')
+    class Client:
+        def __init__(self, token): self.sent = []
+        def call(self, method, payload):
+            if method == 'getMe': return {'username': 'FoodResilienceBot'}
+            self.sent.append(payload)
+            return {'message_id': len(self.sent)}
+    client = Client('test-only')
+    assert send_daily_messages(['demo one', 'demo two'], 'test-only', '123', lambda _: client) == 2
+    assert [x['chat_id'] for x in client.sent] == [123, 123]
+    assert all(x['protect_content'] for x in client.sent)
+    with pytest.raises(TelegramError, match='does not belong'):
+        send_daily_messages(['demo'], 'test-only', '123',
+                            lambda _: type('Other', (), {'call': lambda self, *a: {'username': 'other'}})())
 
 
 @pytest.mark.parametrize('kind,sender,age', [('group',123,0),('private',456,0),('private',123,-10)])
