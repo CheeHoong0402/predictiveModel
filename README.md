@@ -1,6 +1,7 @@
 # FoodResilience — retail procurement dashboard
 
 Public demonstration of a Malaysian retail forecasting and inventory-planning project.
+Visit the [public dashboard](https://foodresilience-procurement.streamlit.app/).
 The retailer transactions are **synthetic**, and the dashboard's decision origin is
 **17 August 2024**. These outputs are not live procurement instructions or evidence
 of real commercial savings.
@@ -63,7 +64,10 @@ durable subscription store and dedicated worker, which this release does not pro
 
 ## Public hosting
 
-On Streamlit Community Cloud choose repository `CheeHoong0402/predictiveModel`, branch
+The canonical repository is `CheeHoong0402/predictiveModel`. Streamlit requires repository
+administrator access, so deployment uses the owner's hosting fork
+`Codinggeniusnks/predictiveModel`. Keep that fork synced with the canonical repository.
+On Streamlit Community Cloud choose the hosting fork, branch
 `main`, entrypoint `app.py`, Python 3.12. Deploy as a public app. Configure the Telegram
 secret privately after token rotation, then reboot the app. Public access must be
 verified from a signed-out browser; a successful local run is not a deployment.
@@ -71,7 +75,7 @@ verified from a signed-out browser; a successful local run is not a deployment.
 ## Verification
 
 ```sh
-python -m pip install pytest
+python -m pip install -r requirements-test.txt
 python scripts/security_scan.py
 python -m pytest tests/test_public_release.py tests/test_dashboard.py tests/test_recommendation_engine.py tests/test_model_governance.py -q
 ```
