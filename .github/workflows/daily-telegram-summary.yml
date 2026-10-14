@@ -1,8 +1,8 @@
 name: Daily Telegram restocking demo
 on:
-  schedule:
-    # Malaysia is UTC+8 year-round. GitHub schedules may run a few minutes late.
-    - cron: '0 0 * * *'
+  # Telegram delivery is temporarily paused at the owner's request.
+  # schedule:
+  #   - cron: '0 0 * * *'
   workflow_dispatch:
 permissions:
   contents: read
@@ -11,8 +11,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   send:
-    # The canonical collaborator repository has no delivery secrets.
-    if: github.repository == 'Codinggeniusnks/predictiveModel'
+    # Delivery stays paused even when manually dispatched; re-enable explicitly later.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
